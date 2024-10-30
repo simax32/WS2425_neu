@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">WS2425</string>
+    <string name="main_hello_world">Hallo, Welt!</string>
 </resources>

@@ -1,5 +1,6 @@
 package de.hka.ws2425.ui.main;
 
+import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 
 import android.os.Bundle;
@@ -8,9 +9,12 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.TextView;
 
 import de.hka.ws2425.R;
 
@@ -36,4 +40,23 @@ public class MainFragment extends Fragment {
         return inflater.inflate(R.layout.fragment_main, container, false);
     }
 
+    @Override
+    public void onResume() {
+        super.onResume();
+
+        /*TextView txtMessage = this.getView().findViewById(R.id.txt_message);
+        txtMessage.setText("This is a stupid way to set a text ....");*/
+
+        Button btnDoSomething = this.getView().findViewById(R.id.btn_do_something);
+        btnDoSomething.setOnClickListener((view) -> mViewModel.doSomething());
+
+        TextView txtMessage = this.getView().findViewById(R.id.txt_message);
+
+        mViewModel.getResult().observe(this.getViewLifecycleOwner(), new Observer<String>() {
+            @Override
+            public void onChanged(String s) {
+                txtMessage.setText(s);
+            }
+        });
+    }
 }
