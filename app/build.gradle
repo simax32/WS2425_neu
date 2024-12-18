@@ -41,7 +41,7 @@ dependencies {
     implementation libs.constraintlayout
     implementation libs.lifecycle.livedata.ktx
     implementation libs.lifecycle.viewmodel.ktx
-    implementation libs.legacy.support.v4s
+    implementation libs.legacy.support.v4
 
 
     implementation 'com.github.Redman1037:Android-Permissions:3.8'
