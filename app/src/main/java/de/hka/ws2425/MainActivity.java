@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
 
         }
 
-        File zippy = new File(getApplicationContext().getCacheDir(), "/gtfs-hka-s24.zip");
+        File zippy = new File(getApplicationContext().getCacheDir(), "/gtfs-hka-j25.zip");
 
         if (!zippy.exists()) {
             copyAsset(getAssets(), zippy, "gtfs-hka-s24.zip");
@@ -78,4 +78,5 @@ public class MainActivity extends AppCompatActivity {
             return false;
         }
     }
+
 }
