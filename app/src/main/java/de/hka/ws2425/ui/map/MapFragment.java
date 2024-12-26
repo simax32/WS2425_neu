@@ -76,7 +76,7 @@ public class MapFragment extends Fragment {
 
         this.mapView.setTileSource(mapServer);
 
-        GeoPoint startPoint = new GeoPoint(49.0069, 8.4037);
+        GeoPoint startPoint = new GeoPoint(49.0069, 8.8037); //Karlsruhe = aLongitude = 8.4037
 
         IMapController mapController = this.mapView.getController();
         mapController.setZoom(14.0);
