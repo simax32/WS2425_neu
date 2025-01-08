@@ -15,6 +15,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.gtfs.reader.*; //Import des GTFS Reader
+import org.osmdroid.api.IMapController;
+import org.osmdroid.config.Configuration;
+import org.osmdroid.util.GeoPoint;
 
 import de.hka.ws2425.ui.main.MainFragment;
 
@@ -38,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
         File zippy = new File(getApplicationContext().getCacheDir(), "/gtfs-hka-j25.zip");
 
         if (!zippy.exists()) {
-            copyAsset(getAssets(), zippy, "gtfs-hka-s24.zip");
+            copyAsset(getAssets(), zippy, "gtfs-hka-j25.zip");
             // gtfs wird vom Assetordner kopiert in ein cache(wo das file darauf zeigt)
         }
 
@@ -59,6 +62,7 @@ public class MainActivity extends AppCompatActivity {
         gtfsDao.getAgencies().forEach(agency -> {
             Log.d(this.getClass().getSimpleName(), agency.getName());       //Holt Name von Bürgerbussen aus gtfs
         });
+
     }
     //Start Code zum Auslesen und Schreiben von gtfs
     private static boolean copyAsset(AssetManager am, File file, String fileName) {

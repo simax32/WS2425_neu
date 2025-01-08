@@ -27,6 +27,7 @@ import org.osmdroid.config.Configuration;
 import org.osmdroid.tileprovider.tilesource.XYTileSource;
 import org.osmdroid.util.GeoPoint;
 import org.osmdroid.views.MapView;
+import org.osmdroid.views.overlay.Marker;
 
 import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
@@ -81,6 +82,14 @@ public class MapFragment extends Fragment {
         IMapController mapController = this.mapView.getController();
         mapController.setZoom(14.0);
         mapController.setCenter(startPoint);
+
+        // Hinzufügen des Markers
+        Marker marker = new Marker(mapView);
+        marker.setPosition(startPoint); // Position setzen
+        marker.setAnchor(Marker.ANCHOR_CENTER, Marker.ANCHOR_BOTTOM); // Ankerpunkt setzen
+        marker.setTitle("Karlsruhe"); // Titel für den Marker
+        mapView.getOverlays().add(marker); // Marker zur Karte hinzufügen
+
 
         return root;
     }

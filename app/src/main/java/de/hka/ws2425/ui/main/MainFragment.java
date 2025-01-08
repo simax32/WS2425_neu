@@ -66,6 +66,6 @@ public class MainFragment extends Fragment {
                 txtMessage.setText(s);
             }
         });
-
     }
+
 }
