@@ -12,7 +12,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:text="Herzlich Wilkommen in der App für das Mobilitätsangebot:" />
-
+//Abändern der Texte
     <TextView
         android:id="@+id/txt_message"
         android:layout_width="match_parent"
