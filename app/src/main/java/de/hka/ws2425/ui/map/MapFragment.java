@@ -1,12 +1,9 @@
 package de.hka.ws2425.ui.map;
 
-import static java.security.AccessController.getContext;
-
 import androidx.lifecycle.ViewModelProvider;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
-import android.content.res.AssetManager;
 import android.location.LocationListener;
 import android.location.LocationManager;
 import android.os.Bundle;
@@ -16,11 +13,9 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
 import android.util.Base64;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
 
 import com.nabinbhandari.android.permissions.PermissionHandler;
 import com.nabinbhandari.android.permissions.Permissions;
@@ -32,39 +27,14 @@ import org.osmdroid.util.GeoPoint;
 import org.osmdroid.views.MapView;
 import org.osmdroid.views.overlay.Marker;
 
-import java.io.IOException;
-import java.io.InputStream;
+
 import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.zip.ZipEntry;
-import java.util.zip.ZipInputStream;
 
 import de.hka.ws2425.R;
-import de.hka.ws2425.utils.Stops;
+import de.hka.ws2425.utils.Haltestellen;
 import androidx.fragment.app.FragmentResultListener;
-
-
-
-/*
-ChatGPT START
-private InputStream extractStopsFileFromZip(String zipFileName, String targetFileName) throws IOException {
-    AssetManager assetManager = getContext().getAssets();
-    InputStream zipInputStream = assetManager.open(zipFileName);
-    ZipInputStream zis = new ZipInputStream(zipInputStream);
-
-    ZipEntry entry;
-    while ((entry = zis.getNextEntry()) != null) {
-        if (entry.getName().equals(targetFileName)) {
-            return zis; // Gibt den InputStream der Datei `stops.txt` zurück
-        }
-    }
-    zis.close();
-    throw new IOException("File " + targetFileName + " not found in " + zipFileName);
-}
-
-ChatGPT ENDE
-*/
 
 public class MapFragment extends Fragment {
 
@@ -72,7 +42,7 @@ public class MapFragment extends Fragment {
 
     private MapView mapView;
 
-    private List<Stops> stopsList = new ArrayList<>();
+    private List<Haltestellen> haltestellenList = new ArrayList<>();
 
     public static MapFragment newInstance() {
         return new MapFragment();
@@ -85,22 +55,6 @@ public class MapFragment extends Fragment {
         // TODO: Use the ViewModel
     }
 
-    // Hinzufügen des Markers
-    public void addStopMarker() {
-        for (Stops stops : stopsList) {
-            Marker marker = new Marker(mapView);
-            marker.setPosition(new GeoPoint(stops.getLatitude(), stops.getLongitude())); // Position setzen
-            //marker.setAnchor(Marker.ANCHOR_CENTER, Marker.ANCHOR_BOTTOM); // Ankerpunkt setzen (Was macht das?)
-            marker.setTitle(stops.getName()); // Titel für den Marker
-            mapView.getOverlays().add(marker); // Marker zur Karte hinzufügen
-        }
-        mapView.invalidate();
-    }
-
-    public void addMarker(){
-
-            Log.d("MARKER", "" + stopsList.size());
-    }
 
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -135,32 +89,28 @@ public class MapFragment extends Fragment {
         mapController.setCenter(startPoint);
 
         // Empfange Haltestellen-Daten von MainActivity:
-        getParentFragmentManager().setFragmentResultListener("stopsData", this, new FragmentResultListener() {
+        getParentFragmentManager().setFragmentResultListener("gebündelteHaltestellen", this, new FragmentResultListener() {
             @Override
             public void onFragmentResult(@NonNull String requestKey, @NonNull Bundle result) {
-                stopsList = (List<Stops>) result.getSerializable("stopsList");
-                if (stopsList != null) {
-                    addStopsToMap();
+                haltestellenList = (List<Haltestellen>) result.getSerializable("stopsList");
+                if (haltestellenList != null) {
+                    addMarker();
                 }
             }
         });
-
-
-
-        addMarker();
 
             return root;
 
     }
 
-    private void addStopsToMap() {
-        for (Stops stop : stopsList) {
+    private void addMarker() {
+        for (Haltestellen stop : haltestellenList) {
             Marker marker = new Marker(mapView);
-            marker.setPosition(new GeoPoint(stop.getLatitude(), stop.getLongitude()));
-            marker.setTitle(stop.getName());
-            mapView.getOverlays().add(marker);
+            marker.setPosition(new GeoPoint(stop.getLatitude(), stop.getLongitude()));  //Breiten und Längengrade setzen
+            marker.setTitle(stop.getName());                                            //Marker benennen
+            mapView.getOverlays().add(marker);                                          //Marker wird hinzugefügt
         }
-        mapView.invalidate();  // Karte aktualisieren
+        mapView.invalidate();                                                           // Aktualisieren der Karte
     }
 
     @Override
