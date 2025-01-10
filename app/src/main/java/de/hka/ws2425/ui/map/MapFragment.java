@@ -42,6 +42,8 @@ import java.util.zip.ZipInputStream;
 
 import de.hka.ws2425.R;
 import de.hka.ws2425.utils.Stops;
+import androidx.fragment.app.FragmentResultListener;
+
 
 
 /*
@@ -95,6 +97,11 @@ public class MapFragment extends Fragment {
         mapView.invalidate();
     }
 
+    public void addMarker(){
+
+            Log.d("MARKER", "" + stopsList.size());
+    }
+
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View root = inflater.inflate(R.layout.fragment_map, container, false);
@@ -127,9 +134,33 @@ public class MapFragment extends Fragment {
         mapController.setZoom(14.0);
         mapController.setCenter(startPoint);
 
+        // Empfange Haltestellen-Daten von MainActivity:
+        getParentFragmentManager().setFragmentResultListener("stopsData", this, new FragmentResultListener() {
+            @Override
+            public void onFragmentResult(@NonNull String requestKey, @NonNull Bundle result) {
+                stopsList = (List<Stops>) result.getSerializable("stopsList");
+                if (stopsList != null) {
+                    addStopsToMap();
+                }
+            }
+        });
+
+
+
+        addMarker();
 
             return root;
 
+    }
+
+    private void addStopsToMap() {
+        for (Stops stop : stopsList) {
+            Marker marker = new Marker(mapView);
+            marker.setPosition(new GeoPoint(stop.getLatitude(), stop.getLongitude()));
+            marker.setTitle(stop.getName());
+            mapView.getOverlays().add(marker);
+        }
+        mapView.invalidate();  // Karte aktualisieren
     }
 
     @Override

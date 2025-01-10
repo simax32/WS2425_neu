@@ -89,12 +89,13 @@ public class MainActivity extends AppCompatActivity {
                 Log.e(this.getClass().getSimpleName(), "Error converting coordinates: " + e.getMessage());
             }
         });
+// Übergabe der Stop-Liste an die Map-Ansicht
         Bundle stopsBundle = new Bundle();
         stopsBundle.putSerializable("stopsList", (ArrayList<Stops>) stopsList);
         getSupportFragmentManager().setFragmentResult("stopsData", stopsBundle);
             try {
                 Log.d(this.getClass().getSimpleName(), "Stops loaded successful");
-                    /*Log.d(this.getClass().getSimpleName(), String.valueOf(stopsBundle));*/        //Test des Inhaltes von stopsBundle
+                Log.d(this.getClass().getSimpleName(), String.valueOf(stopsBundle));        //Test des Inhaltes von stopsBundle
             }
             catch (Exception e) {
                 Log.e(this.getClass().getSimpleName(), "Error occurred: " + e.getMessage());
