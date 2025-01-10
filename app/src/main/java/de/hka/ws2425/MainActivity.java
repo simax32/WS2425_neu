@@ -13,12 +13,16 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.List;
+import java.io.BufferedReader;
+import java.io.FileReader;
 
 import org.gtfs.reader.*; //Import des GTFS Reader
 import org.osmdroid.api.IMapController;
 import org.osmdroid.config.Configuration;
 import org.osmdroid.util.GeoPoint;
 
+import de.hka.ws2425.ui.map.MapFragment;
+import de.hka.ws2425.utils.Stops;
 import de.hka.ws2425.ui.main.MainFragment;
 
 
@@ -56,14 +60,48 @@ public class MainActivity extends AppCompatActivity {
             e.printStackTrace();
         }
 
-        gtfsDao.getStops().forEach(stop -> {                                //Holt Name von Stationen aus gtfs
+        //Test ob das holen der gtfs Daten funktioniert
+
+        /*gtfsDao.getStops().forEach(stop -> {                                //Holt Name von Stationen aus gtfs
             Log.d(this.getClass().getSimpleName(), stop.getName());
         });
         gtfsDao.getAgencies().forEach(agency -> {
             Log.d(this.getClass().getSimpleName(), agency.getName());       //Holt Name von Bürgerbussen aus gtfs
         });
 
+        gtfsDao.getStops().forEach(stop -> {                                //Holt Name von Stationen aus gtfs
+            Log.d(this.getClass().getSimpleName(), stop.getLongitude());
+        });
+        gtfsDao.getStops().forEach(stop -> {                                //Holt Name von Stationen aus gtfs
+            Log.d(this.getClass().getSimpleName(), stop.getLatitude());
+        }); */
+
+        //Auslesen der Haltestellen aus der GTFS Datei
+        List<Stops> stopsList = new ArrayList<>();
+        gtfsDao.getStops().forEach(stop -> {
+            try {
+                double latitude = Double.parseDouble(stop.getLatitude());
+                double longitude = Double.parseDouble(stop.getLongitude());
+                Stops newStop = new Stops(stop.getId(), stop.getName(), latitude, longitude);
+                stopsList.add(newStop);
+            }
+            catch (NumberFormatException e) {
+                Log.e(this.getClass().getSimpleName(), "Error converting coordinates: " + e.getMessage());
+            }
+        });
+        Bundle stopsBundle = new Bundle();
+        stopsBundle.putSerializable("stopsList", (ArrayList<Stops>) stopsList);
+        getSupportFragmentManager().setFragmentResult("stopsData", stopsBundle);
+            try {
+                Log.d(this.getClass().getSimpleName(), "Stops loaded successful");
+                    /*Log.d(this.getClass().getSimpleName(), String.valueOf(stopsBundle));*/        //Test des Inhaltes von stopsBundle
+            }
+            catch (Exception e) {
+                Log.e(this.getClass().getSimpleName(), "Error occurred: " + e.getMessage());
+                e.printStackTrace();
+            }
     }
+
     //Start Code zum Auslesen und Schreiben von gtfs
     private static boolean copyAsset(AssetManager am, File file, String fileName) {
         InputStream in = null;
