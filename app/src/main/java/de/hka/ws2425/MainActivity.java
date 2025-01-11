@@ -76,17 +76,23 @@ public class MainActivity extends AppCompatActivity {
             Log.d(this.getClass().getSimpleName(), stop.getLatitude());
         }); */
 
-        //Auslesen der Haltestellen aus der GTFS Datei
+// Auslesen der Haltestellen aus der GTFS Datei mit Filterung der Parent-Stationen
         List<Stop> stopsList = new ArrayList<>();
         gtfsDao.getStops().forEach(stop -> {
             try {
-                double latitude = Double.parseDouble(stop.getLatitude());
-                double longitude = Double.parseDouble(stop.getLongitude());
-                Stop newStop = new Stop(stop.getId(), stop.getName(), latitude, longitude);
-                stopsList.add(newStop);
-            }
-            catch (NumberFormatException e) {
-                Log.e(this.getClass().getSimpleName(), "Error converting coordinates: " + e.getMessage());
+                if (!stop.getId().endsWith("_Parent")) { // Parent-Stations überspringen
+                    double latitude = Double.parseDouble(stop.getLatitude());
+                    double longitude = Double.parseDouble(stop.getLongitude());
+                    Stop newStop = new Stop(stop.getId(), stop.getName(), latitude, longitude);
+                    stopsList.add(newStop);
+                    Log.d("StopLoader", "Stop geladen: " + newStop.getStop_id());
+                } else {
+                    Log.d("StopLoader", "Parent Stop übersprungen: " + stop.getId());
+                }
+            } catch (NumberFormatException e) {
+                Log.e("StopLoader", "Fehler beim Konvertieren der Koordinaten für Stop " + stop.getId() + ": " + e.getMessage());
+            } catch (NullPointerException e) {
+                Log.e("StopLoader", "Nullpointerexception beim Laden von Stop Daten für Stop " + stop.getId() + ": " + e.getMessage());
             }
         });
 

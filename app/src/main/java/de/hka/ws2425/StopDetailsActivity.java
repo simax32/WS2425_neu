@@ -20,10 +20,13 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.time.LocalDate;
+import java.time.LocalTime;
 import java.util.AbstractList;
 import java.util.ArrayList;
 import java.util.Comparator;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import de.hka.ws2425.utils.CalendarDates;
 import de.hka.ws2425.utils.Departure;
@@ -160,17 +163,31 @@ public class StopDetailsActivity extends AppCompatActivity {
         try (BufferedReader br = new BufferedReader(new InputStreamReader(assetManager.open(fileName)))) {
             String line;
             br.readLine(); // Kopfzeile überspringen
-            int lineNumber = 1; // Zähler für Zeilen, für Debugging hilfreich
+            int lineNumber = 1;
 
             while ((line = br.readLine()) != null) {
                 lineNumber++;
+                Log.d("DEBUG", "Lese Zeile " + lineNumber + ": " + line);
+
                 String[] parts = line.split(",");
-                if (parts.length < 7 || parts[1].isEmpty()) { // Prüfen auf Mindestanzahl von Spalten und gültige Stop-ID
-                    Log.e("DEBUG", "Ungültige Zeile in stop_times.txt (Zeile " + lineNumber + "): " + line);
+                if (parts.length < 7) {
+                    Log.e("DEBUG", "Zeile hat weniger als 7 Spalten in Zeile " + lineNumber + ": " + line);
                     continue;
                 }
 
                 try {
+                    // Entferne Leerzeichen und überprüfe Daten
+                    for (int i = 0; i < parts.length; i++) {
+                        parts[i] = parts[i].trim(); // Entfernt unnötige Leerzeichen
+                    }
+
+                    // Prüfen, ob wichtige Felder vorhanden sind
+                    if (parts[1].isEmpty() || parts[0].isEmpty() || parts[2].isEmpty() || parts[3].isEmpty()) {
+                        Log.e("DEBUG", "Wichtige Daten fehlen in Zeile " + lineNumber + ": " + line);
+                        continue;
+                    }
+
+                    // Erstelle und füge StopTime-Objekt hinzu
                     StopTimes stopTime = new StopTimes(
                             parts[0], // trip_id
                             parts[1], // stop_id
@@ -182,9 +199,11 @@ public class StopDetailsActivity extends AppCompatActivity {
                     );
                     stopTimes.add(stopTime);
 
-                    //Log.d("DEBUG", "Geladene StopTime: trip_id=" + parts[0] + ", stop_id=" + parts[1]);
+                    Log.d("DEBUG", "Geladene StopTime: " + stopTime.toString());
                 } catch (NumberFormatException e) {
                     Log.e("DEBUG", "Fehler beim Konvertieren von Zahlen in Zeile " + lineNumber + ": " + line, e);
+                } catch (Exception e) {
+                    Log.e("DEBUG", "Unbekannter Fehler in Zeile " + lineNumber + ": " + line, e);
                 }
             }
         } catch (IOException e) {
@@ -195,6 +214,8 @@ public class StopDetailsActivity extends AppCompatActivity {
         Log.d("DEBUG", "Insgesamt geladene Stopzeiten: " + stopTimes.size());
         return stopTimes;
     }
+
+
 
 
 
@@ -223,55 +244,54 @@ public class StopDetailsActivity extends AppCompatActivity {
     private List<Departure> getDeparturesForStop(String stopId, List<StopTimes> stopTimes,
                                                  List<Trips> trips, List<Routes> routes) {
         List<Departure> departures = new ArrayList<>();
-
         Log.d("DEBUG", "Starte Filterung der Abfahrten für Stop-ID: " + stopId);
 
+        if (stopId == null || stopId.isEmpty()) {
+            Log.e("DEBUG", "Stop-ID ist null oder leer. Rückgabe einer leeren Abfahrtsliste.");
+            return departures;
+        }
 
-        // 1. Filtere alle StopTimes für die gegebene stop_id
-        List<StopTimes> stopTimesForStop = new ArrayList<>();
-        for (StopTimes stopTime : stopTimes) {
-            if (stopTime.getStop_id() == null) {
-                //Log.e("DEBUG", "Fehler: Stop-ID in StopTime ist null. Überspringe diese StopTime.");
-                continue;
-            }
-            if (stopTime.getStop_id().equalsIgnoreCase(stopId)) { // Groß-/Kleinschreibung ignorieren
-                stopTimesForStop.add(stopTime);
+        // 1. Mapping für schnellere Zuordnung
+        Map<String, Trips> tripsMap = new HashMap<>();
+        for (Trips trip : trips) {
+            if (trip.getTrip_id() != null) {
+                tripsMap.put(trip.getTrip_id(), trip);
             }
         }
 
-        Log.d("DEBUG", "Gefilterte StopTimes für Stop-ID " + stopId + ": " + stopTimesForStop.size());
+        Map<String, Routes> routesMap = new HashMap<>();
+        for (Routes route : routes) {
+            if (route.getRoute_id() != null) {
+                routesMap.put(route.getRoute_id(), route);
+            }
+        }
 
-        // 2. Verknüpfe StopTimes mit Trips und Routes
-        for (StopTimes stopTime : stopTimesForStop) {
-            // Hole den Trip für die Trip-ID
-            Trips trip = null;
-            for (Trips t : trips) {
-                if (t.getTrip_id().equals(stopTime.getTrip_id())) {
-                    trip = t;
-                    break;
-                }
+        // 2. Filtere die StopTimes für die gegebene stop_id
+        for (StopTimes stopTime : stopTimes) {
+            if (stopTime == null || stopTime.getStop_id() == null || stopTime.getTrip_id() == null) {
+                Log.e("DEBUG", "Fehlerhafte StopTime-Einträge übersprungen: " + stopTime);
+                continue;
             }
 
+            if (!stopTime.getStop_id().equalsIgnoreCase(stopId)) {
+                continue;
+            }
+
+            // 3. Hole den Trip für die Trip-ID
+            Trips trip = tripsMap.get(stopTime.getTrip_id());
             if (trip == null) {
                 Log.e("DEBUG", "Kein Trip gefunden für Trip-ID: " + stopTime.getTrip_id());
                 continue;
             }
 
-            // Hole die Route für die Route-ID des Trips
-            Routes route = null;
-            for (Routes r : routes) {
-                if (r.getRoute_id().equals(trip.getRoute_id())) {
-                    route = r;
-                    break;
-                }
-            }
-
+            // 4. Hole die Route für die Route-ID des Trips
+            Routes route = routesMap.get(trip.getRoute_id());
             if (route == null) {
                 Log.e("DEBUG", "Keine Route gefunden für Route-ID: " + trip.getRoute_id());
                 continue;
             }
 
-            // Erstelle ein Departure-Objekt
+            // 5. Departure erstellen
             Departure departure = new Departure(
                     route.getRoute_short_name(), // Kurzname der Route
                     trip.getTrip_headsign(),     // Zielort
@@ -280,18 +300,19 @@ public class StopDetailsActivity extends AppCompatActivity {
             );
             departures.add(departure);
 
-            Log.d("DEBUG", "Erstellte Departure: " + departure.getRouteShortName() + ", " +
+            Log.d("DEBUG", "Departure hinzugefügt: " + departure.getRouteShortName() + ", " +
                     departure.getTripHeadsign() + ", " +
                     departure.getArrivalTime() + " - " +
                     departure.getDepartureTime());
         }
 
-        // 3. Sortiere die Abfahrten nach Abfahrtszeit
+        // 6. Sortiere die Abfahrten nach Abfahrtszeit
         departures.sort(Comparator.comparing(Departure::getDepartureTime));
 
         Log.d("DEBUG", "Insgesamt gefundene Abfahrten: " + departures.size());
         return departures;
     }
+
 
 
 

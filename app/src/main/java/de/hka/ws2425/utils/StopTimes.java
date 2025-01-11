@@ -1,6 +1,8 @@
 package de.hka.ws2425.utils;
 
 public class StopTimes {
+
+    // Felder der Klasse
     private String trip_id;
     private String stop_id;
     private String arrival_time;
@@ -9,8 +11,18 @@ public class StopTimes {
     private String pickup_type;
     private int departure_buffer;
 
-public StopTimes(String tripId, String stopId, String arrivalTime, String depatureTime, int stopSequence, String pickup_type, int departure_buffer){}
+    // Vollständiger Konstruktor mit Validierung
+    public StopTimes(String tripId, String stopId, String arrivalTime, String departureTime, int stopSequence, String pickupType, int departureBuffer) {
+        this.trip_id = (tripId != null) ? tripId : ""; // Standardwert für Strings: ""
+        this.stop_id = (stopId != null) ? stopId : "";
+        this.arrival_time = (arrivalTime != null) ? arrivalTime : "";
+        this.departure_time = (departureTime != null) ? departureTime : "";
+        this.stop_sequence = stopSequence; // Standardwert für int ist 0, keine zusätzliche Prüfung erforderlich
+        this.pickup_type = (pickupType != null) ? pickupType : "";
+        this.departure_buffer = departureBuffer;
+    }
 
+    // Getter und Setter
     public String getTrip_id() {
         return trip_id;
     }
@@ -66,4 +78,19 @@ public StopTimes(String tripId, String stopId, String arrivalTime, String depatu
     public void setDeparture_buffer(int departure_buffer) {
         this.departure_buffer = departure_buffer;
     }
+
+    // Debug-Ausgabe der Objektinhalte
+    @Override
+    public String toString() {
+        return "StopTimes{" +
+                "trip_id='" + trip_id + '\'' +
+                ", stop_id='" + stop_id + '\'' +
+                ", arrival_time='" + arrival_time + '\'' +
+                ", departure_time='" + departure_time + '\'' +
+                ", stop_sequence=" + stop_sequence +
+                ", pickup_type='" + pickup_type + '\'' +
+                ", departure_buffer=" + departure_buffer +
+                '}';
+    }
 }
+
