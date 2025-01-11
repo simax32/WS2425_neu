@@ -90,6 +90,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+
 // Übergabe der Stop-Liste an die Map-Ansicht
         Bundle stopsBundle = new Bundle();
         stopsBundle.putSerializable("stopsList", (ArrayList<Stop>) stopsList);
@@ -123,5 +124,6 @@ public class MainActivity extends AppCompatActivity {
             return false;
         }
     }
+
 
 }

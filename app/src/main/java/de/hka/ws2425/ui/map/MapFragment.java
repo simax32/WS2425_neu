@@ -111,7 +111,7 @@ public class MapFragment extends Fragment {
 
     }
 
-    private void addMarker() {
+    public void addMarker() {
         for (Stop stop : stopsList) {
             Marker marker = new Marker(mapView);
             marker.setPosition(new GeoPoint(stop.getStop_lat(), stop.getStop_lon())); //

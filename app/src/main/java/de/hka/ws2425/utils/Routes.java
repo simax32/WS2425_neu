@@ -10,7 +10,7 @@ public class Routes {
     private String route_color;         //evtl. falscher Typ
     private String route_text_color;    //evtl. falscher Typ
 
-    private Routes(String agencyId,String routeId,String routeShortName,String routeLongName,int routeType,String routeColor,String routeTextColor){
+    public Routes(String agencyId, String routeId, String routeShortName, String routeLongName, int routeType, String routeColor, String routeTextColor){
         this.agency_id = agencyId;
         this.route_id = routeId;
         this.route_short_name = routeShortName;

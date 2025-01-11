@@ -4,14 +4,13 @@ public class Trips {
 
     private String route_id;
     private String trip_id;
-    private int service_id;
+    private String service_id;
     private String trip_short_name;
     private String trip_headsign;
     private int direction_id;
     private int peak_offpeak;
-    private int boarding_type;
 
-    public Trips(String routeId, String tripId, int serviceId, String tripShortName, String tripHeadsign, int directionId, int peakOffpeak, int boardingType) {
+    public Trips(String routeId, String tripId, String serviceId, String tripShortName, String tripHeadsign, int directionId, int peakOffpeak) {
         this.route_id = routeId;
         this.trip_id = tripId;
         this.service_id = serviceId;
@@ -19,7 +18,6 @@ public class Trips {
         this.trip_headsign = tripHeadsign;
         this.direction_id = directionId;
         this.peak_offpeak = peakOffpeak;
-        this.boarding_type = boardingType;
     }
 
     public String getRoute_id() {
@@ -38,11 +36,11 @@ public class Trips {
         this.trip_id = trip_id;
     }
 
-    public int getService_id() {
+    public String getService_id() {
         return service_id;
     }
 
-    public void setService_id(int service_id) {
+    public void setService_id(String service_id) {
         this.service_id = service_id;
     }
 
@@ -76,13 +74,5 @@ public class Trips {
 
     public void setPeak_offpeak(int peak_offpeak) {
         this.peak_offpeak = peak_offpeak;
-    }
-
-    public int getBoarding_type() {
-        return boarding_type;
-    }
-
-    public void setBoarding_type(int boarding_type) {
-        this.boarding_type = boarding_type;
     }
 }

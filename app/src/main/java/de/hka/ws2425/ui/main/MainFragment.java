@@ -17,6 +17,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import de.hka.ws2425.MainActivity;
 import de.hka.ws2425.api.RandomJoke;
 import de.hka.ws2425.ui.map.MapFragment;
 import de.hka.ws2425.R;
@@ -67,5 +68,4 @@ public class MainFragment extends Fragment {
             }
         });
     }
-
 }
