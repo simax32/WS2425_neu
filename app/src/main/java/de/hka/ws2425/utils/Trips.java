@@ -4,7 +4,6 @@ public class Trips {
 
     public String route_id;
     public String trip_id;
-    public String trip_id;
     public int service_id;
     public String trip_short_name;
     public String trip_headsign;
