@@ -114,8 +114,8 @@ public class MapFragment extends Fragment {
     private void addMarker() {
         for (Stop stop : stopsList) {
             Marker marker = new Marker(mapView);
-            marker.setPosition(new GeoPoint(stop.getLatitude(), stop.getLongitude())); //
-            marker.setTitle(stop.getName());
+            marker.setPosition(new GeoPoint(stop.getStop_lat(), stop.getStop_lon())); //
+            marker.setTitle(stop.getStop_name());
 
             // Setze einen Klick-Listener auf den Marker
             /*
@@ -147,7 +147,7 @@ public class MapFragment extends Fragment {
 
     private void openDetailsPage(Stop stop) {
         Intent intent = new Intent(requireContext(), StopDetailsActivity.class);
-        intent.putExtra("STOP_NAME", stop.getName()); // Haltestellenname übergeben
+        intent.putExtra("STOP_NAME", stop.getStop_name()); // Haltestellenname übergeben
         startActivity(intent); // Öffnet die neue leere Activity
     }
 
