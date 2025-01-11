@@ -7,4 +7,28 @@ public class CalendarDates {
     private String service_id;
     private LocalDate date;
     private int exception_type;
+
+    public String getService_id() {
+        return service_id;
+    }
+
+    public void setService_id(String service_id) {
+        this.service_id = service_id;
+    }
+
+    public LocalDate getDate() {
+        return date;
+    }
+
+    public void setDate(LocalDate date) {
+        this.date = date;
+    }
+
+    public int getException_type() {
+        return exception_type;
+    }
+
+    public void setException_type(int exception_type) {
+        this.exception_type = exception_type;
+    }
 }
