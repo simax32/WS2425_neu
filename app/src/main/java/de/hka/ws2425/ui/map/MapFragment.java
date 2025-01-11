@@ -4,6 +4,7 @@ import androidx.lifecycle.ViewModelProvider;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
+import android.content.Intent;
 import android.location.LocationListener;
 import android.location.LocationManager;
 import android.os.Bundle;
@@ -33,7 +34,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 import de.hka.ws2425.R;
-import de.hka.ws2425.utils.Haltestellen;
+import de.hka.ws2425.StopDetailsActivity;
+import de.hka.ws2425.utils.Stop;
 import androidx.fragment.app.FragmentResultListener;
 
 public class MapFragment extends Fragment {
@@ -42,7 +44,7 @@ public class MapFragment extends Fragment {
 
     private MapView mapView;
 
-    private List<Haltestellen> haltestellenList = new ArrayList<>();
+    private List<Stop> stopsList = new ArrayList<>();
 
     public static MapFragment newInstance() {
         return new MapFragment();
@@ -89,11 +91,11 @@ public class MapFragment extends Fragment {
         mapController.setCenter(startPoint);
 
         // Empfange Haltestellen-Daten von MainActivity:
-        getParentFragmentManager().setFragmentResultListener("gebündelteHaltestellen", this, new FragmentResultListener() {
+        getParentFragmentManager().setFragmentResultListener("stopsData", this, new FragmentResultListener() {
             @Override
             public void onFragmentResult(@NonNull String requestKey, @NonNull Bundle result) {
-                haltestellenList = (List<Haltestellen>) result.getSerializable("stopsList");
-                if (haltestellenList != null) {
+                stopsList = (List<Stop>) result.getSerializable("stopsList");
+                if (stopsList != null) {
                     addMarker();
                 }
             }
@@ -104,14 +106,27 @@ public class MapFragment extends Fragment {
     }
 
     private void addMarker() {
-        for (Haltestellen stop : haltestellenList) {
+        for (Stop stop : stopsList) {
             Marker marker = new Marker(mapView);
-            marker.setPosition(new GeoPoint(stop.getLatitude(), stop.getLongitude()));  //Breiten und Längengrade setzen
-            marker.setTitle(stop.getName());                                            //Marker benennen
-            mapView.getOverlays().add(marker);                                          //Marker wird hinzugefügt
+            marker.setPosition(new GeoPoint(stop.getLatitude(), stop.getLongitude())); //
+            marker.setTitle(stop.getName());
+
+            // Setze einen Klick-Listener auf den Marker
+            marker.setOnMarkerClickListener((marker1, mapView) -> {
+                openDetailsPage(stop); // Öffnet eine neue Seite mit Details des Stops
+                return true; // Gibt zurück, dass der Klick verarbeitet wurde
+            });
+
+            mapView.getOverlays().add(marker);
         }
-        mapView.invalidate();                                                           // Aktualisieren der Karte
+        mapView.invalidate();  // Karte aktualisieren
     }
+
+    private void openDetailsPage(Stop stop) {
+        Intent intent = new Intent(requireContext(), StopDetailsActivity.class);
+        startActivity(intent); // Öffnet die neue leere Activity
+    }
+
 
     @Override
     public void onResume() {

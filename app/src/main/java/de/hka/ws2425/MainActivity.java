@@ -13,10 +13,16 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.List;
+import java.io.BufferedReader;
+import java.io.FileReader;
 
 import org.gtfs.reader.*; //Import des GTFS Reader
+import org.osmdroid.api.IMapController;
+import org.osmdroid.config.Configuration;
+import org.osmdroid.util.GeoPoint;
 
-import de.hka.ws2425.utils.Haltestellen;
+import de.hka.ws2425.ui.map.MapFragment;
+import de.hka.ws2425.utils.Stop;
 import de.hka.ws2425.ui.main.MainFragment;
 
 
@@ -71,25 +77,27 @@ public class MainActivity extends AppCompatActivity {
         }); */
 
         //Auslesen der Haltestellen aus der GTFS Datei
-        List<Haltestellen> listeHaltestellen = new ArrayList<>();
+        List<Stop> stopsList = new ArrayList<>();
         gtfsDao.getStops().forEach(stop -> {
             try {
                 double latitude = Double.parseDouble(stop.getLatitude());
                 double longitude = Double.parseDouble(stop.getLongitude());
-                Haltestellen newHaltestelle = new Haltestellen(stop.getId(), stop.getName(), latitude, longitude);
-                listeHaltestellen.add(newHaltestelle);
+                Stop newStop = new Stop(stop.getId(), stop.getName(), latitude, longitude);
+                stopsList.add(newStop);
             }
             catch (NumberFormatException e) {
                 Log.e(this.getClass().getSimpleName(), "Error converting coordinates: " + e.getMessage());
             }
         });
-        // Übergabe der Stop-Liste an das MapFragment
-        Bundle bundleHaltestellen = new Bundle();
-        bundleHaltestellen.putSerializable("listeHaltestellen", (ArrayList<Haltestellen>) listeHaltestellen);
-        getSupportFragmentManager().setFragmentResult("gebündelteHaltestellen", bundleHaltestellen);
+
+// Übergabe der Stop-Liste an die Map-Ansicht
+        Bundle stopsBundle = new Bundle();
+        stopsBundle.putSerializable("stopsList", (ArrayList<Stop>) stopsList);
+        getSupportFragmentManager().setFragmentResult("stopsData", stopsBundle);
+        getSupportFragmentManager().setFragmentResult("stopsData", stopsBundle);
             try {
                 Log.d(this.getClass().getSimpleName(), "Stops loaded successful");
-                Log.d(this.getClass().getSimpleName(), String.valueOf(bundleHaltestellen));        //Test des Inhaltes von bundleHaltestellen
+                Log.d(this.getClass().getSimpleName(), String.valueOf(stopsBundle));        //Test des Inhaltes von stopsBundle
             }
             catch (Exception e) {
                 Log.e(this.getClass().getSimpleName(), "Error occurred: " + e.getMessage());
