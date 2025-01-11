@@ -21,7 +21,15 @@ public class StopDetailsActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+// Hole den Haltestellennamen aus dem Intent
+        String stopName = getIntent().getStringExtra("STOP_NAME");
 
+        // Setze den Haltestellennamen als Titel der Activity
+        if (stopName != null) {
+            setTitle(stopName);
+        } else {
+            setTitle("Details");
+        }
 
     }
 }

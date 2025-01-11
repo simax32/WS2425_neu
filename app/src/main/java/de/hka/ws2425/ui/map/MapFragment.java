@@ -17,6 +17,7 @@ import android.util.Base64;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toast;
 
 import com.nabinbhandari.android.permissions.PermissionHandler;
 import com.nabinbhandari.android.permissions.Permissions;
@@ -31,7 +32,9 @@ import org.osmdroid.views.overlay.Marker;
 
 import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import de.hka.ws2425.R;
 import de.hka.ws2425.StopDetailsActivity;
@@ -45,6 +48,8 @@ public class MapFragment extends Fragment {
     private MapView mapView;
 
     private List<Stop> stopsList = new ArrayList<>();
+
+    private final Map<Marker, Integer> markerClickCountMap = new HashMap<>();
 
     public static MapFragment newInstance() {
         return new MapFragment();
@@ -97,6 +102,7 @@ public class MapFragment extends Fragment {
                 stopsList = (List<Stop>) result.getSerializable("stopsList");
                 if (stopsList != null) {
                     addMarker();
+                    Toast.makeText(requireContext(), "Klicke eine Haltestelle um Abfahrten anzeigen zu lassen", Toast.LENGTH_SHORT).show();
                 }
             }
         });
@@ -112,9 +118,24 @@ public class MapFragment extends Fragment {
             marker.setTitle(stop.getName());
 
             // Setze einen Klick-Listener auf den Marker
+            /*
             marker.setOnMarkerClickListener((marker1, mapView) -> {
                 openDetailsPage(stop); // Öffnet eine neue Seite mit Details des Stops
                 return true; // Gibt zurück, dass der Klick verarbeitet wurde
+            }); */
+
+            marker.setOnMarkerClickListener((marker1, mapView) -> {
+                int clickCount = markerClickCountMap.getOrDefault(marker1, 0);
+                clickCount++;
+                markerClickCountMap.put(marker1, clickCount);
+
+                if (clickCount == 2) {
+                    openDetailsPage(stop); // Öffnet die neue Seite
+                    markerClickCountMap.put(marker1, 0); // Klick-Zähler zurücksetzen
+                } else {
+                    marker1.showInfoWindow();
+                }
+                return true;
             });
 
             mapView.getOverlays().add(marker);
@@ -124,6 +145,7 @@ public class MapFragment extends Fragment {
 
     private void openDetailsPage(Stop stop) {
         Intent intent = new Intent(requireContext(), StopDetailsActivity.class);
+        intent.putExtra("STOP_NAME", stop.getName()); // Haltestellenname übergeben
         startActivity(intent); // Öffnet die neue leere Activity
     }
 
