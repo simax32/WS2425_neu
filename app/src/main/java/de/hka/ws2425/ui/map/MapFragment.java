@@ -132,8 +132,10 @@ public class MapFragment extends Fragment {
                 if (clickCount == 2) {
                     openDetailsPage(stop); // Öffnet die neue Seite
                     markerClickCountMap.put(marker1, 0); // Klick-Zähler zurücksetzen
+
                 } else {
                     marker1.showInfoWindow();
+                    Toast.makeText(requireContext(), "Klicke die Haltestelle nochmal, um Abfahrten anzeigen zu lassen", Toast.LENGTH_SHORT).show();
                 }
                 return true;
             });
