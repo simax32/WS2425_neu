@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <TextView
+        android:id="@+id/routeShortName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Route Name"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tripHeadsign"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Headsign" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/arrivalTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Arrival Time"
+            android:paddingEnd="16dp" />
+
+        <TextView
+            android:id="@+id/departureTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Departure Time" />
+    </LinearLayout>
+</LinearLayout>

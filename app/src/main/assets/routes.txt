@@ -1,0 +1,15 @@
+agency_id,route_id,route_short_name,route_long_name,route_type,route_color,route_text_color
+de:vpe:agency:1,de:vpe:04720_:,720,Pforzheim - Keltern - Ittersbach,701,1CA429,FFFFFF
+de:vpe:agency:1,de:vpe:04721_:,721,Pforzheim - Keltern - Langensteinbach,701,1CA429,FFFFFF
+de:vpe:agency:1,de:vpe:04722_:,722,Pforzheim - Keltern - Remchingen,701,1CA429,FFFFFF
+de:vpe:agency:1,de:vpe:04724_:,724,Keltern - Neuenbürg,701,1CA429,FFFFFF
+de:vpe:agency:1,de:vpe:04725_:,725,Neuenbürg - Schömberg,701,1CA429,FFFFFF
+de:vpe:agency:1,de:vpe:04919_:,919,Schulbus Keltern - Conweiler - Neuenbürg,701,1CA429,FFFFFF
+de:vpe:agency:1,de:vpe:04922_:,922,Schulbus Keltern - Remchingen,701,1CA429,FFFFFF
+de:vpe:agency:1,de:vpe:04923_:,923,Schulbus Pforzheim - Keltern - Ittersbach (- Langensteinbach),701,1CA429,FFFFFF
+de:vpe:agency:13,de:vpe:08807_:,807,Bürgerbus Maulbronn - Zaisersweiher,704,0076C2,FFFFFF
+de:vpe:agency:13,de:vpe:08808_:,808,Bürgerbus Maulbronn (Stadtverkehr),704,0076C2,FFFFFF
+de:vpe:agency:13,de:vpe:08809_:,809,Bürgerbus Maulbronn - Schmie,704,0076C2,FFFFFF
+de:vpe:agency:14,de:vpe:08803_:,803,Bürgerbus Wiernsheim - Großglattbach,704,0076C2,FFFFFF
+de:vpe:agency:14,de:vpe:08804_:,804,Brügerbus Wiernsheim - Serres - Iptingen,704,0076C2,FFFFFF
+de:vpe:agency:14,de:vpe:08805_:,805,Brügerbus Wiernsheim (Ortsverkehr),704,0076C2,FFFFFF

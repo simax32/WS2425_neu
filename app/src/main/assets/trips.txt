@@ -1,0 +1,455 @@
+route_id,trip_id,service_id,trip_short_name,trip_headsign,direction_id,peak_offpeak,boarding_type
+de:vpe:04720_:,de:vpe:04720_:2315,de:vpe:service:0,,Ittersbach Rathaus,0,0,0
+de:vpe:04720_:,de:vpe:04720_:2316,de:vpe:service:0,,Ittersbach Rathaus,0,0,0
+de:vpe:04720_:,de:vpe:04720_:2317,de:vpe:service:0,,Ittersbach Rathaus,0,0,0
+de:vpe:04720_:,de:vpe:04720_:2318,de:vpe:service:0,1,Pforzheim ZOB / Hbf,1,0,0
+de:vpe:04720_:,de:vpe:04720_:2319,de:vpe:service:0,4,Pforzheim ZOB / Hbf,1,0,0
+de:vpe:04720_:,de:vpe:04720_:2320,de:vpe:service:0,2,Pforzheim ZOB / Hbf,1,0,0
+de:vpe:04720_:,de:vpe:04720_:2321,de:vpe:service:0,3,Pforzheim ZOB / Hbf,1,0,0
+de:vpe:04720_:,de:vpe:04720_:2322,de:vpe:service:0,6,Pforzheim ZOB / Hbf,1,0,0
+de:vpe:04720_:,de:vpe:04720_:2323,de:vpe:service:0,7,Pforzheim ZOB / Hbf,1,0,0
+de:vpe:04720_:,de:vpe:04720_:2324,de:vpe:service:0,8,Pforzheim ZOB / Hbf,1,0,0
+de:vpe:04720_:,de:vpe:04720_:2325,de:vpe:service:0,9,Pforzheim ZOB / Hbf,1,0,0
+de:vpe:04720_:,de:vpe:04720_:2326,de:vpe:service:0,10,Pforzheim ZOB / Hbf,1,0,0
+de:vpe:04720_:,de:vpe:04720_:2327,de:vpe:service:0,14,Pforzheim ZOB / Hbf,1,0,0
+de:vpe:04720_:,de:vpe:04720_:2328,de:vpe:service:0,15,Pforzheim ZOB / Hbf,1,0,0
+de:vpe:04720_:,de:vpe:04720_:2329,de:vpe:service:0,21,Pforzheim ZOB / Hbf,1,0,0
+de:vpe:04720_:,de:vpe:04720_:2330,de:vpe:service:0,22,Pforzheim ZOB / Hbf,1,0,0
+de:vpe:04720_:,de:vpe:04720_:2331,de:vpe:service:0,23,Pforzheim ZOB / Hbf,1,0,0
+de:vpe:04720_:,de:vpe:04720_:2332,de:vpe:service:0,24,Pforzheim ZOB / Hbf,1,0,0
+de:vpe:04720_:,de:vpe:04720_:2333,de:vpe:service:8,25,Pforzheim ZOB / Hbf,1,0,0
+de:vpe:04720_:,de:vpe:04720_:2334,de:vpe:service:1,1,Pforzheim ZOB / Hbf,1,0,0
+de:vpe:04720_:,de:vpe:04720_:2335,de:vpe:service:1,2,Pforzheim ZOB / Hbf,1,0,0
+de:vpe:04720_:,de:vpe:04720_:2336,de:vpe:service:1,3,Pforzheim ZOB / Hbf,1,0,0
+de:vpe:04720_:,de:vpe:04720_:2337,de:vpe:service:1,4,Pforzheim ZOB / Hbf,1,0,0
+de:vpe:04720_:,de:vpe:04720_:2338,de:vpe:service:1,5,Pforzheim ZOB / Hbf,1,0,0
+de:vpe:04720_:,de:vpe:04720_:2339,de:vpe:service:1,6,Pforzheim ZOB / Hbf,1,0,0
+de:vpe:04720_:,de:vpe:04720_:2340,de:vpe:service:1,7,Pforzheim ZOB / Hbf,1,0,0
+de:vpe:04720_:,de:vpe:04720_:2341,de:vpe:service:1,8,Pforzheim ZOB / Hbf,1,0,0
+de:vpe:04720_:,de:vpe:04720_:2342,de:vpe:service:1,9,Pforzheim ZOB / Hbf,1,0,0
+de:vpe:04720_:,de:vpe:04720_:2343,de:vpe:service:1,10,Pforzheim ZOB / Hbf,1,0,0
+de:vpe:04720_:,de:vpe:04720_:2344,de:vpe:service:1,11,Pforzheim ZOB / Hbf,1,0,0
+de:vpe:04720_:,de:vpe:04720_:2345,de:vpe:service:1,12,Pforzheim ZOB / Hbf,1,0,0
+de:vpe:04720_:,de:vpe:04720_:2346,de:vpe:service:1,13,Pforzheim ZOB / Hbf,1,0,0
+de:vpe:04720_:,de:vpe:04720_:2347,de:vpe:service:1,14,Pforzheim ZOB / Hbf,1,0,0
+de:vpe:04720_:,de:vpe:04720_:2348,de:vpe:service:5,15,Pforzheim ZOB / Hbf,1,0,0
+de:vpe:04720_:,de:vpe:04720_:2349,de:vpe:service:5,16,Pforzheim ZOB / Hbf,1,0,0
+de:vpe:04720_:,de:vpe:04720_:2350,de:vpe:service:5,17,Pforzheim ZOB / Hbf,1,0,0
+de:vpe:04720_:,de:vpe:04720_:2351,de:vpe:service:5,18,Pforzheim ZOB / Hbf,1,0,0
+de:vpe:04720_:,de:vpe:04720_:2352,de:vpe:service:5,19,Pforzheim ZOB / Hbf,1,0,0
+de:vpe:04720_:,de:vpe:04720_:2353,de:vpe:service:2,1,Pforzheim ZOB / Hbf,1,0,0
+de:vpe:04720_:,de:vpe:04720_:2354,de:vpe:service:2,2,Pforzheim ZOB / Hbf,1,0,0
+de:vpe:04720_:,de:vpe:04720_:2355,de:vpe:service:2,3,Pforzheim ZOB / Hbf,1,0,0
+de:vpe:04720_:,de:vpe:04720_:2356,de:vpe:service:2,4,Pforzheim ZOB / Hbf,1,0,0
+de:vpe:04720_:,de:vpe:04720_:2357,de:vpe:service:2,5,Pforzheim ZOB / Hbf,1,0,0
+de:vpe:04720_:,de:vpe:04720_:2358,de:vpe:service:2,6,Pforzheim ZOB / Hbf,1,0,0
+de:vpe:04720_:,de:vpe:04720_:2359,de:vpe:service:2,7,Pforzheim ZOB / Hbf,1,0,0
+de:vpe:04720_:,de:vpe:04720_:2360,de:vpe:service:2,8,Pforzheim ZOB / Hbf,1,0,0
+de:vpe:04720_:,de:vpe:04720_:2361,de:vpe:service:2,9,Pforzheim ZOB / Hbf,1,0,0
+de:vpe:04720_:,de:vpe:04720_:2362,de:vpe:service:2,10,Pforzheim ZOB / Hbf,1,0,0
+de:vpe:04720_:,de:vpe:04720_:2363,de:vpe:service:2,11,Pforzheim ZOB / Hbf,1,0,0
+de:vpe:04720_:,de:vpe:04720_:2364,de:vpe:service:2,12,Pforzheim ZOB / Hbf,1,0,0
+de:vpe:04720_:,de:vpe:04720_:2365,de:vpe:service:2,16,Pforzheim ZOB / Hbf,1,0,0
+de:vpe:04720_:,de:vpe:04720_:2366,de:vpe:service:2,17,Pforzheim ZOB / Hbf,1,0,0
+de:vpe:04720_:,de:vpe:04720_:2367,de:vpe:service:0,11,Pforzheim ZOB / Hbf,1,0,0
+de:vpe:04720_:,de:vpe:04720_:2368,de:vpe:service:0,12,Pforzheim ZOB / Hbf,1,0,0
+de:vpe:04720_:,de:vpe:04720_:2369,de:vpe:service:0,13,Pforzheim ZOB / Hbf,1,0,0
+de:vpe:04720_:,de:vpe:04720_:2370,de:vpe:service:0,16,Pforzheim ZOB / Hbf,1,0,0
+de:vpe:04720_:,de:vpe:04720_:2371,de:vpe:service:0,18,Pforzheim ZOB / Hbf,1,0,0
+de:vpe:04720_:,de:vpe:04720_:2372,de:vpe:service:0,20,Pforzheim ZOB / Hbf,1,0,0
+de:vpe:04720_:,de:vpe:04720_:2373,de:vpe:service:2,13,Pforzheim ZOB / Hbf,1,0,0
+de:vpe:04720_:,de:vpe:04720_:2374,de:vpe:service:2,14,Pforzheim ZOB / Hbf,1,0,0
+de:vpe:04720_:,de:vpe:04720_:2375,de:vpe:service:2,15,Pforzheim ZOB / Hbf,1,0,0
+de:vpe:04720_:,de:vpe:04720_:2376,de:vpe:service:0,,Ittersbach Rathaus,0,0,0
+de:vpe:04720_:,de:vpe:04720_:2377,de:vpe:service:0,,Ittersbach Becker-Göring-Str.,0,0,0
+de:vpe:04720_:,de:vpe:04720_:2378,de:vpe:service:0,,Ittersbach Becker-Göring-Str.,0,0,0
+de:vpe:04720_:,de:vpe:04720_:2379,de:vpe:service:0,,Ittersbach Becker-Göring-Str.,0,0,0
+de:vpe:04720_:,de:vpe:04720_:2380,de:vpe:service:0,,Ittersbach Becker-Göring-Str.,0,0,0
+de:vpe:04720_:,de:vpe:04720_:2381,de:vpe:service:0,,Ittersbach Becker-Göring-Str.,0,0,0
+de:vpe:04720_:,de:vpe:04720_:2382,de:vpe:service:0,,Ittersbach Becker-Göring-Str.,0,0,0
+de:vpe:04720_:,de:vpe:04720_:2383,de:vpe:service:0,,Ittersbach Becker-Göring-Str.,0,0,0
+de:vpe:04720_:,de:vpe:04720_:2384,de:vpe:service:0,,Ittersbach Becker-Göring-Str.,0,0,0
+de:vpe:04720_:,de:vpe:04720_:2385,de:vpe:service:0,,Ittersbach Becker-Göring-Str.,0,0,0
+de:vpe:04720_:,de:vpe:04720_:2386,de:vpe:service:0,,Ittersbach Becker-Göring-Str.,0,0,0
+de:vpe:04720_:,de:vpe:04720_:2387,de:vpe:service:0,,Ittersbach Becker-Göring-Str.,0,0,0
+de:vpe:04720_:,de:vpe:04720_:2388,de:vpe:service:0,,Ittersbach Becker-Göring-Str.,0,0,0
+de:vpe:04720_:,de:vpe:04720_:2389,de:vpe:service:0,,Ittersbach Becker-Göring-Str.,0,0,0
+de:vpe:04720_:,de:vpe:04720_:2390,de:vpe:service:0,,Ittersbach Becker-Göring-Str.,0,0,0
+de:vpe:04720_:,de:vpe:04720_:2391,de:vpe:service:0,,Ittersbach Becker-Göring-Str.,0,0,0
+de:vpe:04720_:,de:vpe:04720_:2392,de:vpe:service:0,,Ittersbach Becker-Göring-Str.,0,0,0
+de:vpe:04720_:,de:vpe:04720_:2393,de:vpe:service:0,,Ittersbach Becker-Göring-Str.,0,0,0
+de:vpe:04720_:,de:vpe:04720_:2394,de:vpe:service:0,,Ittersbach Becker-Göring-Str.,0,0,0
+de:vpe:04720_:,de:vpe:04720_:2395,de:vpe:service:0,,Ittersbach Becker-Göring-Str.,0,0,0
+de:vpe:04720_:,de:vpe:04720_:2396,de:vpe:service:1,,Ittersbach Becker-Göring-Str.,0,0,0
+de:vpe:04720_:,de:vpe:04720_:2397,de:vpe:service:1,,Ittersbach Becker-Göring-Str.,0,0,0
+de:vpe:04720_:,de:vpe:04720_:2398,de:vpe:service:1,,Ittersbach Becker-Göring-Str.,0,0,0
+de:vpe:04720_:,de:vpe:04720_:2399,de:vpe:service:1,,Ittersbach Becker-Göring-Str.,0,0,0
+de:vpe:04720_:,de:vpe:04720_:2400,de:vpe:service:1,,Ittersbach Becker-Göring-Str.,0,0,0
+de:vpe:04720_:,de:vpe:04720_:2401,de:vpe:service:1,,Ittersbach Becker-Göring-Str.,0,0,0
+de:vpe:04720_:,de:vpe:04720_:2402,de:vpe:service:1,,Ittersbach Becker-Göring-Str.,0,0,0
+de:vpe:04720_:,de:vpe:04720_:2403,de:vpe:service:1,,Ittersbach Becker-Göring-Str.,0,0,0
+de:vpe:04720_:,de:vpe:04720_:2404,de:vpe:service:1,,Ittersbach Becker-Göring-Str.,0,0,0
+de:vpe:04720_:,de:vpe:04720_:2405,de:vpe:service:1,,Ittersbach Becker-Göring-Str.,0,0,0
+de:vpe:04720_:,de:vpe:04720_:2406,de:vpe:service:1,,Ittersbach Becker-Göring-Str.,0,0,0
+de:vpe:04720_:,de:vpe:04720_:2407,de:vpe:service:1,,Ittersbach Becker-Göring-Str.,0,0,0
+de:vpe:04720_:,de:vpe:04720_:2408,de:vpe:service:1,,Ittersbach Becker-Göring-Str.,0,0,0
+de:vpe:04720_:,de:vpe:04720_:2409,de:vpe:service:5,,Ittersbach Becker-Göring-Str.,0,0,0
+de:vpe:04720_:,de:vpe:04720_:2410,de:vpe:service:5,,Ittersbach Becker-Göring-Str.,0,0,0
+de:vpe:04720_:,de:vpe:04720_:2411,de:vpe:service:5,,Ittersbach Becker-Göring-Str.,0,0,0
+de:vpe:04720_:,de:vpe:04720_:2412,de:vpe:service:5,,Ittersbach Becker-Göring-Str.,0,0,0
+de:vpe:04720_:,de:vpe:04720_:2413,de:vpe:service:5,,Ittersbach Becker-Göring-Str.,0,0,0
+de:vpe:04720_:,de:vpe:04720_:2414,de:vpe:service:2,,Ittersbach Becker-Göring-Str.,0,0,0
+de:vpe:04720_:,de:vpe:04720_:2415,de:vpe:service:2,,Ittersbach Becker-Göring-Str.,0,0,0
+de:vpe:04720_:,de:vpe:04720_:2416,de:vpe:service:2,,Ittersbach Becker-Göring-Str.,0,0,0
+de:vpe:04720_:,de:vpe:04720_:2417,de:vpe:service:2,,Ittersbach Becker-Göring-Str.,0,0,0
+de:vpe:04720_:,de:vpe:04720_:2418,de:vpe:service:2,,Ittersbach Becker-Göring-Str.,0,0,0
+de:vpe:04720_:,de:vpe:04720_:2419,de:vpe:service:2,,Ittersbach Becker-Göring-Str.,0,0,0
+de:vpe:04720_:,de:vpe:04720_:2420,de:vpe:service:2,,Ittersbach Becker-Göring-Str.,0,0,0
+de:vpe:04720_:,de:vpe:04720_:2421,de:vpe:service:2,,Ittersbach Becker-Göring-Str.,0,0,0
+de:vpe:04720_:,de:vpe:04720_:2422,de:vpe:service:2,,Ittersbach Becker-Göring-Str.,0,0,0
+de:vpe:04720_:,de:vpe:04720_:2423,de:vpe:service:2,,Ittersbach Becker-Göring-Str.,0,0,0
+de:vpe:04720_:,de:vpe:04720_:2424,de:vpe:service:2,,Ittersbach Becker-Göring-Str.,0,0,0
+de:vpe:04720_:,de:vpe:04720_:2425,de:vpe:service:2,,Ittersbach Becker-Göring-Str.,0,0,0
+de:vpe:04720_:,de:vpe:04720_:2426,de:vpe:service:2,,Ittersbach Becker-Göring-Str.,0,0,0
+de:vpe:04720_:,de:vpe:04720_:2427,de:vpe:service:2,,Ittersbach Becker-Göring-Str.,0,0,0
+de:vpe:04720_:,de:vpe:04720_:2428,de:vpe:service:2,,Ittersbach Becker-Göring-Str.,0,0,0
+de:vpe:04720_:,de:vpe:04720_:2429,de:vpe:service:2,,Ittersbach Becker-Göring-Str.,0,0,0
+de:vpe:04720_:,de:vpe:04720_:2430,de:vpe:service:0,17,Pforzheim ZOB / Hbf,1,0,0
+de:vpe:04720_:,de:vpe:04720_:2431,de:vpe:service:0,19,Pforzheim ZOB / Hbf,1,0,0
+de:vpe:04720_:,de:vpe:04720_:2432,de:vpe:service:8,,Ittersbach Becker-Göring-Str.,0,0,0
+de:vpe:04720_:,de:vpe:04720_:2433,de:vpe:service:3,,Ittersbach Becker-Göring-Str.,0,0,0
+de:vpe:04720_:,de:vpe:04720_:2434,de:vpe:service:2,,Ittersbach Becker-Göring-Str.,0,0,0
+de:vpe:04720_:,de:vpe:04720_:2435,de:vpe:service:0,,Ittersbach Becker-Göring-Str.,0,0,0
+de:vpe:04720_:,de:vpe:04720_:2436,de:vpe:service:0,5,Pforzheim ZOB / Hbf,1,0,0
+de:vpe:04721_:,de:vpe:04721_:1503,de:vpe:service:0,1,Langensteinbach Klinikum,0,0,0
+de:vpe:04721_:,de:vpe:04721_:1504,de:vpe:service:0,2,Langensteinbach Klinikum,0,0,0
+de:vpe:04721_:,de:vpe:04721_:1505,de:vpe:service:0,3,Langensteinbach Klinikum,0,0,0
+de:vpe:04721_:,de:vpe:04721_:1506,de:vpe:service:0,4,Langensteinbach Klinikum,0,0,0
+de:vpe:04721_:,de:vpe:04721_:1507,de:vpe:service:0,5,Langensteinbach Klinikum,0,0,0
+de:vpe:04721_:,de:vpe:04721_:1508,de:vpe:service:0,6,Langensteinbach Klinikum,0,0,0
+de:vpe:04721_:,de:vpe:04721_:1509,de:vpe:service:0,7,Langensteinbach Klinikum,0,0,0
+de:vpe:04721_:,de:vpe:04721_:1510,de:vpe:service:0,8,Langensteinbach Klinikum,0,0,0
+de:vpe:04721_:,de:vpe:04721_:1511,de:vpe:service:0,9,Langensteinbach Klinikum,0,0,0
+de:vpe:04721_:,de:vpe:04721_:1512,de:vpe:service:0,10,Langensteinbach Klinikum,0,0,0
+de:vpe:04721_:,de:vpe:04721_:1513,de:vpe:service:0,1,Pforzheim ZOB / Hbf,1,0,0
+de:vpe:04721_:,de:vpe:04721_:1514,de:vpe:service:0,2,Pforzheim ZOB / Hbf,1,0,0
+de:vpe:04721_:,de:vpe:04721_:1515,de:vpe:service:0,3,Pforzheim ZOB / Hbf,1,0,0
+de:vpe:04721_:,de:vpe:04721_:1516,de:vpe:service:0,4,Pforzheim ZOB / Hbf,1,0,0
+de:vpe:04721_:,de:vpe:04721_:1517,de:vpe:service:0,5,Pforzheim ZOB / Hbf,1,0,0
+de:vpe:04721_:,de:vpe:04721_:1518,de:vpe:service:0,6,Pforzheim ZOB / Hbf,1,0,0
+de:vpe:04721_:,de:vpe:04721_:1519,de:vpe:service:0,7,Pforzheim ZOB / Hbf,1,0,0
+de:vpe:04721_:,de:vpe:04721_:1520,de:vpe:service:0,8,Pforzheim ZOB / Hbf,1,0,0
+de:vpe:04721_:,de:vpe:04721_:1521,de:vpe:service:0,9,Pforzheim ZOB / Hbf,1,0,0
+de:vpe:04722_:,de:vpe:04722_:1528,de:vpe:service:0,1,Wilferdingen-Singen,0,0,0
+de:vpe:04722_:,de:vpe:04722_:1529,de:vpe:service:0,2,Wilferdingen-Singen,0,0,0
+de:vpe:04722_:,de:vpe:04722_:1530,de:vpe:service:0,3,Wilferdingen-Singen,0,0,0
+de:vpe:04722_:,de:vpe:04722_:1531,de:vpe:service:6,4,Singen Gymnasium,0,0,0
+de:vpe:04722_:,de:vpe:04722_:1532,de:vpe:service:0,6,Wilferdingen-Singen,0,0,0
+de:vpe:04722_:,de:vpe:04722_:1533,de:vpe:service:0,7,Wilferdingen-Singen,0,0,0
+de:vpe:04722_:,de:vpe:04722_:1534,de:vpe:service:0,8,Wilferdingen-Singen,0,0,0
+de:vpe:04722_:,de:vpe:04722_:1535,de:vpe:service:0,9,Wilferdingen-Singen,0,0,0
+de:vpe:04722_:,de:vpe:04722_:1536,de:vpe:service:0,10,Wilferdingen-Singen,0,0,0
+de:vpe:04722_:,de:vpe:04722_:1537,de:vpe:service:0,11,Wilferdingen-Singen,0,0,0
+de:vpe:04722_:,de:vpe:04722_:1538,de:vpe:service:0,12,Wilferdingen-Singen,0,0,0
+de:vpe:04722_:,de:vpe:04722_:1539,de:vpe:service:0,13,Wilferdingen-Singen,0,0,0
+de:vpe:04722_:,de:vpe:04722_:1540,de:vpe:service:0,14,Wilferdingen-Singen,0,0,0
+de:vpe:04722_:,de:vpe:04722_:1541,de:vpe:service:0,15,Wilferdingen-Singen,0,0,0
+de:vpe:04722_:,de:vpe:04722_:1542,de:vpe:service:0,16,Wilferdingen-Singen,0,0,0
+de:vpe:04722_:,de:vpe:04722_:1543,de:vpe:service:0,17,Wilferdingen-Singen,0,0,0
+de:vpe:04722_:,de:vpe:04722_:1544,de:vpe:service:0,18,Wilferdingen-Singen,0,0,0
+de:vpe:04722_:,de:vpe:04722_:1545,de:vpe:service:0,19,Wilferdingen-Singen,0,0,0
+de:vpe:04722_:,de:vpe:04722_:1546,de:vpe:service:0,20,Wilferdingen-Singen,0,0,0
+de:vpe:04722_:,de:vpe:04722_:1547,de:vpe:service:0,21,Wilferdingen-Singen,0,0,0
+de:vpe:04722_:,de:vpe:04722_:1548,de:vpe:service:0,22,Wilferdingen-Singen,0,0,0
+de:vpe:04722_:,de:vpe:04722_:1549,de:vpe:service:1,1,Wilferdingen-Singen,0,0,0
+de:vpe:04722_:,de:vpe:04722_:1550,de:vpe:service:1,2,Wilferdingen-Singen,0,0,0
+de:vpe:04722_:,de:vpe:04722_:1551,de:vpe:service:1,3,Wilferdingen-Singen,0,0,0
+de:vpe:04722_:,de:vpe:04722_:1552,de:vpe:service:1,4,Wilferdingen-Singen,0,0,0
+de:vpe:04722_:,de:vpe:04722_:1553,de:vpe:service:1,5,Wilferdingen-Singen,0,0,0
+de:vpe:04722_:,de:vpe:04722_:1554,de:vpe:service:1,6,Wilferdingen-Singen,0,0,0
+de:vpe:04722_:,de:vpe:04722_:1555,de:vpe:service:1,7,Wilferdingen-Singen,0,0,0
+de:vpe:04722_:,de:vpe:04722_:1556,de:vpe:service:1,8,Wilferdingen-Singen,0,0,0
+de:vpe:04722_:,de:vpe:04722_:1557,de:vpe:service:1,9,Wilferdingen-Singen,0,0,0
+de:vpe:04722_:,de:vpe:04722_:1558,de:vpe:service:1,10,Wilferdingen-Singen,0,0,0
+de:vpe:04722_:,de:vpe:04722_:1559,de:vpe:service:1,11,Wilferdingen-Singen,0,0,0
+de:vpe:04722_:,de:vpe:04722_:1560,de:vpe:service:1,12,Wilferdingen-Singen,0,0,0
+de:vpe:04722_:,de:vpe:04722_:1561,de:vpe:service:1,13,Wilferdingen-Singen,0,0,0
+de:vpe:04722_:,de:vpe:04722_:1562,de:vpe:service:5,14,Wilferdingen-Singen,0,0,0
+de:vpe:04722_:,de:vpe:04722_:1563,de:vpe:service:5,15,Wilferdingen-Singen,0,0,0
+de:vpe:04722_:,de:vpe:04722_:1564,de:vpe:service:5,16,Wilferdingen-Singen,0,0,0
+de:vpe:04722_:,de:vpe:04722_:1565,de:vpe:service:2,1,Wilferdingen-Singen,0,0,0
+de:vpe:04722_:,de:vpe:04722_:1566,de:vpe:service:2,2,Wilferdingen-Singen,0,0,0
+de:vpe:04722_:,de:vpe:04722_:1567,de:vpe:service:2,3,Wilferdingen-Singen,0,0,0
+de:vpe:04722_:,de:vpe:04722_:1568,de:vpe:service:2,4,Wilferdingen-Singen,0,0,0
+de:vpe:04722_:,de:vpe:04722_:1569,de:vpe:service:2,5,Wilferdingen-Singen,0,0,0
+de:vpe:04722_:,de:vpe:04722_:1570,de:vpe:service:2,6,Wilferdingen-Singen,0,0,0
+de:vpe:04722_:,de:vpe:04722_:1571,de:vpe:service:2,7,Wilferdingen-Singen,0,0,0
+de:vpe:04722_:,de:vpe:04722_:1572,de:vpe:service:2,8,Wilferdingen-Singen,0,0,0
+de:vpe:04722_:,de:vpe:04722_:1573,de:vpe:service:2,9,Wilferdingen-Singen,0,0,0
+de:vpe:04722_:,de:vpe:04722_:1574,de:vpe:service:2,10,Wilferdingen-Singen,0,0,0
+de:vpe:04722_:,de:vpe:04722_:1575,de:vpe:service:2,11,Wilferdingen-Singen,0,0,0
+de:vpe:04722_:,de:vpe:04722_:1576,de:vpe:service:2,12,Wilferdingen-Singen,0,0,0
+de:vpe:04722_:,de:vpe:04722_:1577,de:vpe:service:2,13,Wilferdingen-Singen,0,0,0
+de:vpe:04722_:,de:vpe:04722_:1578,de:vpe:service:2,14,Wilferdingen-Singen,0,0,0
+de:vpe:04722_:,de:vpe:04722_:1579,de:vpe:service:0,1,Pforzheim ZOB / Hbf,1,0,0
+de:vpe:04722_:,de:vpe:04722_:1580,de:vpe:service:0,2,Pforzheim ZOB / Hbf,1,0,0
+de:vpe:04722_:,de:vpe:04722_:1581,de:vpe:service:0,3,Pforzheim ZOB / Hbf,1,0,0
+de:vpe:04722_:,de:vpe:04722_:1582,de:vpe:service:0,4,Pforzheim ZOB / Hbf,1,0,0
+de:vpe:04722_:,de:vpe:04722_:1583,de:vpe:service:0,5,Pforzheim ZOB / Hbf,1,0,0
+de:vpe:04722_:,de:vpe:04722_:1584,de:vpe:service:0,6,Pforzheim ZOB / Hbf,1,0,0
+de:vpe:04722_:,de:vpe:04722_:1585,de:vpe:service:0,7,Pforzheim ZOB / Hbf,1,0,0
+de:vpe:04722_:,de:vpe:04722_:1586,de:vpe:service:0,8,Pforzheim ZOB / Hbf,1,0,0
+de:vpe:04722_:,de:vpe:04722_:1587,de:vpe:service:0,9,Pforzheim ZOB / Hbf,1,0,0
+de:vpe:04722_:,de:vpe:04722_:1588,de:vpe:service:0,10,Pforzheim ZOB / Hbf,1,0,0
+de:vpe:04722_:,de:vpe:04722_:1589,de:vpe:service:0,11,Pforzheim ZOB / Hbf,1,0,0
+de:vpe:04722_:,de:vpe:04722_:1590,de:vpe:service:0,12,Pforzheim ZOB / Hbf,1,0,0
+de:vpe:04722_:,de:vpe:04722_:1591,de:vpe:service:0,13,Pforzheim ZOB / Hbf,1,0,0
+de:vpe:04722_:,de:vpe:04722_:1592,de:vpe:service:0,14,Pforzheim ZOB / Hbf,1,0,0
+de:vpe:04722_:,de:vpe:04722_:1593,de:vpe:service:0,15,Pforzheim ZOB / Hbf,1,0,0
+de:vpe:04722_:,de:vpe:04722_:1594,de:vpe:service:6,16,Pforzheim ZOB / Hbf,1,0,0
+de:vpe:04722_:,de:vpe:04722_:1595,de:vpe:service:0,18,Pforzheim ZOB / Hbf,1,0,0
+de:vpe:04722_:,de:vpe:04722_:1596,de:vpe:service:0,19,Pforzheim ZOB / Hbf,1,0,0
+de:vpe:04722_:,de:vpe:04722_:1597,de:vpe:service:0,20,Pforzheim ZOB / Hbf,1,0,0
+de:vpe:04722_:,de:vpe:04722_:1598,de:vpe:service:0,21,Pforzheim ZOB / Hbf,1,0,0
+de:vpe:04722_:,de:vpe:04722_:1599,de:vpe:service:0,22,Pforzheim ZOB / Hbf,1,0,0
+de:vpe:04722_:,de:vpe:04722_:1600,de:vpe:service:8,23,Pforzheim ZOB / Hbf,1,0,0
+de:vpe:04722_:,de:vpe:04722_:1601,de:vpe:service:1,1,Pforzheim ZOB / Hbf,1,0,0
+de:vpe:04722_:,de:vpe:04722_:1602,de:vpe:service:1,2,Pforzheim ZOB / Hbf,1,0,0
+de:vpe:04722_:,de:vpe:04722_:1603,de:vpe:service:1,3,Pforzheim ZOB / Hbf,1,0,0
+de:vpe:04722_:,de:vpe:04722_:1604,de:vpe:service:1,4,Pforzheim ZOB / Hbf,1,0,0
+de:vpe:04722_:,de:vpe:04722_:1605,de:vpe:service:1,5,Pforzheim ZOB / Hbf,1,0,0
+de:vpe:04722_:,de:vpe:04722_:1606,de:vpe:service:1,6,Pforzheim ZOB / Hbf,1,0,0
+de:vpe:04722_:,de:vpe:04722_:1607,de:vpe:service:1,7,Pforzheim ZOB / Hbf,1,0,0
+de:vpe:04722_:,de:vpe:04722_:1608,de:vpe:service:1,8,Pforzheim ZOB / Hbf,1,0,0
+de:vpe:04722_:,de:vpe:04722_:1609,de:vpe:service:1,9,Pforzheim ZOB / Hbf,1,0,0
+de:vpe:04722_:,de:vpe:04722_:1610,de:vpe:service:1,10,Pforzheim ZOB / Hbf,1,0,0
+de:vpe:04722_:,de:vpe:04722_:1611,de:vpe:service:1,11,Pforzheim ZOB / Hbf,1,0,0
+de:vpe:04722_:,de:vpe:04722_:1612,de:vpe:service:1,12,Pforzheim ZOB / Hbf,1,0,0
+de:vpe:04722_:,de:vpe:04722_:1613,de:vpe:service:5,13,Pforzheim ZOB / Hbf,1,0,0
+de:vpe:04722_:,de:vpe:04722_:1614,de:vpe:service:5,14,Pforzheim ZOB / Hbf,1,0,0
+de:vpe:04722_:,de:vpe:04722_:1615,de:vpe:service:5,15,Pforzheim ZOB / Hbf,1,0,0
+de:vpe:04722_:,de:vpe:04722_:1616,de:vpe:service:5,16,Pforzheim ZOB / Hbf,1,0,0
+de:vpe:04722_:,de:vpe:04722_:1617,de:vpe:service:2,1,Pforzheim ZOB / Hbf,1,0,0
+de:vpe:04722_:,de:vpe:04722_:1618,de:vpe:service:2,2,Pforzheim ZOB / Hbf,1,0,0
+de:vpe:04722_:,de:vpe:04722_:1619,de:vpe:service:2,3,Pforzheim ZOB / Hbf,1,0,0
+de:vpe:04722_:,de:vpe:04722_:1620,de:vpe:service:2,4,Pforzheim ZOB / Hbf,1,0,0
+de:vpe:04722_:,de:vpe:04722_:1621,de:vpe:service:2,5,Pforzheim ZOB / Hbf,1,0,0
+de:vpe:04722_:,de:vpe:04722_:1622,de:vpe:service:2,6,Pforzheim ZOB / Hbf,1,0,0
+de:vpe:04722_:,de:vpe:04722_:1623,de:vpe:service:2,7,Pforzheim ZOB / Hbf,1,0,0
+de:vpe:04722_:,de:vpe:04722_:1624,de:vpe:service:2,8,Pforzheim ZOB / Hbf,1,0,0
+de:vpe:04722_:,de:vpe:04722_:1625,de:vpe:service:2,9,Pforzheim ZOB / Hbf,1,0,0
+de:vpe:04722_:,de:vpe:04722_:1626,de:vpe:service:2,10,Pforzheim ZOB / Hbf,1,0,0
+de:vpe:04722_:,de:vpe:04722_:1627,de:vpe:service:2,11,Pforzheim ZOB / Hbf,1,0,0
+de:vpe:04722_:,de:vpe:04722_:1628,de:vpe:service:2,12,Pforzheim ZOB / Hbf,1,0,0
+de:vpe:04722_:,de:vpe:04722_:1629,de:vpe:service:2,13,Pforzheim ZOB / Hbf,1,0,0
+de:vpe:04722_:,de:vpe:04722_:1805,de:vpe:service:7,,Pforzheim ZOB / Hbf,1,0,0
+de:vpe:04722_:,de:vpe:04722_:1922,de:vpe:service:7,,Wilferdingen-Singen,0,0,0
+de:vpe:04722_:,de:vpe:04722_:6018,de:vpe:service:2,,Wilferdingen-Singen,0,0,0
+de:vpe:04722_:,de:vpe:04722_:6019,de:vpe:service:2,,Pforzheim ZOB / Hbf,1,0,0
+de:vpe:04722_:,de:vpe:04722_:6020,de:vpe:service:2,,Pforzheim ZOB / Hbf,1,0,0
+de:vpe:04724_:,de:vpe:04724_:1742,de:vpe:service:0,,Neuenbürg Bahnhofstraße,0,0,0
+de:vpe:04724_:,de:vpe:04724_:1743,de:vpe:service:0,,Neuenbürg Bahnhofstraße,0,0,0
+de:vpe:04724_:,de:vpe:04724_:1744,de:vpe:service:0,,Neuenbürg Bahnhofstraße,0,0,0
+de:vpe:04724_:,de:vpe:04724_:1745,de:vpe:service:0,,Neuenbürg Bahnhofstraße,0,0,0
+de:vpe:04724_:,de:vpe:04724_:1746,de:vpe:service:0,,Neuenbürg Bahnhofstraße,0,0,0
+de:vpe:04724_:,de:vpe:04724_:1747,de:vpe:service:0,,Neuenbürg Bahnhofstraße,0,0,0
+de:vpe:04724_:,de:vpe:04724_:1748,de:vpe:service:0,,Neuenbürg Bahnhofstraße,0,0,0
+de:vpe:04724_:,de:vpe:04724_:1749,de:vpe:service:0,,Neuenbürg Bahnhofstraße,0,0,0
+de:vpe:04724_:,de:vpe:04724_:1750,de:vpe:service:0,,Neuenbürg Bahnhofstraße,0,0,0
+de:vpe:04724_:,de:vpe:04724_:1751,de:vpe:service:0,,Neuenbürg Bahnhofstraße,0,0,0
+de:vpe:04724_:,de:vpe:04724_:1752,de:vpe:service:0,,Neuenbürg Bahnhofstraße,0,0,0
+de:vpe:04724_:,de:vpe:04724_:1753,de:vpe:service:0,,Neuenbürg Bahnhofstraße,0,0,0
+de:vpe:04724_:,de:vpe:04724_:1754,de:vpe:service:0,,Neuenbürg Schloßbergschule,0,0,0
+de:vpe:04724_:,de:vpe:04724_:1755,de:vpe:service:0,,Neuenbürg Bahnhofstraße,0,0,0
+de:vpe:04724_:,de:vpe:04724_:1756,de:vpe:service:0,,Neuenbürg Bahnhofstraße,0,0,0
+de:vpe:04724_:,de:vpe:04724_:1757,de:vpe:service:5,,Neuenbürg Bahnhofstraße,0,0,0
+de:vpe:04724_:,de:vpe:04724_:1758,de:vpe:service:5,,Neuenbürg Bahnhofstraße,0,0,0
+de:vpe:04724_:,de:vpe:04724_:1759,de:vpe:service:2,,Neuenbürg Bahnhofstraße,0,0,0
+de:vpe:04724_:,de:vpe:04724_:1760,de:vpe:service:2,,Neuenbürg Bahnhofstraße,0,0,0
+de:vpe:04724_:,de:vpe:04724_:1761,de:vpe:service:2,,Neuenbürg Bahnhofstraße,0,0,0
+de:vpe:04724_:,de:vpe:04724_:1762,de:vpe:service:2,,Neuenbürg Bahnhofstraße,0,0,0
+de:vpe:04724_:,de:vpe:04724_:1763,de:vpe:service:2,,Neuenbürg Bahnhofstraße,0,0,0
+de:vpe:04724_:,de:vpe:04724_:1764,de:vpe:service:2,,Neuenbürg Bahnhofstraße,0,0,0
+de:vpe:04724_:,de:vpe:04724_:1765,de:vpe:service:2,,Neuenbürg Bahnhofstraße,0,0,0
+de:vpe:04724_:,de:vpe:04724_:1766,de:vpe:service:2,,Neuenbürg Bahnhofstraße,0,0,0
+de:vpe:04724_:,de:vpe:04724_:1767,de:vpe:service:1,,Neuenbürg Bahnhofstraße,0,0,0
+de:vpe:04724_:,de:vpe:04724_:1768,de:vpe:service:1,,Neuenbürg Bahnhofstraße,0,0,0
+de:vpe:04724_:,de:vpe:04724_:1769,de:vpe:service:1,,Neuenbürg Bahnhofstraße,0,0,0
+de:vpe:04724_:,de:vpe:04724_:1770,de:vpe:service:1,,Neuenbürg Bahnhofstraße,0,0,0
+de:vpe:04724_:,de:vpe:04724_:1771,de:vpe:service:5,,Neuenbürg Bahnhofstraße,0,0,0
+de:vpe:04724_:,de:vpe:04724_:1772,de:vpe:service:5,,Neuenbürg Bahnhofstraße,0,0,0
+de:vpe:04724_:,de:vpe:04724_:1773,de:vpe:service:0,,Ellmendingen Pforzheimer Str.,1,0,0
+de:vpe:04724_:,de:vpe:04724_:1774,de:vpe:service:0,,Ellmendingen Ettlinger Straße,1,0,0
+de:vpe:04724_:,de:vpe:04724_:1775,de:vpe:service:0,,Ellmendingen Ettlinger Straße,1,0,0
+de:vpe:04724_:,de:vpe:04724_:1776,de:vpe:service:0,,Ellmendingen Ettlinger Straße,1,0,0
+de:vpe:04724_:,de:vpe:04724_:1777,de:vpe:service:0,,Ellmendingen Ettlinger Straße,1,0,0
+de:vpe:04724_:,de:vpe:04724_:1778,de:vpe:service:0,,Ellmendingen Ettlinger Straße,1,0,0
+de:vpe:04724_:,de:vpe:04724_:1779,de:vpe:service:0,,Ellmendingen Ettlinger Straße,1,0,0
+de:vpe:04724_:,de:vpe:04724_:1780,de:vpe:service:0,,Ellmendingen Ettlinger Straße,1,0,0
+de:vpe:04724_:,de:vpe:04724_:1781,de:vpe:service:0,,Ellmendingen Ettlinger Straße,1,0,0
+de:vpe:04724_:,de:vpe:04724_:1782,de:vpe:service:0,,Ellmendingen Ettlinger Straße,1,0,0
+de:vpe:04724_:,de:vpe:04724_:1783,de:vpe:service:0,,Ellmendingen Ettlinger Straße,1,0,0
+de:vpe:04724_:,de:vpe:04724_:1784,de:vpe:service:0,,Ellmendingen Ettlinger Straße,1,0,0
+de:vpe:04724_:,de:vpe:04724_:1785,de:vpe:service:0,,Ellmendingen Ettlinger Straße,1,0,0
+de:vpe:04724_:,de:vpe:04724_:1786,de:vpe:service:0,,Arnbach Rathaus,1,0,0
+de:vpe:04724_:,de:vpe:04724_:1787,de:vpe:service:0,,Arnbach Rathaus,1,0,0
+de:vpe:04724_:,de:vpe:04724_:1788,de:vpe:service:1,,Arnbach Rathaus,1,0,0
+de:vpe:04724_:,de:vpe:04724_:1789,de:vpe:service:1,,Arnbach Rathaus,1,0,0
+de:vpe:04724_:,de:vpe:04724_:1790,de:vpe:service:1,,Arnbach Rathaus,1,0,0
+de:vpe:04724_:,de:vpe:04724_:1791,de:vpe:service:1,,Arnbach Rathaus,1,0,0
+de:vpe:04724_:,de:vpe:04724_:1792,de:vpe:service:5,,Arnbach Rathaus,1,0,0
+de:vpe:04724_:,de:vpe:04724_:1793,de:vpe:service:5,,Arnbach Rathaus,1,0,0
+de:vpe:04724_:,de:vpe:04724_:1794,de:vpe:service:2,,Arnbach Rathaus,1,0,0
+de:vpe:04724_:,de:vpe:04724_:1795,de:vpe:service:2,,Arnbach Rathaus,1,0,0
+de:vpe:04724_:,de:vpe:04724_:1796,de:vpe:service:2,,Arnbach Rathaus,1,0,0
+de:vpe:04724_:,de:vpe:04724_:1797,de:vpe:service:2,,Arnbach Rathaus,1,0,0
+de:vpe:04724_:,de:vpe:04724_:1798,de:vpe:service:2,,Arnbach Rathaus,1,0,0
+de:vpe:04724_:,de:vpe:04724_:1799,de:vpe:service:2,,Arnbach Rathaus,1,0,0
+de:vpe:04724_:,de:vpe:04724_:1800,de:vpe:service:5,,Arnbach Rathaus,1,0,0
+de:vpe:04724_:,de:vpe:04724_:1801,de:vpe:service:5,,Arnbach Rathaus,1,0,0
+de:vpe:04724_:,de:vpe:04724_:1802,de:vpe:service:2,,Arnbach Rathaus,1,0,0
+de:vpe:04724_:,de:vpe:04724_:1803,de:vpe:service:2,,Arnbach Rathaus,1,0,0
+de:vpe:04724_:,de:vpe:04724_:1916,de:vpe:service:0,,Ellmendingen Pforzheimer Str.,1,0,0
+de:vpe:04724_:,de:vpe:04724_:1917,de:vpe:service:0,,Ellmendingen Pforzheimer Str.,1,0,0
+de:vpe:04724_:,de:vpe:04724_:1918,de:vpe:service:0,,Neuenbürg Bahnhofstraße,0,0,0
+de:vpe:04725_:,de:vpe:04725_:1630,de:vpe:service:0,,Waldrennach Enztalstraße,0,0,0
+de:vpe:04725_:,de:vpe:04725_:1631,de:vpe:service:0,,Schömberg Dr.-Schröder-Weg,0,0,0
+de:vpe:04725_:,de:vpe:04725_:1632,de:vpe:service:0,,Schömberg Dr.-Schröder-Weg,0,0,0
+de:vpe:04725_:,de:vpe:04725_:1633,de:vpe:service:0,,Schömberg Dr.-Schröder-Weg,0,0,0
+de:vpe:04725_:,de:vpe:04725_:1634,de:vpe:service:0,,Schömberg Dr.-Schröder-Weg,0,0,0
+de:vpe:04725_:,de:vpe:04725_:1635,de:vpe:service:0,,Schömberg Dr.-Schröder-Weg,0,0,0
+de:vpe:04725_:,de:vpe:04725_:1636,de:vpe:service:0,,Schömberg Dr.-Schröder-Weg,0,0,0
+de:vpe:04725_:,de:vpe:04725_:1637,de:vpe:service:0,,Schömberg Dr.-Schröder-Weg,0,0,0
+de:vpe:04725_:,de:vpe:04725_:1638,de:vpe:service:6,,Waldrennach Enztalstraße,0,0,0
+de:vpe:04725_:,de:vpe:04725_:1639,de:vpe:service:0,,Schömberg Dr.-Schröder-Weg,0,0,0
+de:vpe:04725_:,de:vpe:04725_:1640,de:vpe:service:6,,Schömberg Dr.-Schröder-Weg,0,0,0
+de:vpe:04725_:,de:vpe:04725_:1641,de:vpe:service:0,,Schömberg Dr.-Schröder-Weg,0,0,0
+de:vpe:04725_:,de:vpe:04725_:1642,de:vpe:service:0,,Schömberg Dr.-Schröder-Weg,0,0,0
+de:vpe:04725_:,de:vpe:04725_:1643,de:vpe:service:6,,Waldrennach Enztalstraße,0,0,0
+de:vpe:04725_:,de:vpe:04725_:1644,de:vpe:service:0,,Schömberg Dr.-Schröder-Weg,0,0,0
+de:vpe:04725_:,de:vpe:04725_:1645,de:vpe:service:0,,Schömberg Dr.-Schröder-Weg,0,0,0
+de:vpe:04725_:,de:vpe:04725_:1646,de:vpe:service:0,,Schömberg Dr.-Schröder-Weg,0,0,0
+de:vpe:04725_:,de:vpe:04725_:1647,de:vpe:service:0,,Schömberg Dr.-Schröder-Weg,0,0,0
+de:vpe:04725_:,de:vpe:04725_:1648,de:vpe:service:0,,Waldrennach Enztalstraße,0,0,0
+de:vpe:04725_:,de:vpe:04725_:1649,de:vpe:service:0,,Waldrennach Enztalstraße,0,0,0
+de:vpe:04725_:,de:vpe:04725_:1650,de:vpe:service:1,,Schömberg Dr.-Schröder-Weg,0,0,0
+de:vpe:04725_:,de:vpe:04725_:1651,de:vpe:service:1,,Schömberg Dr.-Schröder-Weg,0,0,0
+de:vpe:04725_:,de:vpe:04725_:1652,de:vpe:service:1,,Schömberg Dr.-Schröder-Weg,0,0,0
+de:vpe:04725_:,de:vpe:04725_:1653,de:vpe:service:1,,Schömberg Dr.-Schröder-Weg,0,0,0
+de:vpe:04725_:,de:vpe:04725_:1654,de:vpe:service:5,,Schömberg Dr.-Schröder-Weg,0,0,0
+de:vpe:04725_:,de:vpe:04725_:1655,de:vpe:service:5,,Schömberg Dr.-Schröder-Weg,0,0,0
+de:vpe:04725_:,de:vpe:04725_:1656,de:vpe:service:5,,Waldrennach Enztalstraße,0,0,0
+de:vpe:04725_:,de:vpe:04725_:1657,de:vpe:service:5,,Waldrennach Enztalstraße,0,0,0
+de:vpe:04725_:,de:vpe:04725_:1658,de:vpe:service:2,,Schömberg Dr.-Schröder-Weg,0,0,0
+de:vpe:04725_:,de:vpe:04725_:1659,de:vpe:service:2,,Schömberg Dr.-Schröder-Weg,0,0,0
+de:vpe:04725_:,de:vpe:04725_:1660,de:vpe:service:2,,Schömberg Dr.-Schröder-Weg,0,0,0
+de:vpe:04725_:,de:vpe:04725_:1661,de:vpe:service:2,,Schömberg Dr.-Schröder-Weg,0,0,0
+de:vpe:04725_:,de:vpe:04725_:1662,de:vpe:service:2,,Schömberg Dr.-Schröder-Weg,0,0,0
+de:vpe:04725_:,de:vpe:04725_:1663,de:vpe:service:2,,Schömberg Dr.-Schröder-Weg,0,0,0
+de:vpe:04725_:,de:vpe:04725_:1664,de:vpe:service:2,,Waldrennach Enztalstraße,0,0,0
+de:vpe:04725_:,de:vpe:04725_:1665,de:vpe:service:2,,Waldrennach Enztalstraße,0,0,0
+de:vpe:04725_:,de:vpe:04725_:1666,de:vpe:service:0,,Ellmendingen Pforzheimer Str.,1,0,0
+de:vpe:04725_:,de:vpe:04725_:1667,de:vpe:service:0,,Ellmendingen Pforzheimer Str.,1,0,0
+de:vpe:04725_:,de:vpe:04725_:1668,de:vpe:service:0,,Neuenbürg Gymnasium,1,0,0
+de:vpe:04725_:,de:vpe:04725_:1669,de:vpe:service:0,,Neuenbürg Gymnasium,1,0,0
+de:vpe:04725_:,de:vpe:04725_:1670,de:vpe:service:0,,Neuenbürg Gymnasium,1,0,0
+de:vpe:04725_:,de:vpe:04725_:1671,de:vpe:service:0,,Neuenbürg Daimlerstraße,1,0,0
+de:vpe:04725_:,de:vpe:04725_:1672,de:vpe:service:0,,Neuenbürg Daimlerstraße,1,0,0
+de:vpe:04725_:,de:vpe:04725_:1673,de:vpe:service:0,,Neuenbürg Daimlerstraße,1,0,0
+de:vpe:04725_:,de:vpe:04725_:1674,de:vpe:service:0,,Neuenbürg Daimlerstraße,1,0,0
+de:vpe:04725_:,de:vpe:04725_:1675,de:vpe:service:0,,Neuenbürg Daimlerstraße,1,0,0
+de:vpe:04725_:,de:vpe:04725_:1676,de:vpe:service:0,,Neuenbürg Daimlerstraße,1,0,0
+de:vpe:04725_:,de:vpe:04725_:1677,de:vpe:service:0,,Neuenbürg Daimlerstraße,1,0,0
+de:vpe:04725_:,de:vpe:04725_:1678,de:vpe:service:0,,Neuenbürg Daimlerstraße,1,0,0
+de:vpe:04725_:,de:vpe:04725_:1679,de:vpe:service:0,,Neuenbürg Daimlerstraße,1,0,0
+de:vpe:04725_:,de:vpe:04725_:1680,de:vpe:service:0,,Neuenbürg Daimlerstraße,1,0,0
+de:vpe:04725_:,de:vpe:04725_:1681,de:vpe:service:0,,Neuenbürg Bahnhofstraße,1,0,0
+de:vpe:04725_:,de:vpe:04725_:1682,de:vpe:service:0,,Neuenbürg Bahnhofstraße,1,0,0
+de:vpe:04725_:,de:vpe:04725_:1683,de:vpe:service:1,,Neuenbürg Bahnhofstraße,1,0,0
+de:vpe:04725_:,de:vpe:04725_:1684,de:vpe:service:1,,Neuenbürg Bahnhofstraße,1,0,0
+de:vpe:04725_:,de:vpe:04725_:1685,de:vpe:service:1,,Neuenbürg Bahnhofstraße,1,0,0
+de:vpe:04725_:,de:vpe:04725_:1686,de:vpe:service:1,,Neuenbürg Bahnhofstraße,1,0,0
+de:vpe:04725_:,de:vpe:04725_:1687,de:vpe:service:5,,Neuenbürg Bahnhofstraße,1,0,0
+de:vpe:04725_:,de:vpe:04725_:1688,de:vpe:service:5,,Neuenbürg Bahnhofstraße,1,0,0
+de:vpe:04725_:,de:vpe:04725_:1689,de:vpe:service:5,,Neuenbürg Bahnhofstraße,1,0,0
+de:vpe:04725_:,de:vpe:04725_:1690,de:vpe:service:5,,Neuenbürg Bahnhofstraße,1,0,0
+de:vpe:04725_:,de:vpe:04725_:1691,de:vpe:service:2,,Neuenbürg Bahnhofstraße,1,0,0
+de:vpe:04725_:,de:vpe:04725_:1692,de:vpe:service:2,,Neuenbürg Bahnhofstraße,1,0,0
+de:vpe:04725_:,de:vpe:04725_:1693,de:vpe:service:2,,Neuenbürg Bahnhofstraße,1,0,0
+de:vpe:04725_:,de:vpe:04725_:1694,de:vpe:service:2,,Neuenbürg Bahnhofstraße,1,0,0
+de:vpe:04725_:,de:vpe:04725_:1695,de:vpe:service:2,,Neuenbürg Bahnhofstraße,1,0,0
+de:vpe:04725_:,de:vpe:04725_:1696,de:vpe:service:2,,Neuenbürg Bahnhofstraße,1,0,0
+de:vpe:04725_:,de:vpe:04725_:1697,de:vpe:service:2,,Neuenbürg Bahnhofstraße,1,0,0
+de:vpe:04919_:,de:vpe:04919_:1522,de:vpe:service:6,SL,Neuenbürg Gymnasium,0,0,0
+de:vpe:04919_:,de:vpe:04919_:1523,de:vpe:service:6,SL,Ottenhausen Turnhalle,1,0,0
+de:vpe:04919_:,de:vpe:04919_:1524,de:vpe:service:6,SL,Niebelsbach Süd,1,0,0
+de:vpe:04919_:,de:vpe:04919_:1525,de:vpe:service:6,SL,Weiler Rathaus,1,0,0
+de:vpe:04919_:,de:vpe:04919_:1526,de:vpe:service:6,SL,Weiler Rathaus,1,0,0
+de:vpe:04919_:,de:vpe:04919_:1527,de:vpe:service:6,SL,Niebelsbach Süd,1,0,0
+de:vpe:04919_:,de:vpe:04919_:1811,de:vpe:service:6,,Conweiler Schule,0,0,0
+de:vpe:04919_:,de:vpe:04919_:1919,de:vpe:service:6,,Niebelsbach Süd,1,0,0
+de:vpe:04919_:,de:vpe:04919_:1920,de:vpe:service:23,,Niebelsbach Süd,1,0,0
+de:vpe:04922_:,de:vpe:04922_:1698,de:vpe:service:16,1,Singen Gymnasium,0,0,0
+de:vpe:04922_:,de:vpe:04922_:1699,de:vpe:service:6,2,Singen Gymnasium,0,0,0
+de:vpe:04922_:,de:vpe:04922_:1700,de:vpe:service:6,3,Singen Gymnasium,0,0,0
+de:vpe:04922_:,de:vpe:04922_:1701,de:vpe:service:6,5,Singen Gymnasium,0,0,0
+de:vpe:04922_:,de:vpe:04922_:1702,de:vpe:service:6,6,Singen Bergschule,0,0,0
+de:vpe:04922_:,de:vpe:04922_:1703,de:vpe:service:6,7,Singen Bergschule,0,0,0
+de:vpe:04922_:,de:vpe:04922_:1704,de:vpe:service:6,8,Ellmendingen Ettlinger Straße,0,0,0
+de:vpe:04922_:,de:vpe:04922_:1705,de:vpe:service:6,1,Birkenfeld Ludwig-Uhland-Schule,1,0,0
+de:vpe:04922_:,de:vpe:04922_:1706,de:vpe:service:6,2,Nöttingen Schule,1,0,0
+de:vpe:04922_:,de:vpe:04922_:1707,de:vpe:service:6,3,Wilferdingen C.-Dittler - Realschule,1,0,0
+de:vpe:04922_:,de:vpe:04922_:1708,de:vpe:service:6,4,Birkenfeld Ludwig-Uhland-Schule,1,0,0
+de:vpe:04922_:,de:vpe:04922_:1709,de:vpe:service:6,5,Nöttingen Schule,1,0,0
+de:vpe:04922_:,de:vpe:04922_:1710,de:vpe:service:6,6,Dietlingen Lessingstraße,1,0,0
+de:vpe:04922_:,de:vpe:04922_:1711,de:vpe:service:6,7,Dietlingen Lessingstraße,1,0,0
+de:vpe:04922_:,de:vpe:04922_:1712,de:vpe:service:6,8,Dietlingen Lessingstraße,1,0,0
+de:vpe:04922_:,de:vpe:04922_:1713,de:vpe:service:6,10,Wilferdingen Sperlingshof,1,0,0
+de:vpe:04922_:,de:vpe:04922_:1714,de:vpe:service:6,13,Dietlingen Lessingstraße,1,0,0
+de:vpe:04922_:,de:vpe:04922_:1715,de:vpe:service:6,14,Dietlingen Lessingstraße,1,0,0
+de:vpe:04922_:,de:vpe:04922_:1716,de:vpe:service:6,15,Dietlingen Lessingstraße,1,0,0
+de:vpe:04922_:,de:vpe:04922_:1717,de:vpe:service:6,,Wilferdingen C.-Dittler - Realschule,1,0,0
+de:vpe:04922_:,de:vpe:04922_:1719,de:vpe:service:6,,Darmsbach Ortsmitte,0,0,0
+de:vpe:04922_:,de:vpe:04922_:1720,de:vpe:service:6,,Singen Bergschule,0,0,0
+de:vpe:04922_:,de:vpe:04922_:1721,de:vpe:service:6,,Dietlingen Lessingstraße,1,0,0
+de:vpe:04922_:,de:vpe:04922_:6021,de:vpe:service:6,,Dietlingen Lessingstraße,1,0,0
+de:vpe:04923_:,de:vpe:04923_:2437,de:vpe:service:6,,Ellmendingen Schule,1,0,0
+de:vpe:04923_:,de:vpe:04923_:2438,de:vpe:service:6,,Ellmendingen Schule,1,0,0
+de:vpe:04923_:,de:vpe:04923_:2439,de:vpe:service:6,,Pforzheim Waldorfschule,1,0,0
+de:vpe:04923_:,de:vpe:04923_:2440,de:vpe:service:6,,Dietenhausen Ortsmitte,0,0,0
+de:vpe:04923_:,de:vpe:04923_:2441,de:vpe:service:6,,Dietenhausen Ortsmitte,0,0,0
+de:vpe:04923_:,de:vpe:04923_:2442,de:vpe:service:6,,Ittersbach Rathaus,0,0,0
+de:vpe:04923_:,de:vpe:04923_:2443,de:vpe:service:6,,Ittersbach Rathaus,0,0,0
+de:vpe:08807_:,de:vpe:08807_:1029,de:vpe:service:0,,Maulbronn Märkte,0,0,0
+de:vpe:08807_:,de:vpe:08807_:1030,de:vpe:service:0,,Maulbronn Märkte,0,0,0
+de:vpe:08807_:,de:vpe:08807_:1031,de:vpe:service:0,,Maulbronn Märkte,0,0,0
+de:vpe:08807_:,de:vpe:08807_:1032,de:vpe:service:28,,Maulbronn Märkte,0,0,0
+de:vpe:08807_:,de:vpe:08807_:1033,de:vpe:service:28,,Maulbronn Märkte,0,0,0
+de:vpe:08807_:,de:vpe:08807_:1034,de:vpe:service:28,,Maulbronn Märkte,0,0,0
+de:vpe:08808_:,de:vpe:08808_:1035,de:vpe:service:0,,Maulbronn Märkte,0,0,0
+de:vpe:08808_:,de:vpe:08808_:1036,de:vpe:service:0,,Maulbronn Märkte,0,0,0
+de:vpe:08808_:,de:vpe:08808_:1037,de:vpe:service:0,,Maulbronn Märkte,0,0,0
+de:vpe:08808_:,de:vpe:08808_:1038,de:vpe:service:28,,Maulbronn Märkte,0,0,0
+de:vpe:08808_:,de:vpe:08808_:1039,de:vpe:service:28,,Maulbronn Märkte,0,0,0
+de:vpe:08808_:,de:vpe:08808_:1040,de:vpe:service:28,,Maulbronn Märkte,0,0,0
+de:vpe:08809_:,de:vpe:08809_:1041,de:vpe:service:0,,Maulbronn Märkte,0,0,0
+de:vpe:08809_:,de:vpe:08809_:1042,de:vpe:service:0,,Maulbronn Märkte,0,0,0
+de:vpe:08809_:,de:vpe:08809_:1043,de:vpe:service:0,,Maulbronn Märkte,0,0,0
+de:vpe:08809_:,de:vpe:08809_:1044,de:vpe:service:28,,Maulbronn Märkte,0,0,0
+de:vpe:08809_:,de:vpe:08809_:1045,de:vpe:service:28,,Maulbronn Märkte,0,0,0
+de:vpe:08809_:,de:vpe:08809_:1046,de:vpe:service:28,,Maulbronn Märkte,0,0,0
+de:vpe:08803_:,de:vpe:08803_:1923,de:vpe:service:28,,Wiernsheim Mühlstraße,0,0,0
+de:vpe:08803_:,de:vpe:08803_:1924,de:vpe:service:28,,Wiernsheim Mühlstraße,0,0,0
+de:vpe:08803_:,de:vpe:08803_:1925,de:vpe:service:29,,Wiernsheim Mühlstraße,0,0,0
+de:vpe:08803_:,de:vpe:08803_:1926,de:vpe:service:29,,Wiernsheim Mühlstraße,0,0,0
+de:vpe:08803_:,de:vpe:08803_:1927,de:vpe:service:28,,Wiernsheim Mühlstraße,0,0,0
+de:vpe:08804_:,de:vpe:08804_:1932,de:vpe:service:28,,Wiernsheim Mühlstraße,0,0,0
+de:vpe:08804_:,de:vpe:08804_:1933,de:vpe:service:28,,Wiernsheim Mühlstraße,0,0,0
+de:vpe:08804_:,de:vpe:08804_:1934,de:vpe:service:28,,Wiernsheim Mühlstraße,0,0,0
+de:vpe:08804_:,de:vpe:08804_:1935,de:vpe:service:29,,Wiernsheim Mühlstraße,0,0,0
+de:vpe:08804_:,de:vpe:08804_:1936,de:vpe:service:29,,Wiernsheim Mühlstraße,0,0,0
+de:vpe:08805_:,de:vpe:08805_:1928,de:vpe:service:28,,Wiernsheim Mühlstraße,0,0,0
+de:vpe:08805_:,de:vpe:08805_:1929,de:vpe:service:28,,Wiernsheim Mühlstraße,0,0,0
+de:vpe:08805_:,de:vpe:08805_:1930,de:vpe:service:28,,Wiernsheim Mühlstraße,0,0,0
+de:vpe:08805_:,de:vpe:08805_:1931,de:vpe:service:29,,Wiernsheim Mühlstraße,0,0,0
+de:vpe:08805_:,de:vpe:08805_:1937,de:vpe:service:29,,Wiernsheim Mühlstraße,0,0,0

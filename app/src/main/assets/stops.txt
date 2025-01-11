@@ -1,0 +1,491 @@
+stop_id,stop_name,stop_lat,stop_lon,location_type,parent_station,platform_code
+de:08215:1403:2:3,Langensteinbach Bahnhof,48.915616,8.503247,,de:08215:1403_Parent,3
+de:08215:1403_Parent,Langensteinbach Bahnhof,48.915846,8.503205,1,,
+de:08215:1410:2:11,Ittersbach Rathaus,48.866798,8.508586,,de:08215:1410_Parent,11
+de:08215:1410:2:12,Ittersbach Rathaus,48.866530,8.507320,,de:08215:1410_Parent,12
+de:08215:1410_Parent,Ittersbach Rathaus,48.866356,8.508640,1,,
+de:08215:1412:0:1,Ittersbach Descostraße,48.884189,8.509330,,de:08215:1412_Parent,1
+de:08215:1412:0:2,Ittersbach Descostraße,48.884238,8.509177,,de:08215:1412_Parent,2
+de:08215:1412_Parent,Ittersbach Descostraße,48.884214,8.509254,1,,
+de:08215:1413:0:1,Ittersbach Industriegebiet,48.882373,8.509371,,de:08215:1413_Parent,1
+de:08215:1413:0:2,Ittersbach Industriegebiet,48.882289,8.509225,,de:08215:1413_Parent,2
+de:08215:1413_Parent,Ittersbach Industriegebiet,48.882331,8.509298,1,,
+de:08215:34875:1:1,Ittersbach Becker-Göring-Str.,48.877857,8.509965,,de:08215:34875_Parent,1
+de:08215:34875:1:2,Ittersbach Becker-Göring-Str.,48.877885,8.509829,,de:08215:34875_Parent,2
+de:08215:34875_Parent,Ittersbach Becker-Göring-Str.,48.877871,8.509897,1,,
+de:08215:34878:0:1,Ittersbach Baumgartenstraße,48.868958,8.509333,,de:08215:34878_Parent,1
+de:08215:34878:0:2,Ittersbach Baumgartenstraße,48.868828,8.509086,,de:08215:34878_Parent,2
+de:08215:34878_Parent,Ittersbach Baumgartenstraße,48.868893,8.509210,1,,
+de:08215:8601:1:1,Langensteinbach Schwimmbad,48.905320,8.499089,,de:08215:8601_Parent,1
+de:08215:8601:1:2,Langensteinbach Schwimmbad,48.905485,8.499167,,de:08215:8601_Parent,2
+de:08215:8601_Parent,Langensteinbach Schwimmbad,48.905402,8.499128,1,,
+de:08215:8602:1:1,Langensteinbach Volksbank,48.912923,8.505914,,de:08215:8602_Parent,1
+de:08215:8602:1:2,Langensteinbach Volksbank,48.912910,8.505761,,de:08215:8602_Parent,2
+de:08215:8602_Parent,Langensteinbach Volksbank,48.912917,8.505838,1,,
+de:08215:8607:2:21,Auerbach Hailerstraße,48.910106,8.527307,,de:08215:8607_Parent,21
+de:08215:8607:2:22,Auerbach Hailerstraße,48.910737,8.528551,,de:08215:8607_Parent,22
+de:08215:8607_Parent,Auerbach Hailerstraße,48.910832,8.528357,1,,
+de:08215:8608:1:1,Auerbach Rathaus,48.914137,8.532110,,de:08215:8608_Parent,1
+de:08215:8608:1:2,Auerbach Rathaus,48.914189,8.531612,,de:08215:8608_Parent,2
+de:08215:8608_Parent,Auerbach Rathaus,48.914163,8.531861,1,,
+de:08215:8610:0:1,Auerbach Siedlung,48.916490,8.535376,,de:08215:8610_Parent,1
+de:08215:8610:0:2,Auerbach Siedlung,48.916291,8.535708,,de:08215:8610_Parent,2
+de:08215:8610_Parent,Auerbach Siedlung,48.916390,8.535542,1,,
+de:08215:8611:1:1,Langensteinbach Ittersb.Str.,48.909335,8.503609,,de:08215:8611_Parent,1
+de:08215:8611:1:2,Langensteinbach Ittersb.Str.,48.909079,8.503263,,de:08215:8611_Parent,2
+de:08215:8611_Parent,Langensteinbach Ittersb.Str.,48.909207,8.503436,1,,
+de:08215:8618:1:1,Langensteinbach Wilferdinger Str.,48.916653,8.508175,,de:08215:8618_Parent,1
+de:08215:8618:1:3,Langensteinbach Wilferdinger Str.,48.916755,8.508364,,de:08215:8618_Parent,3
+de:08215:8618_Parent,Langensteinbach Wilferdinger Str.,48.916732,8.508225,1,,
+de:08215:8701:1:1,Langensteinbach Klinikum,48.903011,8.497358,,de:08215:8701_Parent,1
+de:08215:8701_Parent,Langensteinbach Klinikum,48.903011,8.497358,1,,
+de:08231:100:2:5,Pforzheim Leopoldplatz,48.891788,8.697295,,de:08231:100_Parent,5
+de:08231:100:2:6,Pforzheim Leopoldplatz,48.891746,8.696960,,de:08231:100_Parent,6
+de:08231:100_Parent,Pforzheim Leopoldplatz,48.891748,8.697684,1,,
+de:08231:11:0:5,Pforzheim ZOB / Hbf,48.893698,8.705038,,de:08231:11_Parent,5
+de:08231:11:0:99,Pforzheim ZOB / Hbf,48.893473,8.706012,,de:08231:11_Parent,99
+de:08231:11_Parent,Pforzheim ZOB / Hbf,48.893597,8.705017,1,,
+de:08231:201:0:1,Pforzheim Kulturhaus Osterfeld,48.892401,8.687578,,de:08231:201_Parent,1
+de:08231:201:0:2,Pforzheim Kulturhaus Osterfeld,48.892227,8.686067,,de:08231:201_Parent,2
+de:08231:201_Parent,Pforzheim Kulturhaus Osterfeld,48.892314,8.686823,1,,
+de:08231:204:0:1,Pforzheim Fritz-Erler Schule Süd,48.890166,8.678620,,de:08231:204_Parent,1
+de:08231:204:0:2,Pforzheim Fritz-Erler Schule Süd,48.890744,8.678808,,de:08231:204_Parent,2
+de:08231:204_Parent,Pforzheim Fritz-Erler Schule Süd,48.890300,8.678732,1,,
+de:08231:206:0:1,Pforzheim Burgstraße,48.889208,8.667811,,de:08231:206_Parent,1
+de:08231:206:0:2,Pforzheim Burgstraße,48.888783,8.667977,,de:08231:206_Parent,2
+de:08231:206_Parent,Pforzheim Burgstraße,48.888996,8.667894,1,,
+de:08231:208:0:1,Pforzheim Bahnhof Brötzingen,48.888964,8.665644,,de:08231:208_Parent,1
+de:08231:208:0:2,Pforzheim Bahnhof Brötzingen,48.888855,8.666049,,de:08231:208_Parent,2
+de:08231:208_Parent,Pforzheim Bahnhof Brötzingen,48.888910,8.665847,1,,
+de:08231:214:0:1,Pforzheim Äußerer Arlinger,48.884369,8.648756,,de:08231:214_Parent,1
+de:08231:214:0:2,Pforzheim Äußerer Arlinger,48.884228,8.648418,,de:08231:214_Parent,2
+de:08231:214_Parent,Pforzheim Äußerer Arlinger,48.884298,8.648587,1,,
+de:08231:220:0:1,Pforzheim Dietlinger Straße,48.889583,8.665865,,de:08231:220_Parent,1
+de:08231:220:0:2,Pforzheim Dietlinger Straße,48.889387,8.665618,,de:08231:220_Parent,2
+de:08231:220_Parent,Pforzheim Dietlinger Straße,48.889485,8.665742,1,,
+de:08231:221:0:1,Pforzheim Biberstraße,48.891431,8.663794,,de:08231:221_Parent,1
+de:08231:221:0:2,Pforzheim Biberstraße,48.891706,8.663476,,de:08231:221_Parent,2
+de:08231:221_Parent,Pforzheim Biberstraße,48.891568,8.663635,1,,
+de:08231:222:0:1,Pforzheim Äußere Dietlinger Straße,48.895750,8.657854,,de:08231:222_Parent,1
+de:08231:222:0:2,Pforzheim Äußere Dietlinger Straße,48.895571,8.657982,,de:08231:222_Parent,2
+de:08231:222_Parent,Pforzheim Äußere Dietlinger Straße,48.895661,8.657918,1,,
+de:08231:239:0:1,Pforzheim Händelstraße,48.896378,8.686462,,de:08231:239_Parent,1
+de:08231:239:0:2,Pforzheim Händelstraße,48.896390,8.685894,,de:08231:239_Parent,2
+de:08231:239_Parent,Pforzheim Händelstraße,48.896384,8.686178,1,,
+de:08231:255:2:3,Pforzheim Krankenhaus Siloah,48.898541,8.674564,,de:08231:255_Parent,3
+de:08231:255:2:4,Pforzheim Krankenhaus Siloah,48.898338,8.674430,,de:08231:255_Parent,4
+de:08231:255_Parent,Pforzheim Krankenhaus Siloah,48.898667,8.675201,1,,
+de:08231:261:0:1,Pforzheim Am Enzenloch,48.902201,8.660140,,de:08231:261_Parent,1
+de:08231:261:0:2,Pforzheim Am Enzenloch,48.901989,8.660063,,de:08231:261_Parent,2
+de:08231:261_Parent,Pforzheim Am Enzenloch,48.902095,8.660102,1,,
+de:08231:263:0:1,Pforzheim Fachmarktzentrum,48.903810,8.656665,,de:08231:263_Parent,1
+de:08231:263:0:2,Pforzheim Fachmarktzentrum,48.903445,8.656825,,de:08231:263_Parent,2
+de:08231:263_Parent,Pforzheim Fachmarktzentrum,48.903627,8.656745,1,,
+de:08231:264:0:1,Pforzheim Straßenmeisterei,48.906899,8.650165,,de:08231:264_Parent,1
+de:08231:264_Parent,Pforzheim Straßenmeisterei,48.906960,8.649786,1,,
+de:08231:40:0:2,Pforzheim Bahnhofstraße,48.892937,8.701206,,de:08231:40_Parent,2
+de:08231:40_Parent,Pforzheim Bahnhofstraße,48.892993,8.701176,1,,
+de:08231:450:0:1,Pforzheim Waldsportpfad,48.897216,8.641461,,de:08231:450_Parent,1
+de:08231:450:0:2,Pforzheim Waldsportpfad,48.897223,8.640994,,de:08231:450_Parent,2
+de:08231:450_Parent,Pforzheim Waldsportpfad,48.897219,8.641227,1,,
+de:08231:451:0:1,Pforzheim Waldorfschule,48.883505,8.688046,,de:08231:451_Parent,1
+de:08231:451_Parent,Pforzheim Waldorfschule,48.883505,8.688046,1,,
+de:08235:5280:0:3,Schömberg Rosenstr.,48.792187,8.642390,,de:08235:5280_Parent,3
+de:08235:5280:0:4,Schömberg Rosenstr.,48.791907,8.642290,,de:08235:5280_Parent,4
+de:08235:5280_Parent,Schömberg Rosenstr.,48.792047,8.642340,1,,
+de:08235:5290:0:3,Schömberg Rathaus,48.787061,8.645443,,de:08235:5290_Parent,3
+de:08235:5290:0:4,Schömberg Rathaus,48.786873,8.645221,,de:08235:5290_Parent,4
+de:08235:5290_Parent,Schömberg Rathaus,48.786967,8.645332,1,,
+de:08235:5300:0:3,Schömberg Liebenzeller Str.,48.788159,8.649376,,de:08235:5300_Parent,3
+de:08235:5300:0:4,Schömberg Liebenzeller Str.,48.788062,8.649564,,de:08235:5300_Parent,4
+de:08235:5300_Parent,Schömberg Liebenzeller Str.,48.788110,8.649470,1,,
+de:08235:5310:0:3,Schömberg Dr.-Schröder-Weg,48.787683,8.654695,,de:08235:5310_Parent,3
+de:08235:5310:0:4,Schömberg Dr.-Schröder-Weg,48.787500,8.655209,,de:08235:5310_Parent,4
+de:08235:5310_Parent,Schömberg Dr.-Schröder-Weg,48.787591,8.654952,1,,
+de:08235:9470:0:3,Langenbrand Schömbergerstr.,48.800543,8.634313,,de:08235:9470_Parent,3
+de:08235:9470:0:4,Langenbrand Schömbergerstr.,48.799925,8.634447,,de:08235:9470_Parent,4
+de:08235:9470_Parent,Langenbrand Schömbergerstr.,48.800234,8.634380,1,,
+de:08236:1014:0:1,Birkenfeld Ludwig-Uhland-Schule,48.873171,8.636175,,de:08236:1014_Parent,1
+de:08236:1014:0:2,Birkenfeld Ludwig-Uhland-Schule,48.873189,8.636040,,de:08236:1014_Parent,2
+de:08236:1014_Parent,Birkenfeld Ludwig-Uhland-Schule,48.873180,8.636107,1,,
+de:08236:1026:0:1,Birkenfeld Jägersteig,48.883654,8.634418,,de:08236:1026_Parent,1
+de:08236:1026:0:2,Birkenfeld Jägersteig,48.883543,8.634650,,de:08236:1026_Parent,2
+de:08236:1026_Parent,Birkenfeld Jägersteig,48.883599,8.634534,1,,
+de:08236:1039:0:1,Birkenfeld Dammfeld,48.888474,8.634624,,de:08236:1039_Parent,1
+de:08236:1039_Parent,Birkenfeld Dammfeld,48.888474,8.634624,1,,
+de:08236:1101:0:1,Arnbach Rathaus,48.859914,8.565693,,de:08236:1101_Parent,1
+de:08236:1101:0:4,Arnbach Rathaus,48.859813,8.565515,,de:08236:1101_Parent,4
+de:08236:1101_Parent,Arnbach Rathaus,48.859975,8.565252,1,,
+de:08236:1102:0:1,Arnbach Linde,48.858799,8.570810,,de:08236:1102_Parent,1
+de:08236:1102:0:2,Arnbach Linde,48.858915,8.570768,,de:08236:1102_Parent,2
+de:08236:1102_Parent,Arnbach Linde,48.858857,8.570789,1,,
+de:08236:1105:0:1,Arnbach Siedlung,48.856449,8.575346,,de:08236:1105_Parent,1
+de:08236:1105:0:2,Arnbach Siedlung,48.856566,8.575405,,de:08236:1105_Parent,2
+de:08236:1105_Parent,Arnbach Siedlung,48.856508,8.575376,1,,
+de:08236:1106:0:1,Arnbach Blockhütte,48.865768,8.557023,,de:08236:1106_Parent,1
+de:08236:1106:0:2,Arnbach Blockhütte,48.865666,8.557164,,de:08236:1106_Parent,2
+de:08236:1106_Parent,Arnbach Blockhütte,48.865502,8.557295,1,,
+de:08236:1109:0:1,Ottenhausen Bachstraße,48.875871,8.540737,,de:08236:1109_Parent,1
+de:08236:1109:0:2,Ottenhausen Bachstraße,48.875721,8.540511,,de:08236:1109_Parent,2
+de:08236:1109_Parent,Ottenhausen Bachstraße,48.875796,8.540624,1,,
+de:08236:1110:0:1,Ottenhausen Zur Samsruhe,48.868917,8.546639,,de:08236:1110_Parent,1
+de:08236:1110:0:2,Ottenhausen Zur Samsruhe,48.868797,8.546652,,de:08236:1110_Parent,2
+de:08236:1110_Parent,Ottenhausen Zur Samsruhe,48.868857,8.546645,1,,
+de:08236:1114:0:2,Ottenhausen Turnhalle,48.872595,8.544324,,de:08236:1114_Parent,2
+de:08236:1114:0:3,Ottenhausen Turnhalle,48.872620,8.544179,,de:08236:1114_Parent,3
+de:08236:1114_Parent,Ottenhausen Turnhalle,48.872675,8.544219,1,,
+de:08236:1115:0:1,Ottenhausen Rote Äcker,48.872301,8.538261,,de:08236:1115_Parent,1
+de:08236:1115:0:2,Ottenhausen Rote Äcker,48.872143,8.538435,,de:08236:1115_Parent,2
+de:08236:1115_Parent,Ottenhausen Rote Äcker,48.872222,8.538348,1,,
+de:08236:1200:0:1,Feldrennach Marktplatz,48.854807,8.531838,,de:08236:1200_Parent,1
+de:08236:1200:0:2,Feldrennach Marktplatz,48.854888,8.532498,,de:08236:1200_Parent,2
+de:08236:1200_Parent,Feldrennach Marktplatz,48.854848,8.532168,1,,
+de:08236:1201:0:1,Feldrennach Linde,48.857282,8.533480,,de:08236:1201_Parent,1
+de:08236:1201:0:2,Feldrennach Linde,48.857416,8.533695,,de:08236:1201_Parent,2
+de:08236:1201_Parent,Feldrennach Linde,48.857349,8.533587,1,,
+de:08236:1209:0:1,Feldrennach Kernäckerstraße,48.853259,8.528249,,de:08236:1209_Parent,1
+de:08236:1209:0:2,Feldrennach Kernäckerstraße,48.853188,8.528336,,de:08236:1209_Parent,2
+de:08236:1209_Parent,Feldrennach Kernäckerstraße,48.853223,8.528292,1,,
+de:08236:1320:0:1,Conweiler Schule,48.846184,8.528471,,de:08236:1320_Parent,1
+de:08236:1320:0:4,Conweiler Schule,48.846502,8.528184,,de:08236:1320_Parent,4
+de:08236:1320_Parent,Conweiler Schule,48.846259,8.528395,1,,
+de:08236:1400:0:1,Neuenbürg Gewerbegebiet,48.853722,8.582630,,de:08236:1400_Parent,1
+de:08236:1400:0:2,Neuenbürg Gewerbegebiet,48.854054,8.582515,,de:08236:1400_Parent,2
+de:08236:1400:0:3,Neuenbürg Gewerbegebiet,48.854108,8.582180,,de:08236:1400_Parent,3
+de:08236:1400_Parent,Neuenbürg Gewerbegebiet,48.853987,8.582392,1,,
+de:08236:1401:0:1,Neuenbürg Waldrennacher Steige,48.845794,8.595272,,de:08236:1401_Parent,1
+de:08236:1401:0:2,Neuenbürg Waldrennacher Steige,48.845886,8.595339,,de:08236:1401_Parent,2
+de:08236:1401_Parent,Neuenbürg Waldrennacher Steige,48.845840,8.595306,1,,
+de:08236:1402:0:1,Neuenbürg Daimlerstraße,48.852732,8.578703,,de:08236:1402_Parent,1
+de:08236:1402_Parent,Neuenbürg Daimlerstraße,48.852685,8.578718,1,,
+de:08236:1403:0:1,Neuenbürg Wilhelmshöhe,48.853405,8.584008,,de:08236:1403_Parent,1
+de:08236:1403:0:2,Neuenbürg Wilhelmshöhe,48.853260,8.583945,,de:08236:1403_Parent,2
+de:08236:1403_Parent,Neuenbürg Wilhelmshöhe,48.853333,8.583976,1,,
+de:08236:1404:0:1,Neuenbürg Gymnasium,48.849693,8.581831,,de:08236:1404_Parent,1
+de:08236:1404:0:2,Neuenbürg Gymnasium,48.849367,8.581792,,de:08236:1404_Parent,2
+de:08236:1404_Parent,Neuenbürg Gymnasium,48.849530,8.581811,1,,
+de:08236:1405:0:1,Neuenbürg Krankenhaus,48.852209,8.589528,,de:08236:1405_Parent,2
+de:08236:1405:0:2,Neuenbürg Krankenhaus,48.852120,8.589423,,de:08236:1405_Parent,1
+de:08236:1405_Parent,Neuenbürg Krankenhaus,48.852165,8.589475,1,,
+de:08236:1406:0:1,Neuenbürg Abzweig Krankenhaus,48.850907,8.594340,,de:08236:1406_Parent,1
+de:08236:1406:0:2,Neuenbürg Abzweig Krankenhaus,48.850642,8.594705,,de:08236:1406_Parent,2
+de:08236:1406_Parent,Neuenbürg Abzweig Krankenhaus,48.850774,8.594523,1,,
+de:08236:1407:0:1,Neuenbürg Marktplatz,48.845883,8.588967,,de:08236:1407_Parent,1
+de:08236:1407:0:2,Neuenbürg Marktplatz,48.846069,8.588917,,de:08236:1407_Parent,2
+de:08236:1407_Parent,Neuenbürg Marktplatz,48.845976,8.588942,1,,
+de:08236:1408:0:1,Neuenbürg Biesinger,48.847110,8.588676,,de:08236:1408_Parent,1
+de:08236:1408_Parent,Neuenbürg Biesinger,48.847110,8.588676,1,,
+de:08236:1409:0:1,Neuenbürg Schloßbergschule,48.847831,8.588875,,de:08236:1409_Parent,1
+de:08236:1409_Parent,Neuenbürg Schloßbergschule,48.847831,8.588875,1,,
+de:08236:1411:0:1,Neuenbürg Bolleystraße,48.847312,8.578035,,de:08236:1411_Parent,1
+de:08236:1411:0:2,Neuenbürg Bolleystraße,48.847056,8.578068,,de:08236:1411_Parent,2
+de:08236:1411_Parent,Neuenbürg Bolleystraße,48.847184,8.578052,1,,
+de:08236:1412:0:1,Neuenbürg Alte Post,48.848975,8.589397,,de:08236:1412_Parent,1
+de:08236:1412_Parent,Neuenbürg Alte Post,48.848975,8.589397,1,,
+de:08236:1413:0:2,Neuenbürg Bahnhofstraße,48.849154,8.597722,,de:08236:1413_Parent,2
+de:08236:1413_Parent,Neuenbürg Bahnhofstraße,48.849138,8.597453,1,,
+de:08236:1416:0:1,Neuenbürg Friedhof,48.837285,8.597640,,de:08236:1416_Parent,1
+de:08236:1416:0:2,Neuenbürg Friedhof,48.837372,8.597851,,de:08236:1416_Parent,2
+de:08236:1416_Parent,Neuenbürg Friedhof,48.837328,8.597746,1,,
+de:08236:1419:0:1,Neuenbürg Bergwerk,48.833950,8.593208,,de:08236:1419_Parent,1
+de:08236:1419:0:2,Neuenbürg Bergwerk,48.834002,8.593174,,de:08236:1419_Parent,2
+de:08236:1419_Parent,Neuenbürg Bergwerk,48.833976,8.593191,1,,
+de:08236:1420:0:1,Waldrennach Enztalstraße,48.832160,8.609226,,de:08236:1420_Parent,1
+de:08236:1420_Parent,Waldrennach Enztalstraße,48.832160,8.609226,1,,
+de:08236:1424:0:1,Neuenbürg Feldbergstraße,48.848257,8.578711,,de:08236:1424_Parent,1
+de:08236:1424_Parent,Neuenbürg Feldbergstraße,48.848212,8.578748,1,,
+de:08236:1425:0:1,Neuenbürg Stadtgarten,48.849693,8.592487,,de:08236:1425_Parent,1
+de:08236:1425:0:2,Neuenbürg Stadtgarten,48.849762,8.592344,,de:08236:1425_Parent,2
+de:08236:1425_Parent,Neuenbürg Stadtgarten,48.849728,8.592415,1,,
+de:08236:1431:0:1,Neuenbürg Kniebisstraße,48.846780,8.580357,,de:08236:1431_Parent,1
+de:08236:1431:0:2,Neuenbürg Kniebisstraße,48.846834,8.580240,,de:08236:1431_Parent,2
+de:08236:1431_Parent,Neuenbürg Kniebisstraße,48.846807,8.580299,1,,
+de:08236:1433:0:1,Neuenbürg Hirschbrücke,48.846588,8.587826,,de:08236:1433_Parent,1
+de:08236:1433:0:2,Neuenbürg Hirschbrücke,48.846671,8.587513,,de:08236:1433_Parent,2
+de:08236:1433_Parent,Neuenbürg Hirschbrücke,48.846629,8.587669,1,,
+de:08236:1434:0:1,Waldrennach Langenbrander Straße,48.831401,8.610497,,de:08236:1434_Parent,1
+de:08236:1434_Parent,Waldrennach Langenbrander Straße,48.831401,8.610497,1,,
+de:08236:1435:0:1,Waldrennach Eichwaldstraße,48.832416,8.610840,,de:08236:1435_Parent,1
+de:08236:1435_Parent,Waldrennach Eichwaldstraße,48.832416,8.610840,1,,
+de:08236:1491:2:1,Neuenbürg Süd,48.843796,8.599739,,de:08236:1491_Parent,1
+de:08236:1491:2:2,Neuenbürg Süd,48.843823,8.599971,,de:08236:1491_Parent,2
+de:08236:1491_Parent,Neuenbürg Süd,48.843809,8.599855,1,,
+de:08236:1500:0:1,Dietlingen Industriegebiet,48.891439,8.614026,,de:08236:1500_Parent,1
+de:08236:1500:0:2,Dietlingen Industriegebiet,48.891335,8.615288,,de:08236:1500_Parent,2
+de:08236:1500_Parent,Dietlingen Industriegebiet,48.891387,8.614657,1,,
+de:08236:1503:0:1,Dietlingen Lessingstraße,48.893479,8.606439,,de:08236:1503_Parent,1
+de:08236:1503:0:2,Dietlingen Lessingstraße,48.892869,8.607203,,de:08236:1503_Parent,2
+de:08236:1503_Parent,Dietlingen Lessingstraße,48.893174,8.606821,1,,
+de:08236:1504:0:1,Dietlingen Rathaus,48.895852,8.603535,,de:08236:1504_Parent,1
+de:08236:1504:0:2,Dietlingen Rathaus,48.895260,8.603725,,de:08236:1504_Parent,2
+de:08236:1504_Parent,Dietlingen Rathaus,48.895556,8.603630,1,,
+de:08236:1505:0:1,Dietlingen Westendstraße,48.897005,8.599237,,de:08236:1505_Parent,1
+de:08236:1505:0:2,Dietlingen Westendstraße,48.896409,8.601161,,de:08236:1505_Parent,2
+de:08236:1505_Parent,Dietlingen Westendstraße,48.896707,8.600199,1,,
+de:08236:1506:0:1,Dietlingen Sprangerweg,48.897778,8.595209,,de:08236:1506_Parent,1
+de:08236:1506:0:2,Dietlingen Sprangerweg,48.897617,8.595293,,de:08236:1506_Parent,2
+de:08236:1506_Parent,Dietlingen Sprangerweg,48.897697,8.595251,1,,
+de:08236:1507:0:1,Ellmendingen Pforzheimer Str.,48.901210,8.576556,,de:08236:1507_Parent,1
+de:08236:1507:0:2,Ellmendingen Pforzheimer Str.,48.901045,8.576498,,de:08236:1507_Parent,2
+de:08236:1507_Parent,Ellmendingen Pforzheimer Str.,48.901127,8.576527,1,,
+de:08236:1508:0:1,Ellmendingen Ettlinger Straße,48.902334,8.570333,,de:08236:1508_Parent,1
+de:08236:1508:0:2,Ellmendingen Ettlinger Straße,48.902115,8.570493,,de:08236:1508_Parent,2
+de:08236:1508_Parent,Ellmendingen Ettlinger Straße,48.902224,8.570413,1,,
+de:08236:1509:0:1,Ellmendingen Schule,48.898581,8.577318,,de:08236:1509_Parent,1
+de:08236:1509_Parent,Ellmendingen Schule,48.898581,8.577318,1,,
+de:08236:1510:0:1,Dietenhausen Landstraße,48.915428,8.560178,,de:08236:1510_Parent,1
+de:08236:1510:0:2,Dietenhausen Landstraße,48.915414,8.559975,,de:08236:1510_Parent,2
+de:08236:1510_Parent,Dietenhausen Landstraße,48.915421,8.560076,1,,
+de:08236:1511:0:1,Dietenhausen Ortsmitte,48.914909,8.558502,,de:08236:1511_Parent,1
+de:08236:1511_Parent,Dietenhausen Ortsmitte,48.914909,8.558502,1,,
+de:08236:1512:0:1,Niebelsbach Grenzsägmühle,48.893170,8.575144,,de:08236:1512_Parent,1
+de:08236:1512:0:2,Niebelsbach Grenzsägmühle,48.893032,8.575380,,de:08236:1512_Parent,2
+de:08236:1512_Parent,Niebelsbach Grenzsägmühle,48.893101,8.575262,1,,
+de:08236:1513:0:1,Niebelsbach Schwabenstraße,48.892454,8.571292,,de:08236:1513_Parent,1
+de:08236:1513:0:2,Niebelsbach Schwabenstraße,48.891728,8.570579,,de:08236:1513_Parent,2
+de:08236:1513_Parent,Niebelsbach Schwabenstraße,48.892091,8.570936,1,,
+de:08236:1514:0:1,Niebelsbach Rathaus,48.887963,8.568454,,de:08236:1514_Parent,1
+de:08236:1514:0:2,Niebelsbach Rathaus,48.888153,8.568724,,de:08236:1514_Parent,2
+de:08236:1514_Parent,Niebelsbach Rathaus,48.888058,8.568589,1,,
+de:08236:1515:0:1,Niebelsbach Neuenbürger Straße,48.882881,8.567644,,de:08236:1515_Parent,1
+de:08236:1515:0:2,Niebelsbach Neuenbürger Straße,48.883098,8.567814,,de:08236:1515_Parent,2
+de:08236:1515_Parent,Niebelsbach Neuenbürger Straße,48.882989,8.567729,1,,
+de:08236:1516:0:1,Weiler Friedhof,48.889449,8.545669,,de:08236:1516_Parent,1
+de:08236:1516_Parent,Weiler Friedhof,48.889449,8.545669,1,,
+de:08236:1517:0:1,Weiler Ittersbacher Straße,48.887736,8.542037,,de:08236:1517_Parent,1
+de:08236:1517:0:2,Weiler Ittersbacher Straße,48.887690,8.542262,,de:08236:1517_Parent,2
+de:08236:1517_Parent,Weiler Ittersbacher Straße,48.887713,8.542150,1,,
+de:08236:1518:0:1,Weiler Gartenstraße,48.883666,8.543473,,de:08236:1518_Parent,1
+de:08236:1518:0:2,Weiler Gartenstraße,48.883644,8.543169,,de:08236:1518_Parent,2
+de:08236:1518_Parent,Weiler Gartenstraße,48.883655,8.543321,1,,
+de:08236:1519:0:1,Weiler Rathaus,48.887199,8.546663,,de:08236:1519_Parent,1
+de:08236:1519:0:2,Weiler Rathaus,48.887661,8.547047,,de:08236:1519_Parent,2
+de:08236:1519_Parent,Weiler Rathaus,48.887430,8.546855,1,,
+de:08236:1520:0:1,Ellmendingen Gewerbegebiet,48.908266,8.562394,,de:08236:1520_Parent,1
+de:08236:1520:0:2,Ellmendingen Gewerbegebiet,48.908751,8.561475,,de:08236:1520_Parent,2
+de:08236:1520_Parent,Ellmendingen Gewerbegebiet,48.908508,8.561934,1,,
+de:08236:1521:0:1,Ellmendingen Kindergarten,48.900046,8.581036,,de:08236:1521_Parent,1
+de:08236:1521:0:2,Ellmendingen Kindergarten,48.899758,8.581298,,de:08236:1521_Parent,2
+de:08236:1521_Parent,Ellmendingen Kindergarten,48.899902,8.581167,1,,
+de:08236:1522:0:1,Ellmendingen Ringstraße,48.899563,8.574180,,de:08236:1522_Parent,1
+de:08236:1522:0:2,Ellmendingen Ringstraße,48.899811,8.574226,,de:08236:1522_Parent,2
+de:08236:1522_Parent,Ellmendingen Ringstraße,48.899687,8.574203,1,,
+de:08236:1523:0:1,Niebelsbach Süd,48.880798,8.566514,,de:08236:1523_Parent,1
+de:08236:1523:0:2,Niebelsbach Süd,48.880847,8.566741,,de:08236:1523_Parent,2
+de:08236:1523_Parent,Niebelsbach Süd,48.880822,8.566628,1,,
+de:08236:1600:0:1,Nöttingen Sägemühle,48.925570,8.564700,,de:08236:1600_Parent,1
+de:08236:1600:0:2,Nöttingen Sägemühle,48.925741,8.564576,,de:08236:1600_Parent,2
+de:08236:1600_Parent,Nöttingen Sägemühle,48.925656,8.564638,1,,
+de:08236:1601:0:1,Nöttingen Karlsbader Straße,48.928977,8.568779,,de:08236:1601_Parent,1
+de:08236:1601:0:2,Nöttingen Karlsbader Straße,48.928225,8.568262,,de:08236:1601_Parent,2
+de:08236:1601_Parent,Nöttingen Karlsbader Straße,48.928601,8.568521,1,,
+de:08236:1602:0:1,Nöttingen Schule,48.928851,8.572284,,de:08236:1602_Parent,1
+de:08236:1602:0:2,Nöttingen Schule,48.928975,8.572360,,de:08236:1602_Parent,2
+de:08236:1602_Parent,Nöttingen Schule,48.928913,8.572322,1,,
+de:08236:1603:0:1,Nöttingen Kirche,48.930181,8.569102,,de:08236:1603_Parent,1
+de:08236:1603_Parent,Nöttingen Kirche,48.930181,8.569102,1,,
+de:08236:1604:0:1,Nöttingen Tullastraße,48.932913,8.564966,,de:08236:1604_Parent,1
+de:08236:1604:0:2,Nöttingen Tullastraße,48.932608,8.565177,,de:08236:1604_Parent,2
+de:08236:1604_Parent,Nöttingen Tullastraße,48.932761,8.565071,1,,
+de:08236:1605:0:1,Nöttingen Friedhof,48.931846,8.570502,,de:08236:1605_Parent,1
+de:08236:1605:0:2,Nöttingen Friedhof,48.931804,8.570279,,de:08236:1605_Parent,2
+de:08236:1605_Parent,Nöttingen Friedhof,48.931825,8.570391,1,,
+de:08236:1606:0:1,Darmsbach Ortsmitte,48.936741,8.561340,,de:08236:1606_Parent,1
+de:08236:1606_Parent,Darmsbach Ortsmitte,48.936741,8.561340,1,,
+de:08236:1607:0:1,Wilferdingen Römermuseum,48.941431,8.571795,,de:08236:1607_Parent,1
+de:08236:1607:0:2,Wilferdingen Römermuseum,48.940524,8.571611,,de:08236:1607_Parent,2
+de:08236:1607_Parent,Wilferdingen Römermuseum,48.940978,8.571703,1,,
+de:08236:1608:0:1,Wilferdingen Altes Rathaus,48.944745,8.573992,,de:08236:1608_Parent,1
+de:08236:1608:0:2,Wilferdingen Altes Rathaus,48.944861,8.573997,,de:08236:1608_Parent,2
+de:08236:1608_Parent,Wilferdingen Altes Rathaus,48.944803,8.573994,1,,
+de:08236:1609:0:1,Wilferdingen Hauptstraße,48.950156,8.572264,,de:08236:1609_Parent,1
+de:08236:1609:0:2,Wilferdingen Hauptstraße,48.950190,8.572025,,de:08236:1609_Parent,2
+de:08236:1609_Parent,Wilferdingen Hauptstraße,48.950173,8.572144,1,,
+de:08236:1613:0:1,Wilferdingen Sperlingshof,48.934890,8.600478,,de:08236:1613_Parent,1
+de:08236:1613_Parent,Wilferdingen Sperlingshof,48.934890,8.600478,1,,
+de:08236:1614:0:1,Singen Neuwiesenstraße,48.956899,8.578154,,de:08236:1614_Parent,1
+de:08236:1614_Parent,Singen Neuwiesenstraße,48.956899,8.578154,1,,
+de:08236:1615:0:1,Singen Goethering,48.960814,8.580820,,de:08236:1615_Parent,1
+de:08236:1615_Parent,Singen Goethering,48.960814,8.580820,1,,
+de:08236:1616:0:1,Singen Bergschule,48.958939,8.574208,,de:08236:1616_Parent,1
+de:08236:1616_Parent,Singen Bergschule,48.958939,8.574208,1,,
+de:08236:1617:0:1,Singen Lammstraße,48.958243,8.568828,,de:08236:1617_Parent,1
+de:08236:1617_Parent,Singen Lammstraße,48.958243,8.568828,1,,
+de:08236:1618:0:1,Singen Marktstraße,48.955448,8.567940,,de:08236:1618_Parent,1
+de:08236:1618_Parent,Singen Marktstraße,48.955448,8.567940,1,,
+de:08236:1620:0:1,Darmsbach Landstraße,48.937198,8.566808,,de:08236:1620_Parent,1
+de:08236:1620:0:2,Darmsbach Landstraße,48.937078,8.566512,,de:08236:1620_Parent,2
+de:08236:1620_Parent,Darmsbach Landstraße,48.937138,8.566660,1,,
+de:08236:1622:0:1,Singen Gymnasium,48.954318,8.574459,,de:08236:1622_Parent,1
+de:08236:1622:0:2,Singen Gymnasium,48.954280,8.575887,,de:08236:1622_Parent,2
+de:08236:1622_Parent,Singen Gymnasium,48.954299,8.575173,1,,
+de:08236:1623:0:1,Nöttingen Talstraße,48.931739,8.569612,,de:08236:1623_Parent,1
+de:08236:1623_Parent,Nöttingen Talstraße,48.931739,8.569612,1,,
+de:08236:1794:3:1,Wilferdingen-Singen,48.953632,8.571677,,de:08236:1794_Parent,1
+de:08236:1794_Parent,Wilferdingen-Singen,48.953632,8.571677,1,,
+de:08236:187229_Parent,Wilferdingen C.-Dittler - Realschule,48.947779,8.576677,1,,
+de:08236:187999:0:1,Wilferdingen C.-Dittler - Realschule,48.947722,8.576554,,de:08236:187229_Parent,1
+de:08236:187999:0:2,Wilferdingen C.-Dittler - Realschule,48.947837,8.576801,,de:08236:187229_Parent,2
+de:08236:2210:0:1,Maulbronn Seehausweg,48.996595,8.799733,,de:08236:2210_Parent,1
+de:08236:2210_Parent,Maulbronn Seehausweg,48.996514,8.799548,1,,
+de:08236:2211:0:1,Maulbronn Alte Post,48.998034,8.804739,,de:08236:2211_Parent,1
+de:08236:2211:0:2,Maulbronn Alte Post,48.998003,8.804765,,de:08236:2211_Parent,2
+de:08236:2211_Parent,Maulbronn Alte Post,48.998019,8.804752,1,,
+de:08236:2213:1:1,Maulbronn Kloster,49.000173,8.812243,,de:08236:2213_Parent,1
+de:08236:2213_Parent,Maulbronn Kloster,49.000147,8.812481,1,,
+de:08236:2214:0:1,Maulbronn Stuttgarter Straße,49.000366,8.815517,,de:08236:2214_Parent,1
+de:08236:2214_Parent,Maulbronn Stuttgarter Straße,49.000366,8.815517,1,,
+de:08236:2216:0:2,Maulbronn Schefenacker,48.996831,8.811561,,de:08236:2216_Parent,2
+de:08236:2216_Parent,Maulbronn Schefenacker,48.996799,8.811914,1,,
+de:08236:2218:0:1,Zaisersweiher Postplatz,49.006209,8.858404,,de:08236:2218_Parent,1
+de:08236:2218_Parent,Zaisersweiher Postplatz,49.006216,8.858526,1,,
+de:08236:2219:0:1,Schmie Strombergstraße,48.984160,8.828856,,de:08236:2219_Parent,1
+de:08236:2219_Parent,Schmie Strombergstraße,48.984199,8.828797,1,,
+de:08236:2222:0:3,Maulbronn Billensbacher,48.997669,8.791777,,de:08236:2222_Parent,3
+de:08236:2222_Parent,Maulbronn Billensbacher,48.997654,8.792055,1,,
+de:08236:2224:0:1,Zaisersweiher Eichbuschstraße,49.009624,8.858990,,de:08236:2224_Parent,1
+de:08236:2224_Parent,Zaisersweiher Eichbuschstraße,49.009637,8.858892,1,,
+de:08236:2227:0:1,Maulbronn Talweg,48.995041,8.796809,,de:08236:2227_Parent,1
+de:08236:2227_Parent,Maulbronn Talweg,48.995053,8.796780,1,,
+de:08236:2603:0:1,Großglattbach Rathaus,48.913254,8.897135,,de:08236:2603_Parent,1
+de:08236:2603_Parent,Großglattbach Rathaus,48.913267,8.897070,1,,
+de:08236:2604:0:1,Großglattbach Kelter,48.914966,8.898169,,de:08236:2604_Parent,1
+de:08236:2604_Parent,Großglattbach Kelter,48.915004,8.898112,1,,
+de:08236:2607:0:1,Pinache Gewerbegebiet,48.909276,8.847742,,de:08236:2607_Parent,1
+de:08236:2607:0:2,Pinache Gewerbegebiet,48.909357,8.847660,,de:08236:2607_Parent,2
+de:08236:2607_Parent,Pinache Gewerbegebiet,48.909317,8.847701,1,,
+de:08236:2608:0:1,Pinache Kirche,48.906937,8.849055,,de:08236:2608_Parent,1
+de:08236:2608_Parent,Pinache Kirche,48.907142,8.849053,1,,
+de:08236:2900:0:1,Wiernsheim Mühlstraße,48.891709,8.852949,,de:08236:2900_Parent,1
+de:08236:2900:0:2,Wiernsheim Mühlstraße,48.891206,8.852751,,de:08236:2900_Parent,2
+de:08236:2900_Parent,Wiernsheim Mühlstraße,48.891458,8.852850,1,,
+de:08236:2901:0:1,Wiernsheim Bürgersaal,48.890697,8.848517,,de:08236:2901_Parent,1
+de:08236:2901_Parent,Wiernsheim Bürgersaal,48.890601,8.848445,1,,
+de:08236:2902:0:1,Wiernsheim Lindenhalle,48.885917,8.849924,,de:08236:2902_Parent,1
+de:08236:2902_Parent,Wiernsheim Lindenhalle,48.885996,8.850014,1,,
+de:08236:2903:0:2,Wiernsheim Krügele,48.883531,8.850941,,de:08236:2903_Parent,2
+de:08236:2903_Parent,Wiernsheim Krügele,48.883352,8.851011,1,,
+de:08236:2904:0:1,Serres Pinascastraße,48.894102,8.871905,,de:08236:2904_Parent,1
+de:08236:2904_Parent,Serres Pinascastraße,48.894155,8.871918,1,,
+de:08236:2905:0:1,Serres Rathaus,48.894007,8.875515,,de:08236:2905_Parent,1
+de:08236:2905_Parent,Serres Rathaus,48.894064,8.875497,1,,
+de:08236:2906:0:1,Iptingen Schönblickstraße,48.888022,8.897464,,de:08236:2906_Parent,1
+de:08236:2906_Parent,Iptingen Schönblickstraße,48.888307,8.897034,1,,
+de:08236:2908:0:1,Serres Schillerstrasse,48.890927,8.876225,,de:08236:2908_Parent,1
+de:08236:2908_Parent,Serres Schillerstrasse,48.890882,8.876256,1,,
+de:08236:2914:0:1,Iptingen Ortsmitte,48.886900,8.897622,,de:08236:2914_Parent,1
+de:08236:2914_Parent,Iptingen Ortsmitte,48.886857,8.897732,1,,
+de:08236:2918:0:1,Wiernsheim Friedhof,48.888857,8.853056,,de:08236:2918_Parent,1
+de:08236:2918_Parent,Wiernsheim Friedhof,48.888952,8.852914,1,,
+de:08236:4001:0:1,Pinache Großglattbacher Straße,48.909855,8.850970,,de:08236:4001_Parent,1
+de:08236:4001_Parent,Pinache Großglattbacher Straße,48.909810,8.850909,1,,
+de:08236:4002:0:1,Großglattbach Panorama-/Heerstraße,48.910168,8.894241,,de:08236:4002_Parent,1
+de:08236:4002_Parent,Großglattbach Panorama-/Heerstraße,48.910168,8.894241,1,,
+de:08236:4003:0:1,Großglattbach Iptinger Weg,48.911652,8.895561,,de:08236:4003_Parent,1
+de:08236:4003_Parent,Großglattbach Iptinger Weg,48.911652,8.895561,1,,
+de:08236:4005:0:1,Großglattbach Fronackerweg,48.914800,8.895624,,de:08236:4005_Parent,1
+de:08236:4005_Parent,Großglattbach Fronackerweg,48.914800,8.895624,1,,
+de:08236:4006:0:1,Großglattbach Marsstraße,48.915166,8.894033,,de:08236:4006_Parent,1
+de:08236:4006_Parent,Großglattbach Marsstraße,48.915166,8.894033,1,,
+de:08236:4007:0:1,Großglattbach Galileistraße,48.915006,8.891000,,de:08236:4007_Parent,1
+de:08236:4007_Parent,Großglattbach Galileistraße,48.915006,8.891000,1,,
+de:08236:4009:0:1,Pinache Friedhof,48.911443,8.845063,,de:08236:4009_Parent,1
+de:08236:4009_Parent,Pinache Friedhof,48.911443,8.845063,1,,
+de:08236:4010:0:1,Wiernsheim AZP,48.891113,8.843931,,de:08236:4010_Parent,1
+de:08236:4010_Parent,Wiernsheim AZP,48.891113,8.843931,1,,
+de:08236:4011:0:1,Wiernsheim Apotheke,48.890845,8.849878,,de:08236:4011_Parent,1
+de:08236:4011_Parent,Wiernsheim Apotheke,48.890845,8.849878,1,,
+de:08236:4012:0:1,Wiernsheim Ortsmitte,48.891061,8.851142,,de:08236:4012_Parent,1
+de:08236:4012_Parent,Wiernsheim Ortsmitte,48.891061,8.851142,1,,
+de:08236:4013:0:1,Wiernsheim Mühlacker Straße,48.892176,8.851209,,de:08236:4013_Parent,1
+de:08236:4013_Parent,Wiernsheim Mühlacker Straße,48.892176,8.851209,1,,
+de:08236:4014:0:1,Serres Kernerstraße,48.890758,8.878825,,de:08236:4014_Parent,1
+de:08236:4014_Parent,Serres Kernerstraße,48.890758,8.878825,1,,
+de:08236:4015:0:1,Serres Hans-Albrecht-Str.,48.890054,8.881520,,de:08236:4015_Parent,1
+de:08236:4015_Parent,Serres Hans-Albrecht-Str.,48.890054,8.881520,1,,
+de:08236:4016:0:1,Iptingen Im Schönblick,48.888997,8.897287,,de:08236:4016_Parent,1
+de:08236:4016_Parent,Iptingen Im Schönblick,48.888997,8.897287,1,,
+de:08236:4017:0:1,Iptingen Mühle,48.887304,8.900251,,de:08236:4017_Parent,1
+de:08236:4017_Parent,Iptingen Mühle,48.887304,8.900251,1,,
+de:08236:4018:0:1,Iptingen Mönsheimer Str.,48.884607,8.898898,,de:08236:4018_Parent,1
+de:08236:4018_Parent,Iptingen Mönsheimer Str.,48.884607,8.898898,1,,
+de:08236:4019:0:1,Iptingen Rathaus (Bürgerbus),48.883619,8.899961,,de:08236:4019_Parent,1
+de:08236:4019_Parent,Iptingen Rathaus (Bürgerbus),48.883619,8.899961,1,,
+de:08236:4020:0:1,Iptingen Kreuzbachhalle,48.882265,8.900028,,de:08236:4020_Parent,1
+de:08236:4020_Parent,Iptingen Kreuzbachhalle,48.882265,8.900028,1,,
+de:08236:4022:0:1,Iptingen Gasthaus Rössle,48.885703,8.899286,,de:08236:4022_Parent,1
+de:08236:4022_Parent,Iptingen Gasthaus Rössle,48.885703,8.899286,1,,
+de:08236:4024:0:1,Iptingen Hofwiesenstraße,48.889324,8.901273,,de:08236:4024_Parent,1
+de:08236:4024_Parent,Iptingen Hofwiesenstraße,48.889324,8.901273,1,,
+de:08236:4025:0:1,Iptingen Feuerwache,48.888265,8.899993,,de:08236:4025_Parent,1
+de:08236:4025_Parent,Iptingen Feuerwache,48.888265,8.899993,1,,
+de:08236:4028:0:1,Wiernsheim Im Bild,48.888813,8.854923,,de:08236:4028_Parent,1
+de:08236:4028_Parent,Wiernsheim Im Bild,48.888813,8.854923,1,,
+de:08236:4029:0:1,Wiernsheim Breiter Weg,48.887610,8.856173,,de:08236:4029_Parent,1
+de:08236:4029_Parent,Wiernsheim Breiter Weg,48.887610,8.856173,1,,
+de:08236:4030:0:1,Wiernsheim Kazenloch,48.885936,8.856503,,de:08236:4030_Parent,1
+de:08236:4030:0:2,Wiernsheim Kazenloch,48.884892,8.853593,,de:08236:4030_Parent,2
+de:08236:4030_Parent,Wiernsheim Kazenloch,48.885414,8.855048,1,,
+de:08236:4031:0:1,Wiernsheim M.Luther Str.,48.885940,8.854233,,de:08236:4031_Parent,1
+de:08236:4031_Parent,Wiernsheim M.Luther Str.,48.885940,8.854233,1,,
+de:08236:4033:0:1,Wiernsheim Lindenstraße,48.884439,8.849673,,de:08236:4033_Parent,1
+de:08236:4033_Parent,Wiernsheim Lindenstraße,48.884439,8.849673,1,,
+de:08236:4040:0:1,Maulbronn Märkte,48.998529,8.801281,,de:08236:4040_Parent,1
+de:08236:4040_Parent,Maulbronn Märkte,48.998529,8.801281,1,,
+de:08236:4041:0:1,Zaisersweiher Füllmenbacherhofweg,49.008685,8.861644,,de:08236:4041_Parent,1
+de:08236:4041_Parent,Zaisersweiher Füllmenbacherhofweg,49.008685,8.861644,1,,
+de:08236:4042:0:1,Zaisersweiher W.Schenk Schule,49.006232,8.862188,,de:08236:4042_Parent,1
+de:08236:4042_Parent,Zaisersweiher W.Schenk Schule,49.006232,8.862188,1,,
+de:08236:4043:0:1,Zaisersweiher Mühlacker Str.,49.004315,8.858435,,de:08236:4043_Parent,1
+de:08236:4043_Parent,Zaisersweiher Mühlacker Str.,49.004315,8.858435,1,,
+de:08236:4044:0:1,Zaisersweiher Friedhof,49.006054,8.855047,,de:08236:4044_Parent,1
+de:08236:4044_Parent,Zaisersweiher Friedhof,49.006054,8.855047,1,,
+de:08236:4045:0:1,Maulbronn Friedhofweg,49.000577,8.810029,,de:08236:4045_Parent,1
+de:08236:4045_Parent,Maulbronn Friedhofweg,49.000577,8.810029,1,,
+de:08236:4046:0:1,Maulbronn Hilsenbeurenstraße,48.999755,8.804904,,de:08236:4046_Parent,1
+de:08236:4046_Parent,Maulbronn Hilsenbeurenstraße,48.999755,8.804904,1,,
+de:08236:4047:0:1,Maulbronn Kinderzentrum,49.001077,8.801395,,de:08236:4047_Parent,1
+de:08236:4047_Parent,Maulbronn Kinderzentrum,49.001077,8.801395,1,,
+de:08236:4048:0:1,Maulbronn Keplerstraße,48.999211,8.800895,,de:08236:4048_Parent,1
+de:08236:4048_Parent,Maulbronn Keplerstraße,48.999211,8.800895,1,,
+de:08236:4049:0:1,Maulbronn Keplerstr./Seehausweg,48.998881,8.797730,,de:08236:4049_Parent,1
+de:08236:4049_Parent,Maulbronn Keplerstr./Seehausweg,48.998881,8.797730,1,,
+de:08236:4050:0:1,Maulbronn Waldfriedhof,49.000360,8.794224,,de:08236:4050_Parent,1
+de:08236:4050_Parent,Maulbronn Waldfriedhof,49.000360,8.794224,1,,
+de:08236:4052:0:1,Maulbronn Malvenweg,48.997045,8.788677,,de:08236:4052_Parent,1
+de:08236:4052_Parent,Maulbronn Malvenweg,48.997045,8.788677,1,,
+de:08236:4053:0:1,Maulbronn Höhenstraße,48.997590,8.808942,,de:08236:4053_Parent,1
+de:08236:4053_Parent,Maulbronn Höhenstraße,48.997590,8.808942,1,,
+de:08236:4054:0:1,Maulbronn Lärchenstraße,48.996580,8.810609,,de:08236:4054_Parent,1
+de:08236:4054_Parent,Maulbronn Lärchenstraße,48.996580,8.810609,1,,
+de:08236:4055:0:1,Maulbronn Tannenweg,48.995537,8.809420,,de:08236:4055_Parent,1
+de:08236:4055_Parent,Maulbronn Tannenweg,48.995537,8.809420,1,,
+de:08236:4057:0:1,Schmie Alte Schule,48.983619,8.826888,,de:08236:4057_Parent,1
+de:08236:4057_Parent,Schmie Alte Schule,48.983619,8.826888,1,,
+de:08236:4059:0:1,Schmie Oskar Schrade Straße,48.982175,8.833390,,de:08236:4059_Parent,1
+de:08236:4059_Parent,Schmie Oskar Schrade Straße,48.982175,8.833390,1,,
+de:08236:4060:0:1,Schmie Friedhof,48.985328,8.826019,,de:08236:4060_Parent,1
+de:08236:4060_Parent,Schmie Friedhof,48.985328,8.826019,1,,
+de:08236:4061:0:1,Maulbronn Sportzentrum,48.990930,8.818714,,de:08236:4061_Parent,1
+de:08236:4061_Parent,Maulbronn Sportzentrum,48.990930,8.818714,1,,
+de:08236:4062:0:1,Maulbronn Buchenstraße,48.997460,8.816593,,de:08236:4062_Parent,1
+de:08236:4062_Parent,Maulbronn Buchenstraße,48.997460,8.816593,1,,
+de:08236:4063:0:1,Maulbronn Tiefer See,49.004049,8.818090,,de:08236:4063_Parent,1
+de:08236:4063_Parent,Maulbronn Tiefer See,49.004049,8.818090,1,,
+de:08236:449:0:1,Dietlingen Schönbiegel,48.895401,8.633436,,de:08236:449_Parent,1
+de:08236:449:0:2,Dietlingen Schönbiegel,48.895082,8.633333,,de:08236:449_Parent,2
+de:08236:449_Parent,Dietlingen Schönbiegel,48.895241,8.633384,1,,
+de:08236:8401:0:1,Wiernsheim Im Roßland,48.892292,8.848855,,de:08236:8401_Parent,1
+de:08236:8401_Parent,Wiernsheim Im Roßland,48.892292,8.848855,1,,
+de:08236:8402:0:1,Wiernsheim Schanzstraße,48.888159,8.846603,,de:08236:8402_Parent,1
+de:08236:8402_Parent,Wiernsheim Schanzstraße,48.888159,8.846603,1,,
+de:08236:8403:0:1,Wiernsheim Schanz-/Pichlerstraße,48.889243,8.849646,,de:08236:8403_Parent,1
+de:08236:8403_Parent,Wiernsheim Schanz-/Pichlerstraße,48.889243,8.849646,1,,
+de:08236:8404:0:1,Großglattbach Panoramastraße,48.910809,8.896018,,de:08236:8404_Parent,1
+de:08236:8404_Parent,Großglattbach Panoramastraße,48.910809,8.896018,1,,
+de:08236:8405:0:1,Schmie Lienzinger Straße,48.983599,8.829686,,de:08236:8405_Parent,1
+de:08236:8405_Parent,Schmie Lienzinger Straße,48.983599,8.829686,1,,
+de:08236:8492:2:3,Wiernsheim Einkaufsmärkte,48.891473,8.859874,,de:08236:8492_Parent,3
+de:08236:8492_Parent,Wiernsheim Einkaufsmärkte,48.891347,8.859608,1,,
+de:08236:8571:0:1,Maulbronn Lindenstraße,48.995681,8.814639,,de:08236:8571_Parent,1
+de:08236:8571_Parent,Maulbronn Lindenstraße,48.995681,8.814639,1,,
