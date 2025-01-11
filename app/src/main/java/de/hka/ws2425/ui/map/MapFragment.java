@@ -14,6 +14,7 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
 import android.util.Base64;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -114,16 +115,10 @@ public class MapFragment extends Fragment {
     public void addMarker() {
         for (Stop stop : stopsList) {
             Marker marker = new Marker(mapView);
-            marker.setPosition(new GeoPoint(stop.getStop_lat(), stop.getStop_lon())); //
+            marker.setPosition(new GeoPoint(stop.getStop_lat(), stop.getStop_lon()));
             marker.setTitle(stop.getStop_name());
 
-            // Setze einen Klick-Listener auf den Marker
-            /*
-            marker.setOnMarkerClickListener((marker1, mapView) -> {
-                openDetailsPage(stop); // Öffnet eine neue Seite mit Details des Stops
-                return true; // Gibt zurück, dass der Klick verarbeitet wurde
-            }); */
-
+            // Klick-Listener für Marker
             marker.setOnMarkerClickListener((marker1, mapView) -> {
                 int clickCount = markerClickCountMap.getOrDefault(marker1, 0);
                 clickCount++;
@@ -132,23 +127,25 @@ public class MapFragment extends Fragment {
                 if (clickCount == 2) {
                     openDetailsPage(stop); // Öffnet die neue Seite
                     markerClickCountMap.put(marker1, 0); // Klick-Zähler zurücksetzen
-
                 } else {
                     marker1.showInfoWindow();
-                    Toast.makeText(requireContext(), "Klicke die Haltestelle nochmal, um Abfahrten anzeigen zu lassen", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(requireContext(), "Klicke die Haltestelle nochmal, um Abfahrten anzuzeigen.", Toast.LENGTH_SHORT).show();
                 }
                 return true;
             });
 
             mapView.getOverlays().add(marker);
         }
-        mapView.invalidate();  // Karte aktualisieren
+        mapView.invalidate(); // Karte aktualisieren
     }
+
 
     private void openDetailsPage(Stop stop) {
         Intent intent = new Intent(requireContext(), StopDetailsActivity.class);
         intent.putExtra("STOP_NAME", stop.getStop_name()); // Haltestellenname übergeben
+        intent.putExtra("STOP_ID", stop.getStop_id()); // Stop-ID übergeben
         startActivity(intent); // Öffnet die neue leere Activity
+        Log.d("Debug", "StopId = " + stop.getStop_id());
     }
 
 

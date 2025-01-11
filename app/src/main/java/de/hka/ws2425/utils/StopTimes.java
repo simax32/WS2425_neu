@@ -1,17 +1,15 @@
 package de.hka.ws2425.utils;
 
-import org.gtfs.reader.model.Stop;
-
 public class StopTimes {
     private String trip_id;
     private String stop_id;
     private String arrival_time;
     private String departure_time;
     private int stop_sequence;
-    private int pickup_type;
+    private String pickup_type;
     private int departure_buffer;
 
-public StopTimes(String tripId, String stopId, String arrivalTime, String depatureTime, int stopSequence, int pickup_type, int departure_buffer){}
+public StopTimes(String tripId, String stopId, String arrivalTime, String depatureTime, int stopSequence, String pickup_type, int departure_buffer){}
 
     public String getTrip_id() {
         return trip_id;
@@ -53,11 +51,11 @@ public StopTimes(String tripId, String stopId, String arrivalTime, String depatu
         this.stop_sequence = stop_sequence;
     }
 
-    public int getPickup_type() {
+    public String getPickup_type() {
         return pickup_type;
     }
 
-    public void setPickup_type(int pickup_type) {
+    public void setPickup_type(String pickup_type) {
         this.pickup_type = pickup_type;
     }
 
