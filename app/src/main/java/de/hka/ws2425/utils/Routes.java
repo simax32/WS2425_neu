@@ -10,6 +10,16 @@ public class Routes {
     private String route_color;         //evtl. falscher Typ
     private String route_text_color;    //evtl. falscher Typ
 
+    private Routes(String agencyId,String routeId,String routeShortName,String routeLongName,int routeType,String routeColor,String routeTextColor){
+        this.agency_id = agencyId;
+        this.route_id = routeId;
+        this.route_short_name = routeShortName;
+        this.route_long_name = routeLongName;
+        this.route_type = routeType;
+        this.route_color = routeColor;
+        this.route_text_color = routeTextColor;
+    }
+
     public String getAgency_id() {
         return agency_id;
     }

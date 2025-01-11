@@ -1,6 +1,7 @@
 package de.hka.ws2425.utils;
 
 public class Agency {
+    private final String agencyEmail;
     private int id;
     private String agency_name;
     private String agency_url;
@@ -8,6 +9,24 @@ public class Agency {
     private String agency_lang;
     private String agency_phone;
     private String agency_email;
+
+    private Agency(int id, String agencyName, String agencyUrl, String agencyTimezone, String agencyLang, String agencyPhone, String agencyEmail){
+        this.id = id;
+        this.agency_name = agencyName;
+        this.agency_url = agencyUrl;
+        this.agency_timezone = agencyTimezone;
+        this.agency_lang = agencyLang;
+        this.agency_phone = agencyPhone;
+        this.agencyEmail = agencyEmail;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
 
     public String getAgency_name() {
         return agency_name;
@@ -56,4 +75,6 @@ public class Agency {
     public void setAgency_email(String agency_email) {
         this.agency_email = agency_email;
     }
+
+
 }

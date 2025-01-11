@@ -8,6 +8,12 @@ public class CalendarDates {
     private LocalDate date;
     private int exception_type;
 
+    public CalendarDates(String serviceId, LocalDate date, int exceptionType){
+        this.service_id = serviceId;
+        this.date = date;
+        this.exception_type = exceptionType;
+    }
+
     public String getService_id() {
         return service_id;
     }

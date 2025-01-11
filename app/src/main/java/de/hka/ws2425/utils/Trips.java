@@ -11,6 +11,16 @@ public class Trips {
     private int peak_offpeak;
     private int boarding_type;
 
+    public Trips(String routeId, String tripId, int serviceId, String tripShortName, String tripHeadsign, int directionId, int peakOffpeak, int boardingType) {
+        this.route_id = routeId;
+        this.trip_id = tripId;
+        this.service_id = serviceId;
+        this.trip_short_name = tripShortName;
+        this.trip_headsign = tripHeadsign;
+        this.direction_id = directionId;
+        this.peak_offpeak = peakOffpeak;
+        this.boarding_type = boardingType;
+    }
 
     public String getRoute_id() {
         return route_id;
