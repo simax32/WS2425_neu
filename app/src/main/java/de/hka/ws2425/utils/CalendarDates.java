@@ -1,14 +1,13 @@
 package de.hka.ws2425.utils;
 
 import java.time.LocalDate;
-import java.util.Date;
 
 public class CalendarDates {
     private String service_id;
-    private LocalDate date;
+    private String date;
     private int exception_type;
 
-    public CalendarDates(String serviceId, LocalDate date, int exceptionType){
+    public CalendarDates(String serviceId, String date, int exceptionType){
         this.service_id = serviceId;
         this.date = date;
         this.exception_type = exceptionType;
@@ -22,11 +21,11 @@ public class CalendarDates {
         this.service_id = service_id;
     }
 
-    public LocalDate getDate() {
+    public String getDate() {
         return date;
     }
 
-    public void setDate(LocalDate date) {
+    public void setDate(String date) {
         this.date = date;
     }
 

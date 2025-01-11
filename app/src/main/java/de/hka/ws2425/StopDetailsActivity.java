@@ -13,10 +13,12 @@ import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
+import java.time.LocalDate;
 import java.util.AbstractList;
 import java.util.ArrayList;
 import java.util.List;
 
+import de.hka.ws2425.utils.CalendarDates;
 import de.hka.ws2425.utils.Routes;
 import de.hka.ws2425.utils.Stop;
 import de.hka.ws2425.utils.StopTimes;
@@ -117,4 +119,23 @@ public class StopDetailsActivity extends AppCompatActivity {
         return stopTimes;
     }
 
+    // Lädt die Datei calendar_dates.txt und erstellt eine Liste von Kalenderdaten
+    //service_id,date,exception_type
+    private List<CalendarDates> loadCalendaDates(File calendarDatesFile) throws IOException {
+        List<CalendarDates> calendarDates = new ArrayList<>();
+        try (BufferedReader br = new BufferedReader(new FileReader(calendarDatesFile))){
+            String line;
+            br.readLine(); // Kopfzeile überspringen
+            while ((line = br.readLine()) != null) {
+                String[] parts = line.split(","); // Werte durch Kommas trennen
+                CalendarDates calendarDate = new CalendarDates(
+                        parts[0], // trip_id
+                        parts[1], // stop_id
+                        Integer.parseInt(parts[2]) // departure_buffer
+                );
+                calendarDates.add(calendarDate);
+            }
+        }
+        return calendarDates;
+    }
 }

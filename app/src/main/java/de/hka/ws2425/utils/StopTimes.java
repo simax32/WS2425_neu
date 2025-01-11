@@ -11,7 +11,7 @@ public class StopTimes {
     private int pickup_type;
     private int departure_buffer;
 
-private StopTimes(String tripId, String stopId, String arrivalTime, String depatureTime, int stopSequence, int pickup_type, int departure_buffer){}
+public StopTimes(String tripId, String stopId, String arrivalTime, String depatureTime, int stopSequence, int pickup_type, int departure_buffer){}
 
     public String getTrip_id() {
         return trip_id;
