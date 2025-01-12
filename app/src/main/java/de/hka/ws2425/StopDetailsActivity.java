@@ -1,10 +1,8 @@
 package de.hka.ws2425;
 
-import android.content.Intent;
 import android.content.res.AssetManager;
 import android.os.Bundle;
 import android.util.Log;
-import android.view.View;
 import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
@@ -16,13 +14,8 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.time.LocalDate;
-import java.time.LocalTime;
-import java.util.AbstractList;
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.HashMap;
@@ -31,9 +24,8 @@ import java.util.Map;
 
 import de.hka.ws2425.utils.CalendarDates;
 import de.hka.ws2425.utils.Departure;
-import de.hka.ws2425.utils.DepartureAdapter;
+import de.hka.ws2425.utils.Adapter.DepartureAdapter;
 import de.hka.ws2425.utils.Routes;
-import de.hka.ws2425.utils.Stop;
 import de.hka.ws2425.utils.StopTimes;
 import de.hka.ws2425.utils.Trips;
 

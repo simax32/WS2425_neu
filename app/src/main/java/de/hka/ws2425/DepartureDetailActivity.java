@@ -1,12 +1,10 @@
-package de.hka.ws2425.utils;
+package de.hka.ws2425;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
-
-import de.hka.ws2425.R;
 
 public class DepartureDetailActivity extends AppCompatActivity {
     @Override

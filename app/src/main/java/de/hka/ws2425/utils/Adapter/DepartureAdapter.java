@@ -1,4 +1,4 @@
-package de.hka.ws2425.utils;
+package de.hka.ws2425.utils.Adapter;
 
 import android.content.Intent;
 import android.view.LayoutInflater;
@@ -13,7 +13,9 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
 
+import de.hka.ws2425.DepartureDetailActivity;
 import de.hka.ws2425.R;
+import de.hka.ws2425.utils.Departure;
 import io.reactivex.annotations.NonNull;
 
 public class DepartureAdapter extends RecyclerView.Adapter<DepartureAdapter.DepartureViewHolder> {

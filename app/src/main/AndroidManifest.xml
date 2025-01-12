@@ -19,7 +19,7 @@
         <activity
             android:name=".StopDetailsActivity"
             android:exported="false" />
-        <activity android:name=".utils.DepartureDetailActivity"
+        <activity android:name=".DepartureDetailActivity"
             android:label= "Fahrtverlauf"
             android:exported="true">
         </activity>
