@@ -17,6 +17,7 @@ public class DepartureDetailActivity extends AppCompatActivity {
         String tripHeadsign = intent.getStringExtra("TRIP_HEADSIGN");
         String arrivalTime = intent.getStringExtra("ARRIVAL_TIME");
         String departureTime = intent.getStringExtra("DEPARTURE_TIME");
+        String tripID = intent.getStringExtra("TRIP_ID");
 
         // Use the data to populate views in your layout
         TextView routeNameTextView = findViewById(R.id.routeShortNameTextView); // Example
@@ -27,6 +28,13 @@ public class DepartureDetailActivity extends AppCompatActivity {
         if(tripHeadsignTextview != null) {
             tripHeadsignTextview.setText(tripHeadsign);
         }
+
+        TextView tripIdTextview = findViewById(R.id.dummy); // Example
+        if(tripIdTextview != null) {
+            tripIdTextview.setText(tripID);
+        }
+
+
         // ... set other text views
     }
 }

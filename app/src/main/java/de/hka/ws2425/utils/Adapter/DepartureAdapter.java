@@ -55,6 +55,7 @@ public class DepartureAdapter extends RecyclerView.Adapter<DepartureAdapter.Depa
             intent.putExtra("TRIP_HEADSIGN", departure.getTripHeadsign());
             intent.putExtra("ARRIVAL_TIME", departure.getArrivalTime());
             intent.putExtra("DEPARTURE_TIME", departure.getDepartureTime());
+            intent.putExtra("TRIP_ID", departure.getTripID()); // Assuming you want the first departure's tripID
 
             v.getContext().startActivity(intent);
         });

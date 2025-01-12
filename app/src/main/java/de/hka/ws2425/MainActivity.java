@@ -85,9 +85,9 @@ public class MainActivity extends AppCompatActivity {
                     double longitude = Double.parseDouble(stop.getLongitude());
                     Stop newStop = new Stop(stop.getId(), stop.getName(), latitude, longitude);
                     stopsList.add(newStop);
-                    Log.d("StopLoader", "Stop geladen: " + newStop.getStop_id());
+                    //Log.d("StopLoader", "Stop geladen: " + newStop.getStop_id());
                 } else {
-                    Log.d("StopLoader", "Parent Stop übersprungen: " + stop.getId());
+                    //Log.d("StopLoader", "Parent Stop übersprungen: " + stop.getId());
                 }
             } catch (NumberFormatException e) {
                 Log.e("StopLoader", "Fehler beim Konvertieren der Koordinaten für Stop " + stop.getId() + ": " + e.getMessage());

@@ -164,7 +164,7 @@ public class StopDetailsActivity extends AppCompatActivity{
 
             while ((line = br.readLine()) != null) {
                 lineNumber++;
-                Log.d("DEBUG", "Lese Zeile " + lineNumber + ": " + line);
+                //Log.d("DEBUG", "Lese Zeile " + lineNumber + ": " + line);
 
                 String[] parts = line.split(",");
                 if (parts.length < 7) {
@@ -196,7 +196,7 @@ public class StopDetailsActivity extends AppCompatActivity{
                     );
                     stopTimes.add(stopTime);
 
-                    Log.d("DEBUG", "Geladene StopTime: " + stopTime.toString());
+                    //Log.d("DEBUG", "Geladene StopTime: " + stopTime.toString());
                 } catch (NumberFormatException e) {
                     Log.e("DEBUG", "Fehler beim Konvertieren von Zahlen in Zeile " + lineNumber + ": " + line, e);
                 } catch (Exception e) {
@@ -290,17 +290,18 @@ public class StopDetailsActivity extends AppCompatActivity{
 
             // 5. Departure erstellen
             Departure departure = new Departure(
-                    route.getRoute_short_name(), // Kurzname der Route
-                    trip.getTrip_headsign(),     // Zielort
-                    stopTime.getArrival_time(),  // Ankunftszeit
-                    stopTime.getDeparture_time() // Abfahrtszeit
+                    route.getRoute_short_name(),    // Kurzname der Route
+                    trip.getTrip_headsign(),        // Zielort
+                    stopTime.getArrival_time(),     // Ankunftszeit
+                    stopTime.getDeparture_time(),   // Abfahrtszeit
+                    stopTime.getTrip_id()           // TripID
             );
             departures.add(departure);
 
             Log.d("DEBUG", "Departure hinzugefügt: " + departure.getRouteShortName() + ", " +
                     departure.getTripHeadsign() + ", " +
                     departure.getArrivalTime() + " - " +
-                    departure.getDepartureTime());
+                    departure.getDepartureTime() + " - " + departure.getTripID() );
         }
 
         // 6. Sortiere die Abfahrten nach Abfahrtszeit
