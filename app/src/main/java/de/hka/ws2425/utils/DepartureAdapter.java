@@ -36,11 +36,11 @@ public class DepartureAdapter extends RecyclerView.Adapter<DepartureAdapter.Depa
     @Override
     public void onBindViewHolder(@NonNull DepartureViewHolder holder, int position) {
         Departure departure = departures.get(position);
-        holder.routeShortName.setText(departure.getRouteShortName());
+        holder.routeShortName.setText("Linie " + departure.getRouteShortName());
         holder.tripHeadsign.setText(departure.getTripHeadsign());
 
         // Formatieren der Zeiten
-        holder.arrivalTime.setText(formatTime(departure.getArrivalTime()) + " Uhr");
+        holder.arrivalTime.setText("Ankunft " + formatTime(departure.getArrivalTime()) + " Uhr");
         holder.departureTime.setText(formatTime(departure.getDepartureTime()) + " Uhr");
     }
 

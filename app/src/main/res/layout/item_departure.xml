@@ -14,14 +14,14 @@
         android:text="14:48 Uhr"
         android:textSize="20sp"
         android:textStyle="bold"
-        android:textColor="@android:color/holo_red_dark" />
+        android:textColor="@android:color/holo_green_dark" />
 
     <!-- Zweite Zeile: Zielort -->
     <TextView
         android:id="@+id/tripHeadsign"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Freising"
+        android:text="Uhingen Uditorium"
         android:textSize="16sp"
         android:textColor="@android:color/black"
         android:layout_marginTop="4dp" />
@@ -33,28 +33,29 @@
         android:orientation="horizontal"
         android:layout_marginTop="4dp">
 
-        <!-- Ankunftszeit -->
-        <TextView
-            android:id="@+id/arrivalTime"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="14:38 Uhr"
-            android:textSize="14sp"
-            android:textColor="@android:color/darker_gray" />
-
-        <!-- Abstand -->
-        <TextView
-            android:layout_width="16dp"
-            android:layout_height="wrap_content" />
-
         <!-- Zusatzinfos -->
         <TextView
             android:id="@+id/routeShortName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="S3"
+            android:text="Linie 911"
             android:textSize="14sp"
             android:textColor="@android:color/darker_gray" />
+        <!-- Ankunftszeit -->
+        <!-- Abstand -->
+        <TextView
+            android:layout_width="16dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/arrivalTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ankunft 14:38 Uhr"
+            android:textSize="14sp"
+            android:textColor="@android:color/darker_gray" />
+
+
     </LinearLayout>
 
     <!-- Untere Linie als Trennlinie -->
