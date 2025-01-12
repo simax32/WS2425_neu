@@ -144,7 +144,7 @@ public class MapFragment extends Fragment {
         Intent intent = new Intent(requireContext(), StopDetailsActivity.class);
         intent.putExtra("STOP_NAME", stop.getStop_name()); // Haltestellenname übergeben
         intent.putExtra("STOP_ID", stop.getStop_id()); // Stop-ID übergeben
-        startActivity(intent); // Öffnet die neue leere Activity
+        startActivity(intent); // Öffnet die Activity
         Log.d("Debug", "StopId = " + stop.getStop_id());
     }
 

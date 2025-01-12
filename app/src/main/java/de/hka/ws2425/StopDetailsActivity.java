@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.content.res.AssetManager;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
 import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
@@ -36,12 +37,12 @@ import de.hka.ws2425.utils.Stop;
 import de.hka.ws2425.utils.StopTimes;
 import de.hka.ws2425.utils.Trips;
 
-public class StopDetailsActivity extends AppCompatActivity {
+public class StopDetailsActivity extends AppCompatActivity{
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-
         super.onCreate(savedInstanceState);
+
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_stop_details);
 
@@ -81,6 +82,7 @@ public class StopDetailsActivity extends AppCompatActivity {
 
             RecyclerView recyclerView = findViewById(R.id.departureList);
             recyclerView.setLayoutManager(new LinearLayoutManager(this));
+            departures = getDeparturesForStop(stopId, stopTimes, trips, routes); // Assign the list
             recyclerView.setAdapter(new DepartureAdapter(departures));
 
             Log.d("DEBUG", "Adapter erfolgreich an RecyclerView gebunden mit " + departures.size() + " Einträgen.");
@@ -88,7 +90,10 @@ public class StopDetailsActivity extends AppCompatActivity {
             Log.e("DEBUG", "Fehler beim Laden der Daten: " + e.getMessage(), e);
             Toast.makeText(this, "Fehler beim Laden der Abfahrten.", Toast.LENGTH_SHORT).show();
         }
+
     }
+
+
 //Ende
 
     // Lädt die Datei routes.txt und erstellt eine Liste von Routes
@@ -312,8 +317,5 @@ public class StopDetailsActivity extends AppCompatActivity {
         Log.d("DEBUG", "Insgesamt gefundene Abfahrten: " + departures.size());
         return departures;
     }
-
-
-
 
 }

@@ -1,5 +1,6 @@
 package de.hka.ws2425.utils;
 
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -42,6 +43,19 @@ public class DepartureAdapter extends RecyclerView.Adapter<DepartureAdapter.Depa
         // Formatieren der Zeiten
         holder.arrivalTime.setText("Ankunft " + formatTime(departure.getArrivalTime()) + " Uhr");
         holder.departureTime.setText(formatTime(departure.getDepartureTime()) + " Uhr");
+
+        holder.itemView.setOnClickListener(v -> {
+            // Handle item click here
+            Intent intent = new Intent(v.getContext(), DepartureDetailActivity.class);
+
+            // Pass data as extras
+            intent.putExtra("ROUTE_SHORT_NAME", departure.getRouteShortName());
+            intent.putExtra("TRIP_HEADSIGN", departure.getTripHeadsign());
+            intent.putExtra("ARRIVAL_TIME", departure.getArrivalTime());
+            intent.putExtra("DEPARTURE_TIME", departure.getDepartureTime());
+
+            v.getContext().startActivity(intent);
+        });
     }
 
     @Override
@@ -60,7 +74,7 @@ public class DepartureAdapter extends RecyclerView.Adapter<DepartureAdapter.Depa
         }
     }
 
-    static class DepartureViewHolder extends RecyclerView.ViewHolder {
+    public static class DepartureViewHolder extends RecyclerView.ViewHolder {
         TextView routeShortName, tripHeadsign, arrivalTime, departureTime;
 
         public DepartureViewHolder(@NonNull View itemView) {
