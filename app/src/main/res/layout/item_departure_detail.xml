@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp"
+    android:background="@android:color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="4dp">
+
+        <!-- Ankunftszeit -->
+        <TextView
+            android:id="@+id/tripStopDepartureTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="14:48 Uhr"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/secondary_text_light" />
+
+        <!-- Abstand -->
+        <TextView
+            android:layout_width="16dp"
+            android:layout_height="wrap_content" />
+
+        <!-- Stationsname -->
+
+        <TextView
+            android:id="@+id/tripStopShortName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Uhingen Schulstraße"
+            android:textSize="20sp"
+            android:textColor="@android:color/primary_text_light" />
+
+
+    </LinearLayout>
+
+    <!-- Untere Linie als Trennlinie -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"
+        android:layout_marginTop="8dp" />
+</LinearLayout>
