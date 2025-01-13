@@ -1,5 +1,6 @@
 package de.hka.ws2425.ui.map;
 
+import androidx.fragment.app.FragmentManager;
 import androidx.lifecycle.ViewModelProvider;
 
 import android.annotation.SuppressLint;
@@ -106,6 +107,7 @@ public class MapFragment extends Fragment {
                     Toast.makeText(requireContext(), "Klicke eine Haltestelle um Abfahrten anzeigen zu lassen", Toast.LENGTH_SHORT).show();
                 }
             }
+            FragmentManager fragmentManager = getParentFragmentManager();
         });
 
             return root;

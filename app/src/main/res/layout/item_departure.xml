@@ -14,7 +14,7 @@
         android:text="14:48 Uhr"
         android:textSize="20sp"
         android:textStyle="bold"
-        android:textColor="@android:color/holo_green_dark" />
+        android:textColor="#546E7A" />
 
     <!-- Zweite Zeile: Zielort -->
     <TextView
@@ -23,15 +23,15 @@
         android:layout_height="wrap_content"
         android:text="Uhingen Uditorium"
         android:textSize="16sp"
-        android:textColor="@android:color/black"
-        android:layout_marginTop="4dp" />
+        android:textColor="@android:color/secondary_text_light"
+        android:layout_marginTop="2dp" />
 
     <!-- Dritte Zeile: Ankunftszeit und Zusatzinfos -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_marginTop="4dp">
+        android:layout_marginTop="2dp">
 
         <!-- Zusatzinfos -->
         <TextView
@@ -40,7 +40,7 @@
             android:layout_height="wrap_content"
             android:text="Linie 911"
             android:textSize="14sp"
-            android:textColor="@android:color/darker_gray" />
+            android:textColor="@android:color/tertiary_text_light" />
         <!-- Ankunftszeit -->
         <!-- Abstand -->
         <TextView
@@ -53,7 +53,7 @@
             android:layout_height="wrap_content"
             android:text="Ankunft 14:38 Uhr"
             android:textSize="14sp"
-            android:textColor="@android:color/darker_gray" />
+            android:textColor="@android:color/tertiary_text_light" />
 
 
     </LinearLayout>
@@ -62,6 +62,6 @@
     <View
         android:layout_width="match_parent"
         android:layout_height="1dp"
-        android:background="@android:color/darker_gray"
-        android:layout_marginTop="8dp" />
+        android:background="#EEEEEE"
+        android:layout_marginTop="16dp" />
 </LinearLayout>

@@ -6,14 +6,19 @@ import android.net.ParseException;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.FrameLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
+
+import org.osmdroid.views.MapView;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -26,6 +31,7 @@ import java.util.List;
 import java.util.Locale;
 import java.util.stream.Collectors;
 
+import de.hka.ws2425.ui.map.MapFragment;
 import de.hka.ws2425.utils.Adapter.TripDetailAdapter;
 import de.hka.ws2425.utils.Stop;
 import de.hka.ws2425.utils.StopTimes;
@@ -43,6 +49,7 @@ public class DepartureDetailActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_departure_details);
 
+
         // Daten aus Intent holen
         Intent intent = getIntent();
         String tripID = intent.getStringExtra("TRIP_ID");
@@ -53,12 +60,9 @@ public class DepartureDetailActivity extends AppCompatActivity {
         Log.d("DepartureDetailActivity", "Erhaltene Daten: TripID = " + tripID +
                 ", RouteShortName = " + routeShortName + ", TripHeadsign = " + tripHeadsign);
 
-        // UI-Elemente initialisieren
-        TextView routeNameTextView = findViewById(R.id.routeShortNameTextView);
-        TextView tripHeadsignTextView = findViewById(R.id.routeDesinationNameTextView);
 
-        if (routeNameTextView != null) routeNameTextView.setText(routeShortName);
-        if (tripHeadsignTextView != null) tripHeadsignTextView.setText(tripHeadsign);
+        setTitle("Linieienverlauf " +routeShortName +" " + tripHeadsign);
+
 
         // RecyclerView initialisieren
         departureRecyclerView = findViewById(R.id.departureList);
@@ -72,6 +76,12 @@ public class DepartureDetailActivity extends AppCompatActivity {
                 finish();
             }
         });
+
+        RecyclerView departureList = findViewById(R.id.departureList);
+        FloatingActionButton fabMap = findViewById(R.id.fabMapBack);
+
+
+
         // Daten laden
         List<Stop> stops;
         List<StopTimes> stopTimes;
@@ -165,7 +175,7 @@ public class DepartureDetailActivity extends AppCompatActivity {
                     .orElse(null);
 
             if (stop != null) {
-                tripStops.add(new TripStop(stopTime.getDeparture_time(), stop.getStop_name()));
+                tripStops.add(new TripStop(stopTime.getDeparture_time(), stop.getStop_name(), stopTime.getArrival_time()));
                 Log.d("fetchTripStops", "TripStop hinzugefügt: StopName = " + stop.getStop_name() +
                         ", DepartureTime = " + stopTime.getDeparture_time());
             } else {
@@ -186,6 +196,18 @@ public class DepartureDetailActivity extends AppCompatActivity {
         } catch (java.text.ParseException e) {
             throw new RuntimeException(e);
         }
+    }
+
+    public void launchMapFragment() {
+        FragmentManager fragmentManager = getSupportFragmentManager();
+        FragmentTransaction transaction = fragmentManager.beginTransaction();
+
+        // Create a new instance of MapFragment (if needed)
+        MapFragment mapFragment = new MapFragment();
+
+        transaction.replace(R.id.container, mapFragment); // Replace container with MapFragment
+        transaction.addToBackStack(null); // Add to backstack (optional: provide a name)
+        transaction.commit();
     }
 }
 

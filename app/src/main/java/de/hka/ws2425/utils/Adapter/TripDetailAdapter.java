@@ -34,6 +34,7 @@ public class TripDetailAdapter extends RecyclerView.Adapter<TripDetailAdapter.Tr
         TripStop tripStop = tripStops.get(position);
         holder.tripStopDepartureTime.setText(formatTime(tripStop.getDepartureTime()) + " Uhr");
         holder.tripStopShortName.setText(tripStop.getStopName());
+        holder.tripStopArrivalTime.setText(formatTime(tripStop.getArrivalTime()) + " Uhr");
     }
 
     @Override
@@ -42,12 +43,13 @@ public class TripDetailAdapter extends RecyclerView.Adapter<TripDetailAdapter.Tr
     }
 
     static class TripDetailViewHolder extends RecyclerView.ViewHolder {
-        TextView tripStopDepartureTime, tripStopShortName;
+        TextView tripStopDepartureTime, tripStopShortName, tripStopArrivalTime;
 
         public TripDetailViewHolder(@NonNull View itemView) {
             super(itemView);
             tripStopDepartureTime = itemView.findViewById(R.id.tripStopDepartureTime);
             tripStopShortName = itemView.findViewById(R.id.tripStopShortName);
+            tripStopArrivalTime = itemView.findViewById(R.id.tripStopArrivalTime);
         }
     }
     private String formatTime(String time) {
