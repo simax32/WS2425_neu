@@ -5,12 +5,15 @@ import android.content.res.AssetManager;
 import android.net.ParseException;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -61,6 +64,14 @@ public class DepartureDetailActivity extends AppCompatActivity {
         departureRecyclerView = findViewById(R.id.departureList);
         departureRecyclerView.setLayoutManager(new LinearLayoutManager(this));
 
+        FloatingActionButton fabBack = findViewById(R.id.fabBack);
+        fabBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Schließt die aktuelle Activity und kehrt zur vorherigen zurück
+                finish();
+            }
+        });
         // Daten laden
         List<Stop> stops;
         List<StopTimes> stopTimes;
