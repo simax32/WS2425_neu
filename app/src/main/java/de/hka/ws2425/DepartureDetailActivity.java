@@ -6,8 +6,6 @@ import android.net.ParseException;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
-import android.widget.FrameLayout;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -17,8 +15,6 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
-
-import org.osmdroid.views.MapView;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -76,6 +72,19 @@ public class DepartureDetailActivity extends AppCompatActivity {
                 finish();
             }
         });
+
+        FloatingActionButton fabMapBack = findViewById(R.id.fabMapBack);
+        fabMapBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Schließt die aktuelle Activity und kehrt zur vorherigen zurück
+                Intent intent = new Intent();
+                intent.putExtra("returnMap", true);
+                setResult(RESULT_OK, intent);
+                finish();
+            }
+        });
+
 
         RecyclerView departureList = findViewById(R.id.departureList);
         FloatingActionButton fabMap = findViewById(R.id.fabMapBack);

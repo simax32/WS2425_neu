@@ -1,11 +1,18 @@
 package de.hka.ws2425;
 
+import android.content.Intent;
 import android.content.res.AssetManager;
+import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
 import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
+import androidx.activity.result.ActivityResult;
+import androidx.activity.result.ActivityResultCallback;
+import androidx.activity.result.ActivityResultLauncher;
+import androidx.activity.result.contract.ActivityResultContracts;
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
@@ -83,7 +90,22 @@ public class StopDetailsActivity extends AppCompatActivity{
             RecyclerView recyclerView = findViewById(R.id.departureList);
             recyclerView.setLayoutManager(new LinearLayoutManager(this));
             departures = getDeparturesForStop(stopId, stopTimes, trips, routes); // Assign the list
-            recyclerView.setAdapter(new DepartureAdapter(departures));
+
+
+            ActivityResultLauncher<Intent> departureLauncher = registerForActivityResult(
+                    new ActivityResultContracts.StartActivityForResult(), new ActivityResultCallback<ActivityResult>() {
+                        @Override
+                        public void onActivityResult(ActivityResult o) {
+                            if (o.getResultCode() == RESULT_OK) {
+                                Intent data = o.getData();
+                                boolean returnMap = data.getBooleanExtra("returnMap", false);
+                                if (returnMap)
+                                    finish();
+                            }
+                        }
+                    });
+
+            recyclerView.setAdapter(new DepartureAdapter(departures, departureLauncher));
 
             Log.d("DEBUG", "Adapter erfolgreich an RecyclerView gebunden mit " + departures.size() + " Einträgen.");
         } catch (IOException e) {
@@ -318,5 +340,4 @@ public class StopDetailsActivity extends AppCompatActivity{
         Log.d("DEBUG", "Insgesamt gefundene Abfahrten: " + departures.size());
         return departures;
     }
-
 }

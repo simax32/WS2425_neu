@@ -1,11 +1,14 @@
 package de.hka.ws2425.utils.Adapter;
 
 import android.content.Intent;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import androidx.activity.result.ActivityResultLauncher;
+import androidx.annotation.Nullable;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.text.ParseException;
@@ -20,12 +23,14 @@ import io.reactivex.annotations.NonNull;
 
 public class DepartureAdapter extends RecyclerView.Adapter<DepartureAdapter.DepartureViewHolder> {
 
+    private ActivityResultLauncher<Intent> departureLauncher;
     private List<Departure> departures;
     private final SimpleDateFormat inputFormat = new SimpleDateFormat("HH:mm:ss");
     private final SimpleDateFormat outputFormat = new SimpleDateFormat("HH:mm");
 
-    public DepartureAdapter(List<Departure> departures) {
+    public DepartureAdapter(List<Departure> departures, ActivityResultLauncher<Intent> departureLauncher) {
         this.departures = departures;
+        this.departureLauncher = departureLauncher;
     }
 
     @NonNull
@@ -56,8 +61,8 @@ public class DepartureAdapter extends RecyclerView.Adapter<DepartureAdapter.Depa
             intent.putExtra("ARRIVAL_TIME", departure.getArrivalTime());
             intent.putExtra("DEPARTURE_TIME", departure.getDepartureTime());
             intent.putExtra("TRIP_ID", departure.getTripID()); // Assuming you want the first departure's tripID
+            departureLauncher.launch(intent);
 
-            v.getContext().startActivity(intent);
         });
     }
 
