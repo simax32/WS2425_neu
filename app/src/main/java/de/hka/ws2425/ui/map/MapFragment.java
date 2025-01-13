@@ -153,6 +153,12 @@ public class MapFragment extends Fragment {
     public void onResume() {
         super.onResume();
 
+        if (mapView != null) {
+            mapView.onResume();
+            if (stopsList != null && !stopsList.isEmpty()) {
+                addMarker();
+            }
+        }
         String[] permissions = {
                 android.Manifest.permission.ACCESS_FINE_LOCATION,
         };
@@ -168,6 +174,22 @@ public class MapFragment extends Fragment {
                 super.onDenied(context, deniedPermissions);
             }
         });
+    }
+
+    @Override
+    public void onPause() {
+        super.onPause();
+        if (mapView != null) {
+            mapView.onPause();
+        }
+    }
+
+    @Override
+    public void onDestroy() {
+        super.onDestroy();
+        if (mapView != null) {
+            mapView.onDetach();
+        }
     }
 
     @SuppressLint("MissingPermission")
