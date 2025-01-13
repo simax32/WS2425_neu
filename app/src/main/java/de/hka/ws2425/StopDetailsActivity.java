@@ -13,6 +13,8 @@ import androidx.core.view.WindowInsetsCompat;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -63,6 +65,12 @@ public class StopDetailsActivity extends AppCompatActivity{
         }
         // Titel setzen
         setTitle(stopName);
+
+        FloatingActionButton fabBack = findViewById(R.id.fabBack);
+        fabBack.setOnClickListener(v -> {
+            finish(); // Schließt die Abfahrts-Activity und kehrt zur Karte zurück
+        });
+
 
         // Daten laden und RecyclerView initialisieren
         try {
