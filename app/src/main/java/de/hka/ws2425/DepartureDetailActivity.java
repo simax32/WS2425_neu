@@ -57,7 +57,7 @@ public class DepartureDetailActivity extends AppCompatActivity {
                 ", RouteShortName = " + routeShortName + ", TripHeadsign = " + tripHeadsign);
 
 
-        setTitle("Linieienverlauf " +routeShortName +" " + tripHeadsign);
+        setTitle("Linienverlauf " +routeShortName +" " + tripHeadsign);
 
 
         // RecyclerView initialisieren
