@@ -1,17 +1,27 @@
 package de.hka.ws2425;
 
 import android.content.Intent;
+import android.content.res.AssetManager;
 import android.os.Bundle;
+import android.util.Log;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
+import java.util.stream.Collectors;
 
 import de.hka.ws2425.utils.Adapter.TripDetailAdapter;
+import de.hka.ws2425.utils.Stop;
+import de.hka.ws2425.utils.StopTimes;
 import de.hka.ws2425.utils.TripStop;
 
 public class DepartureDetailActivity extends AppCompatActivity {
@@ -24,15 +34,17 @@ public class DepartureDetailActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_departure_details);
 
+        // Daten aus Intent holen
         Intent intent = getIntent();
+        String tripID = intent.getStringExtra("TRIP_ID");
         String routeShortName = intent.getStringExtra("ROUTE_SHORT_NAME");
         String tripHeadsign = intent.getStringExtra("TRIP_HEADSIGN");
-        String arrivalTime = intent.getStringExtra("ARRIVAL_TIME");
-        String departureTime = intent.getStringExtra("DEPARTURE_TIME");
-        String tripID = intent.getStringExtra("TRIP_ID");
 
+        // Debugging: Überprüfe empfangene Daten
+        Log.d("DepartureDetailActivity", "Erhaltene Daten: TripID = " + tripID +
+                ", RouteShortName = " + routeShortName + ", TripHeadsign = " + tripHeadsign);
 
-        // UI-Elemente befüllen
+        // UI-Elemente initialisieren
         TextView routeNameTextView = findViewById(R.id.routeShortNameTextView);
         TextView tripHeadsignTextView = findViewById(R.id.routeDesinationNameTextView);
 
@@ -43,23 +55,109 @@ public class DepartureDetailActivity extends AppCompatActivity {
         departureRecyclerView = findViewById(R.id.departureList);
         departureRecyclerView.setLayoutManager(new LinearLayoutManager(this));
 
-        // Beispielhafte Liste der Trip-Daten erstellen
-        List<TripStop> tripStops = fetchTripStops(tripID);
+        // Daten laden
+        List<Stop> stops;
+        List<StopTimes> stopTimes;
+
+        try {
+            stops = loadStops("stops.txt");
+            stopTimes = loadStopTimes("stop_times.txt");
+        } catch (IOException e) {
+            Log.e("DepartureDetailActivity", "Fehler beim Laden der Dateien: " + e.getMessage(), e);
+            Toast.makeText(this, "Fehler beim Laden der Daten.", Toast.LENGTH_SHORT).show();
+            return;
+        }
+
+        // Liste der TripStops erstellen
+        List<TripStop> tripStops = fetchTripStops(tripID, stopTimes, stops);
 
         // Adapter setzen
         tripDetailAdapter = new TripDetailAdapter(tripStops);
         departureRecyclerView.setAdapter(tripDetailAdapter);
+
+        // Debugging: Überprüfe Liste
+        Log.d("DepartureDetailActivity", "RecyclerView mit TripStops initialisiert: " + tripStops.size());
     }
 
+    /**
+     * Diese Methode lädt Stops aus der Datei "stops.txt".
+     */
+    private List<Stop> loadStops(String fileName) throws IOException {
+        List<Stop> stops = new ArrayList<>();
+        AssetManager assetManager = getAssets();
 
-    private List<TripStop> fetchTripStops(String tripID) {
-        // In einer echten Anwendung würden hier die Daten aus einer Datenbank oder API abgerufen werden.
-        // Beispiel-Daten:
+        try (BufferedReader reader = new BufferedReader(new InputStreamReader(assetManager.open(fileName)))) {
+            reader.readLine(); // Kopfzeile überspringen
+            String line;
+            while ((line = reader.readLine()) != null) {
+                String[] parts = line.split(",");
+                if (parts.length >= 4) {
+                    stops.add(new Stop(parts[0], parts[1], Double.parseDouble(parts[2]), Double.parseDouble(parts[3])));
+                } else {
+                    Log.w("loadStops", "Ungültige Zeile: " + line);
+                }
+            }
+        }
+        Log.d("loadStops", "Geladene Stops: " + stops.size());
+        return stops;
+    }
+
+    /**
+     * Diese Methode lädt StopTimes aus der Datei "stop_times.txt".
+     */
+    private List<StopTimes> loadStopTimes(String fileName) throws IOException {
+        List<StopTimes> stopTimes = new ArrayList<>();
+        AssetManager assetManager = getAssets();
+
+        try (BufferedReader reader = new BufferedReader(new InputStreamReader(assetManager.open(fileName)))) {
+            reader.readLine(); // Kopfzeile überspringen
+            String line;
+            while ((line = reader.readLine()) != null) {
+                String[] parts = line.split(",");
+                if (parts.length >= 7) {
+                    stopTimes.add(new StopTimes(parts[0], parts[1], parts[2], parts[3],
+                            Integer.parseInt(parts[4]), parts[5], Integer.parseInt(parts[6])));
+                } else {
+                    Log.w("loadStopTimes", "Ungültige Zeile: " + line);
+                }
+            }
+        }
+        Log.d("loadStopTimes", "Geladene StopTimes: " + stopTimes.size());
+        return stopTimes;
+    }
+
+    /**
+     * Diese Methode filtert StopTimes für die gegebene TripID und mappt sie zu einer Liste von TripStops.
+     */
+    private List<TripStop> fetchTripStops(String tripID, List<StopTimes> stopTimes, List<Stop> stops) {
         List<TripStop> tripStops = new ArrayList<>();
-        tripStops.add(new TripStop("08:30", "Uhingen Schulstraße"));
-        tripStops.add(new TripStop("08:45", "Göppingen Bahnhof"));
-        tripStops.add(new TripStop("09:00", "Eislingen Markt"));
+
+        // StopTimes für die gegebene TripID filtern
+        List<StopTimes> filteredStopTimes = stopTimes.stream()
+                .filter(stopTime -> tripID.equals(stopTime.getTrip_id()))
+                .sorted(Comparator.comparing(StopTimes::getDeparture_time))
+                .collect(Collectors.toList());
+
+        Log.d("fetchTripStops", "Gefilterte StopTimes: " + filteredStopTimes.size());
+
+        // Zu jedem StopTime den zugehörigen Stop finden
+        for (StopTimes stopTime : filteredStopTimes) {
+            Stop stop = stops.stream()
+                    .filter(s -> s.getStop_id().equals(stopTime.getStop_id()))
+                    .findFirst()
+                    .orElse(null);
+
+            if (stop != null) {
+                tripStops.add(new TripStop(stopTime.getDeparture_time(), stop.getStop_name()));
+                Log.d("fetchTripStops", "TripStop hinzugefügt: StopName = " + stop.getStop_name() +
+                        ", DepartureTime = " + stopTime.getDeparture_time());
+            } else {
+                Log.w("fetchTripStops", "Kein Stop gefunden für StopID: " + stopTime.getStop_id());
+            }
+        }
+
         return tripStops;
     }
-
 }
+
+
