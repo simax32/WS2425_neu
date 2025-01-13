@@ -2,6 +2,7 @@ package de.hka.ws2425;
 
 import android.content.Intent;
 import android.content.res.AssetManager;
+import android.net.ParseException;
 import android.os.Bundle;
 import android.util.Log;
 import android.widget.TextView;
@@ -14,9 +15,12 @@ import androidx.recyclerview.widget.RecyclerView;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Comparator;
+import java.util.Date;
 import java.util.List;
+import java.util.Locale;
 import java.util.stream.Collectors;
 
 import de.hka.ws2425.utils.Adapter.TripDetailAdapter;
@@ -28,6 +32,8 @@ public class DepartureDetailActivity extends AppCompatActivity {
 
     private RecyclerView departureRecyclerView;
     private TripDetailAdapter tripDetailAdapter;
+    private final SimpleDateFormat inputFormat = new SimpleDateFormat("HH:mm:ss", Locale.getDefault());
+    private final SimpleDateFormat outputFormat = new SimpleDateFormat("HH:mm", Locale.getDefault());
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -157,6 +163,18 @@ public class DepartureDetailActivity extends AppCompatActivity {
         }
 
         return tripStops;
+    }
+
+    private String formatTime(String time) {
+        try {
+            Date date = inputFormat.parse(time); // Eingabezeit parsen
+            return outputFormat.format(date);   // Ausgabezeit formatieren
+        } catch (ParseException e) {
+            e.printStackTrace();
+            return time; // Falls ein Fehler auftritt, die Originalzeit zurückgeben
+        } catch (java.text.ParseException e) {
+            throw new RuntimeException(e);
+        }
     }
 }
 

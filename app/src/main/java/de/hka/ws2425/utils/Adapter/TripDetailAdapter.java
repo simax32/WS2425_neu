@@ -32,7 +32,7 @@ public class TripDetailAdapter extends RecyclerView.Adapter<TripDetailAdapter.Tr
     @Override
     public void onBindViewHolder(@NonNull TripDetailViewHolder holder, int position) {
         TripStop tripStop = tripStops.get(position);
-        holder.tripStopDepartureTime.setText(tripStop.getDepartureTime() + " Uhr");
+        holder.tripStopDepartureTime.setText(formatTime(tripStop.getDepartureTime()) + " Uhr");
         holder.tripStopShortName.setText(tripStop.getStopName());
     }
 
@@ -49,6 +49,18 @@ public class TripDetailAdapter extends RecyclerView.Adapter<TripDetailAdapter.Tr
             tripStopDepartureTime = itemView.findViewById(R.id.tripStopDepartureTime);
             tripStopShortName = itemView.findViewById(R.id.tripStopShortName);
         }
+    }
+    private String formatTime(String time) {
+        try {
+            if (time == null) return "";
+            String[] parts = time.split(":");
+            if (parts.length >= 2) {
+                return parts[0] + ":" + parts[1]; // Nur Stunden und Minuten übernehmen
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return time; // Bei Fehlern das Original zurückgeben
     }
 }
 
