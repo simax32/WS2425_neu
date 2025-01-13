@@ -8,15 +8,15 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_marginTop="4dp">
+        android:layout_marginTop="10dp">
 
         <!-- Zusatzinfos -->
         <TextView
             android:id="@+id/routeShortNameTextViewLinie"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Linie "
-            android:textSize="20sp"
+            android:text=" Linie "
+            android:textSize="25sp"
             android:textStyle="bold"
             android:textColor="@android:color/black" />
 
@@ -25,7 +25,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="911"
-            android:textSize="20sp"
+            android:textSize="25sp"
             android:textStyle="bold"
             android:textColor="@android:color/black" />
         <TextView
@@ -37,8 +37,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Uhingen Uditorium"
-
-
+            android:textSize="25sp"
             android:textColor="@android:color/black" />
 
     </LinearLayout>
