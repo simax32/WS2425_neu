@@ -54,7 +54,6 @@ public class StopDetailsActivity extends AppCompatActivity{
             return insets;
         });
 
-//GPT Start
 
         String stopName = getIntent().getStringExtra("STOP_NAME");
         String stopId = getIntent().getStringExtra("STOP_ID");
