@@ -120,6 +120,9 @@ public class MapFragment extends Fragment {
             marker.setPosition(new GeoPoint(stop.getStop_lat(), stop.getStop_lon()));
             marker.setTitle(stop.getStop_name());
 
+            // Setze das benutzerdefinierte Icon buspikto.png
+            marker.setIcon(getResources().getDrawable(R.drawable.buspikto, null));
+
             // Klick-Listener für Marker
             marker.setOnMarkerClickListener((marker1, mapView) -> {
                 int clickCount = markerClickCountMap.getOrDefault(marker1, 0);
@@ -140,6 +143,7 @@ public class MapFragment extends Fragment {
         }
         mapView.invalidate(); // Karte aktualisieren
     }
+
 
 
     private void openDetailsPage(Stop stop) {
